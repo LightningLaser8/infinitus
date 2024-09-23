@@ -1,0 +1,15 @@
+{
+	"name": "[cyan]I[blue]T[gold]I[][][] Core: Expedition",
+	"type": "CoreBlock",
+	"research": "infinite-start",
+	"health": 1000,
+	"size": 2,
+	"itemCapacity": 1500,
+	"unitCapModifier": 6,
+        "unitType": "0i-0-01-scout",
+	"requirements": [
+		"iron/2000",
+		"raw-infinitite/1000",
+	],
+  	"category": "effect"
+}

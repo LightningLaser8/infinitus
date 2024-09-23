@@ -1,0 +1,11 @@
+{
+	"name": "[teal]Core: Infinite",
+        "description": "Yes, that was a thing. And it was this OP."
+	"type": "CoreBlock",
+	"health": 180000,
+	"size": 2,
+	"itemCapacity": 20000,
+	"unitCapModifier": 50,
+     "unitType": "infinimeep",
+  	"category": "effect"
+}

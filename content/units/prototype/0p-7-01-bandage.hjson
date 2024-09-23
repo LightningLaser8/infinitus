@@ -1,0 +1,53 @@
+{
+  type: tether
+  hidden: true
+  flying: false
+  hitSize: 16
+  health: 500
+  outlineColor: 000000
+  canBoost: false
+  canAttack: true
+  canDrown: false
+  speed: 0
+  rotateSpeed: 0
+  drawCell: false
+  createWreck: false
+  createScorch: false
+  lightColor: ffffff
+  lightRadius: 0
+  lowAltitude: true
+  physics: false
+  playerControllable: true
+  useUnitCap: false
+  bounded: true
+  weapons: [
+    {
+      type: RepairBeamWeapon
+      name: challenger-gun0
+      y: 0
+      x: 0
+      targetBuildings: true
+      targetUnits: false
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      mirror: true
+      shootY: 4
+      repairSpeed: 2.5
+      beamWidth: 0.75
+      pulseRadius: 3
+      laserColor: ff0000ff
+      healColor: ff0000ff
+      pulseStroke: 1
+      bullet: {
+        speed: 12
+        lifetime: 20
+        maxRange: 240
+      }
+    }
+  ]
+  immunities: [
+    disassembly
+  ]
+}

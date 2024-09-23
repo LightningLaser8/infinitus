@@ -1,0 +1,12 @@
+{
+    "name": "[black]Rubber",
+    "description": "A bouncy, insulating material.",
+    "explosiveness": 0,
+    "research": "prototype-start",
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "cost": 1,
+    "color": "222222"
+    }
+    

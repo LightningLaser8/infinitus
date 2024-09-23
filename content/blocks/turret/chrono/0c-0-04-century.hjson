@@ -1,0 +1,157 @@
+{
+  type: ItemTurret
+  category: turret
+  research: 0c-0-03-decade
+  consumes: {
+    coolant: {
+      amount: 0.1
+      optional: true
+    }
+  }
+  health: 3600
+  targetAir: true
+  size: 5
+  reload: 650
+  maxAmmo: 60
+  range: 1200
+  recoilAmount: 3
+  shootShake: 4
+  inaccuracy: 0
+  ammoPerShot: 10
+  recoil: 3
+  spread: 0
+  restitution: 0.2
+  rotateSpeed: 1.4
+  shootSound: artillery
+  hitEffect: flakExplosionBig
+  knockback: 0.8
+  hitSize: 16
+  consumes: {
+    coolant: {
+      amount: 0.1
+      optional: true
+    }
+  }
+  ammoTypes: {
+    time-crystal: {
+      speed: 4
+      type: BasicBulletType
+      sprite: shell
+      lifetime: 380
+      homingRange: 2000
+      homingPower: 0.01
+      frontColor: 84f491
+      backColor: 84f491
+      damage: 100
+      keepVelocity: false
+      splashDamage: 240
+      splashDamageRadius: 96
+      status: time-slow-t3
+      statusDuration: 450
+      width: 15
+      height: 35
+      drag: 0.001
+      absorbable: true
+      trailChance: 0.6
+      shootEffect: shootBig2
+      smokeEffect: {
+        type: ParticleEffect
+        particles: 10
+        offset: 11
+        sizeFrom: 5
+        sizeTo: 0
+        length: 70
+        lifetime: 28
+        cone: 25
+      }
+      fragBullets: 8
+      fragBullet: {
+        type: BasicBulletType
+        height: 10
+        width: 10
+        status: time-slow-t2
+        statusDuration: 900
+        lifetime: 30
+        frontColor: 84f491
+        backColor: 84f491
+        drag: 0.02
+        speed: 5
+        splashDamage: 85
+        splashDamageRadius: 64
+        hitEffect: flakExplosionBig
+        despawnEffect: flakExplosionBig
+        fragBullets: 12
+        fragBullet: {
+          type: BasicBulletType
+          height: 7
+          width: 7
+          frontColor: 84f491
+          backColor: 84f491
+          status: time-slow-t1
+          statusDuration: 1800
+          lifetime: 40
+          drag: 0.02
+          speed: 3
+          splashDamage: 30
+          splashDamageRadius: 24
+          hitEffect: flakExplosionBig
+          despawnEffect: flakExplosionBig
+        }
+      }
+    }
+    lead: {
+      speed: 4
+      type: BasicBulletType
+      sprite: shell
+      lifetime: 380
+      homingRange: 2000
+      homingPower: 0.01
+      frontColor: ab98d2
+      backColor: 6f687e
+      damage: 100
+      keepVelocity: false
+      splashDamage: 560
+      splashDamageRadius: 96
+      status: shell-shock
+      statusDuration: 6000
+      width: 15
+      height: 35
+      drag: 0.001
+      trailChance: 0.6
+      shootEffect: shootBig2
+      smokeEffect: {
+        type: ParticleEffect
+        particles: 10
+        offset: 11
+        sizeFrom: 5
+        sizeTo: 0
+        length: 70
+        lifetime: 28
+        cone: 25
+      }
+      fragBullets: 8
+      fragBullet: {
+        type: BasicBulletType
+        height: 10
+        width: 3
+        lifetime: 30
+        damage: 30
+        pierce: true
+        pierceBuilding: false
+        pierceCap: 2
+        frontColor: ab98d2
+        backColor: 6f687e
+        drag: 0.02
+        speed: 12
+        hitEffect: flakExplosionBig
+        despawnEffect: flakExplosionBig
+      }
+    }
+  }
+  requirements: [
+    time-crystal/500
+    thorium/900
+    plastanium/800
+    titanium/1200
+  ]
+}

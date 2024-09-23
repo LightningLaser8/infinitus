@@ -1,0 +1,13 @@
+{
+  type: Conduit
+  health: 140
+  requirements: [
+    raw-infinitite/1
+    quartz/1
+  ]
+  liquidCapacity: 6
+  liquidPressure: 0.75
+  botColor: 054c4c
+  category: liquid
+  research: infinite-start
+}

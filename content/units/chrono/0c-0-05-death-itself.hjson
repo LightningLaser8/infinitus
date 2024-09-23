@@ -1,0 +1,363 @@
+{
+  type: payload
+  lowAltitude: true
+  payloadCapacity: 4096
+  speed: 1.5
+  itemCapacity: 60
+  faceTarget: true
+  accel: 0.5
+  drag: 0.1
+  flying: true
+  buildSpeed: 3
+  buildPower: 3
+  health: 101101
+  hitSize: 88
+  range: 360
+  maxRange: 360
+  engineOffset: 22
+  engineSize: 9
+  engineColor: 000000
+  outlineColor: 000000
+  targetAir: true
+  weapons: [
+    {
+      name: death-spear-release
+      shootSound: lasershoot
+      reload: 60
+      recoil: 3
+      maxRange: 360
+      recoilTime: 10
+      mirror: true
+      alternate: false
+      x: 26
+      y: -10
+      recoils: 3
+      shoot: {
+        shots: 3
+        shotDelay: 10
+        spread: 20
+      }
+      rotate: false
+      layerOffset: -2
+      baseRotation: 200
+      shootCone: 361
+      top: false
+      bullet: {
+        type: BasicBulletType
+        sprite: infinitus-chrono-bullet
+        status: time-slow-t2
+        statusDuration: 150
+        lifetime: 75
+        maxRange: 360
+        backColor: 62ae7fFF
+        frontColor: 84f491FF
+        damage: 101
+        pierce: true
+        pierceCap: 10
+        pierceBuilding: false
+        speed: 10
+        width: 18
+        height: 48
+        trailWidth: 4
+        trailLength: 20
+        trailColor: 84f491FF
+        homingRange: 800
+        homingPower: 0.2
+      }
+    }
+    {
+      name: death-spear-release
+      shootSound: lasershoot
+      reload: 60
+      recoil: 3
+      recoilTime: 10
+      mirror: true
+      alternate: false
+      useAttackRange: false
+      x: 26
+      y: 2
+      recoils: 3
+      shoot: {
+        shots: 3
+        shotDelay: 10
+        spread: 20
+      }
+      rotate: false
+      layerOffset: -2
+      baseRotation: 220
+      shootCone: 361
+      top: false
+      bullet: {
+        type: BasicBulletType
+        sprite: infinitus-chrono-bullet
+        status: time-slow-t2
+        statusDuration: 150
+        maxRange: 360
+        lifetime: 75
+        backColor: 62ae7fFF
+        frontColor: 84f491FF
+        damage: 101
+        pierce: true
+        pierceCap: 10
+        pierceBuilding: false
+        speed: 10
+        width: 18
+        height: 48
+        trailWidth: 4
+        trailLength: 20
+        trailColor: 84f491FF
+        homingRange: 800
+        homingPower: 0.2
+      }
+    }
+    {
+      name: death-silver-gun
+      layerOffset: 0.01
+      y: 0
+      x: 20
+      shootY: 38
+      mirror: false
+      useAttackRange: false
+      rotate: true
+      rotateSpeed: 6.3
+      reload: 300
+      recoil: 1
+      cooldownTime: 180
+      shadow: 26
+      shootSound: shotgun
+      inaccuracy: 0
+      parts: [
+        {
+          suffix: -barrel
+          heatLayerOffset: 0
+          under: true
+          moveY: -6
+          progress: {
+            type: heat
+            op: compress
+            start: 0.66
+            end: 1
+          }
+        }
+      ]
+      bullet: {
+        speed: 36
+        lifetime: 15
+        damage: 12000
+        splashDamage: 120
+        splashDamageRadius: 24
+        maxRange: 360
+        pierce: true
+        buildingDamageMultiplier: 0.01
+        pierceBuilding: false
+        sprite: missile-large
+        status: time-stop
+        statudDuration: 200
+        frontColor: ffffffFF
+        backColor: 626262FF
+        width: 11
+        height: 28
+        trailWidth: 3
+        trailLength: 30
+        trailColor: ffffffFF
+        hitEffect: {
+          type: WrapEffect
+          color: ffffff
+          effect: blastExplosion
+        }
+      }
+    }
+    {
+      name: death-golden-gun
+      shootSound: shootBig
+      reload: 60
+      x: -20
+      y: 0
+      rotate: true
+      shootCone: 8
+      useAttackRange: false
+      rotateSpeed: 6.3
+      mirror: false
+      alternate: false
+      shootY: 4
+      bullet: {
+        speed: 8
+        lifetime: 60
+        splashDamage: 50
+        splashDamageRadius: 24
+        buildingDamageMultiplier: 20
+        scaledSplashDamage: true
+        homingPower: 0.05
+        homingRange: 300
+        homingDelay: 20
+        hitSound: explosion
+        sprite: missile-large
+        width: 10
+        height: 14
+        frontColor: ffff00
+        backColor: ffce00
+        trailColor: ffce00
+        trailWidth: 3
+        trailLength: 7
+        hitEffect: {
+          type: ExplosionEffect
+          lifetime: 35
+          waveRad: 24
+          sparkRad: 30
+          smokeRad: 19
+          waveLife: 5
+          waveStroke: 3
+          waveColor: ffce00
+          sparks: 6
+          sparkLen: 4
+          sparkStroke: 2
+          sparkColor: ffce00
+          smokes: 24
+          smokeColor: 787878
+          smokeSize: 3
+        }
+        shootEffect: shootBig
+        smokeEffect: shootBigSmoke
+      }
+    }
+    {
+      name: death-soul-bombs
+      reload: 300
+      alwaysShooting: true
+      controllable: false
+      aiControllable: false
+      rotate: false
+      shootCone: 361
+      bullet: {
+        type: BulletType
+        damage: 0
+        lifetime: 1
+        lightning: 1
+        lightningLength: 2
+        lightningType: {
+          speed: 1
+          lifetime: 1
+          damage: 0
+          backMove: false
+          collides: false
+          despawnHit: true
+          hitEffect: none
+          despawnEffect: none
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: 0
+          fragVelocityMin: 0
+          fragVelocityMax: 2
+          fragBullet: {
+            speed: 180
+            lifetime: 1
+            damage: 0
+            backMove: false
+            collides: false
+            despawnHit: true
+            hitEffect: none
+            despawnEffect: none
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragAngle: 0
+            fragVelocityMin: 1
+            fragVelocityMax: 1
+            fragBullet: {
+              type: BasicBulletType
+              lifetime: 180
+              sprite: infinitus-color-laser-center
+              frontColor: 00ffff
+              backColor: 00000000
+              speed: 0
+              shrinkX: -8
+              shrinkY: -8
+              shrinkInterp: pow3In
+              spin: 5
+              width: 20
+              height: 20
+              despawnEffect: {
+                type: MultiEffect
+                effects: [
+                  {
+                    type: WaveEffect
+                    sizeFrom: 0
+                    sizeTo: 80
+                    lifetime: 30
+                    strokeFrom: 10
+                    strokeTo: 0
+                    colorFrom: 00ffff
+                    colorTo: 00ffff
+                  }
+                  {
+                    type: WaveEffect
+                    sizeFrom: 20
+                    sizeTo: 100
+                    lifetime: 30
+                    strokeFrom: 10
+                    strokeTo: 0
+                    colorFrom: 00ffff
+                    colorTo: 00ffff
+                  }
+                  {
+                    type: ParticleEffect
+                    sizeFrom: 0
+                    sizeTo: 120
+                    region: infinitus-spike-dual-hd
+                    lifetime: 30
+                    particles: 1
+                    colorFrom: 00ffff
+                    colorTo: 00ffff
+                  }
+                ]
+              }
+              splashDamage: 400
+              splashDamageRadius: 80
+            }
+          }
+        }
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: StatusFieldAbility
+      duration: 60
+      reload: 60
+      range: 300
+      effect: infinitus-time-speed-t3
+    }
+    {
+      type: UnitSpawnAbility,
+      spawnX: 0
+      spawnY: -15
+      unit: 0c-3-01-mini-tonk,
+      spawnTime: 600
+    }
+    {
+      type: UnitSpawnAbility,
+      spawnX: 0
+      spawnY: 30
+      unit: 0c-3-02-death-spooder,
+      spawnTime: 1800
+    }
+  ]
+  immunities: [
+    time-slow-t1
+    time-slow-t2
+    time-slow-t3
+    time-speed
+    time-speed-t2
+    time-speed-t3
+    chrono-hyperspeed
+    time-stop
+    frosted-1
+    frosted-2
+    frosted-3
+    recoded
+    unstable
+    phased
+    infinitised-weak
+    infinitised
+    death-effect
+  ]
+}

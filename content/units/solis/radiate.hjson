@@ -1,0 +1,133 @@
+type: legs
+speed: 2
+hitSize: 12
+rotateSpeed: 3.4
+health: 303
+armor: 3
+lockLegBase: true
+legCount: 3
+outlineColor: 48483f
+legLength: 10
+maxStretch: 1.2
+drawCell: false
+shadowElevationScl: 0.2
+legContinuousMove: true
+lightColor: ffff00
+parts: [
+  	 { 
+   	 type: RegionPart
+   	 suffix: -flare
+   	 outline: false
+   	 blending: additive
+   	 layer: 135
+    	 color: ffe18f
+  	 }
+	]
+weapons: [
+  {
+    x: 0
+    rotate: true
+    rotateSpeed: 360
+    reload: 60
+    controllable: false
+    autoTarget: true
+    targetInterval: 0
+    targetSwitchInterval: 0
+    shootSound: none
+    bullet: {
+      type: PointBulletType
+      speed: 240
+      lifetime: 1
+      damage: 0
+      trailEffect: none
+      shootEffect: none
+      smokeEffect: none
+      collides: false
+      despawnEffect: none
+      hitEffect: none
+      despawnHit: true
+      lightning: 6
+      lightningLength: 2
+      lightningType: {
+        speed: 120
+        lifetime: 1
+        damage: 0
+        backMove: false
+        collides: false
+        despawnHit: true
+        hitEffect: none
+        despawnEffect: none
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragAngle: 180
+        fragVelocityMin: 1
+        fragVelocityMax: 1
+        fragBullet: {
+          damage: 100
+          speed: 18
+          lifetime: 30
+          collidesTiles: false
+          knockback: 20
+          sprite: infinitus-arrow
+          width: 15
+          height: 15
+          shrinkY: 0
+          frontColor: ffe18f
+          backColor: ad825e
+          trailChance: 0
+          trailLength: 5
+          trailColor: ffe18f
+          trailWidth: 3
+          despawnEffect: {
+            lifetime: 25
+            length: 0
+            particles: 1
+            lifetime: 15
+            sizeFrom: 5
+            sizeTo: 0
+            sizeInterp: pow3In
+            colorFrom: ffe18f
+            colorTo: ad825e
+          }
+          hitEffect: {
+            type: MultiEffect
+            effects: [
+              {
+                type: WaveEffect
+                lifetime: 25
+                sides: 5
+                sizeFrom: 0
+                sizeTo: 20
+                strokeFrom: 3
+                strokeTo: 0
+                colorFrom: ffe18f
+                colorTo: ad825e
+              }
+              {
+                length: 30
+                cone: 15
+                line: true
+                lifetime: 35
+                particles: 25
+                interp: pow3Out
+                sizeInterp: pow2In
+                lenFrom: 8
+                lenTo: 0
+                strokeFrom: 3
+                strokeTo: 0
+                colorFrom: ffe18f
+                colorTo: ad825e
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]
+abilities: [
+]
+research: {
+  parent: zero
+  objectives: [void-crystal]
+}

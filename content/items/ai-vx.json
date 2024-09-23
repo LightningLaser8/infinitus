@@ -1,0 +1,12 @@
+{
+    "name": "AI Controller: Advanced",
+    "description": "Circuit board to control units.\n\n[#ffff4f]Advanced[]: Required for only the most advanced units",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 1,
+    "cost": 1,
+    "color": "ffff4f"
+    }
+    
+//anything VX-related

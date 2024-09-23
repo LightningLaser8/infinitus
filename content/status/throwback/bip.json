@@ -1,0 +1,19 @@
+{
+    "name": "Cuteness, apparently",
+    "description": "kills you, somehow.",
+    "reloadMultiplier": 0.5,
+    "speedMultiplier": 0.5,
+    "damage": 0.1
+    "applyColor": "CCFFCCEE"
+    "effect": {
+	 "type": "WaveEffect"
+ 	 "lifetime": 60
+ 	 "sizeFrom": 20
+ 	 "sizeTo": 0
+ 	 "strokeFrom": 1
+ 	 "strokeTo": 0
+ 	 "colorFrom": CCFFCCEE
+ 	 "colorTo": 55CC55AA
+	}
+    "effectChance": 0.05
+}

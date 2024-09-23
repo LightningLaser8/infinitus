@@ -1,0 +1,5 @@
+damage: -1
+buildSpeedMultiplier: 0.5
+opposites:[
+  melting
+]

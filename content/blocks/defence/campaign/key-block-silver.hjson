@@ -1,0 +1,11 @@
+{
+  type: Block
+  destructible: false
+  breakable: true
+  size: 1
+  requirements: [
+    silver-key/2
+  ]
+  category: defense
+  buildVisibility: sandboxOnly
+}

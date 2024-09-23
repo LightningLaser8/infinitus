@@ -1,0 +1,14 @@
+{
+  name: "[green]Warp Bridge[]"
+  type: ItemBridge
+  description: Instantly transports items to the linked Warper. Consumes no power.
+  category: distribution
+  hasPower: false
+  range: 14
+  transportTime: 0.001
+  research: 0c-0-01-chrono-rail
+  requirements: [
+    time-crystal/5
+    spatial-shard/3
+  ]
+}

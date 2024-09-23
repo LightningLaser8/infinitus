@@ -1,0 +1,27 @@
+{
+  type: Conduit
+  leaks: false
+  health: 60
+  requirements: [
+    shadow-steel/1
+    tinted-glass/1
+  ]
+  liquidCapacity: 10
+  liquidPressure: 1.5
+  botColor: 000000
+  category: liquid
+  research: prototype-start
+  junctionReplacement: 0p-0-02-shadow-junction
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 4
+    sizeTo: 8
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

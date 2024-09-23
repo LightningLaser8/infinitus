@@ -1,0 +1,255 @@
+{
+  type: tether
+  hidden: true
+  flying: false
+  hitSize: 56
+  health: 1600
+  outlineColor: 000000
+  canBoost: false
+  canAttack: true
+  canDrown: false
+  speed: 0
+  rotateSpeed: 0
+  drawCell: false
+  createWreck: false
+  createScorch: false
+  lightColor: ffffff
+  lightRadius: 0
+  lowAltitude: true
+  physics: false
+  playerControllable: true
+  useUnitCap: false
+  bounded: true
+  weapons: [
+    {
+      type: RepairBeamWeapon
+      name: challenger-gun0
+      y: 25
+      x: 25
+      targetBuildings: true
+      targetUnits: false
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      mirror: true
+      shootY: 4
+      repairSpeed: 2.5
+      beamWidth: 0.75
+      pulseRadius: 3
+      laserColor: ff0000ff
+      healColor: ff0000ff
+      pulseStroke: 1
+      bullet: {
+        speed: 12
+        lifetime: 20
+        maxRange: 240
+      }
+    }
+    {
+      type: RepairBeamWeapon
+      name: challenger-gun0
+      y: -25
+      x: 25
+      targetBuildings: true
+      targetUnits: false
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      mirror: true
+      shootY: 4
+      repairSpeed: 2.5
+      beamWidth: 0.75
+      pulseRadius: 3
+      laserColor: ff0000ff
+      healColor: ff0000ff
+      pulseStroke: 1
+      bullet: {
+        speed: 12
+        lifetime: 20
+        maxRange: 240
+      }
+    }
+    {
+      name: challenger-gun1
+      shootSound: laser
+      reload: 120
+      x: 15
+      y: 15
+      mirror: false
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      alternate: false
+      bullet: {
+        type: LaserBulletType
+        lifetime: 20
+        colors: [
+          ff0000AA
+          ff5555FF
+          FFFFFF
+        ]
+        damage: 300
+        sideAngle: 30
+        sideWidth: 1
+        sideLength: 15
+        shootEffect: hitMeltdown
+        width: 20
+        length: 256
+      }
+    }
+    {
+      name: challenger-gun1
+      shootSound: laser
+      reload: 120
+      x: -15
+      y: 15
+      mirror: false
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      alternate: false
+      bullet: {
+        type: LaserBulletType
+        lifetime: 20
+        colors: [
+          ff0000AA
+          ff5555FF
+          FFFFFF
+        ]
+        damage: 300
+        sideAngle: 30
+        sideWidth: 1
+        sideLength: 15
+        shootEffect: hitMeltdown
+        width: 20
+        length: 256
+      }
+    }
+    {
+      name: challenger-gun1
+      shootSound: laser
+      reload: 120
+      x: 15
+      y: -15
+      mirror: false
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      alternate: false
+      bullet: {
+        type: LaserBulletType
+        lifetime: 20
+        colors: [
+          ff0000AA
+          ff5555FF
+          FFFFFF
+        ]
+        damage: 300
+        sideAngle: 30
+        sideWidth: 1
+        sideLength: 15
+        shootEffect: hitMeltdown
+        width: 20
+        length: 256
+      }
+    }
+    {
+      name: challenger-gun1
+      shootSound: laser
+      reload: 120
+      x: -15
+      y: -15
+      mirror: false
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      alternate: false
+      bullet: {
+        type: LaserBulletType
+        lifetime: 20
+        colors: [
+          ff0000AA
+          ff5555FF
+          FFFFFF
+        ]
+        damage: 300
+        sideAngle: 30
+        sideWidth: 1
+        sideLength: 15
+        shootEffect: hitMeltdown
+        width: 20
+        length: 256
+      }
+    }
+    {
+      name: challenger-gun2
+      shootSound: energy-shoot
+      reload: 600
+      x: 0
+      y: 0
+      mirror: false
+      rotate: true
+      controllable: true
+      rotateSpeed: 6
+      alternate: false
+      bullet: {
+        type: BasicBulletType
+        sprite: large-orb
+        speed: 8
+        lifetime: 45
+        damage: 450
+        pierce: true
+        pierceCap: 3
+        bulletInterval: 2
+        intervalBullets: 3
+        intervalAngle: 180
+        intervalRandomSpread: 20
+        intervalBullet: {
+          type: BasicBulletType
+          lifetime: 60
+          homingRange: 600
+          homingPower: 0.1
+          speed: 4
+          drag: 0.0125
+          damage: 10
+          sprite: large-orb
+          frontColor: ff0000
+          backColor: ff5a5a
+          width: 4
+          height: 4
+          shrinkY: 0
+          trailLength: 3.5
+          trailWidth: 1
+          trailColor: ff5a5a
+          lightning: 4
+          lightningDamage: 5
+          lightningLength: 5
+          lightningLengthRand: 5
+          lightningColor: ff0000
+        }
+        trailLength: 15
+        trailWidth: 4
+        trailColor: ff5a5a
+        frontColor: ff0000
+        backColor: ff5a5a
+        width: 16
+        height: 16
+        shrinkY: 0
+        lightning: 15
+        lightningDamage: 100
+        lightningLength: 25
+        lightningLengthRand: 10
+        lightningColor: ff0000
+      }
+    }
+  ]
+  immunities: [
+    disassembly
+  ]
+}

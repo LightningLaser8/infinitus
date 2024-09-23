@@ -1,0 +1,138 @@
+{
+  type: PowerTurret
+  health: 3200
+  armor: 20
+  reload: 120
+  recoil: 3
+  shake: 1
+  shootSound: shootBig
+  shootCone: 4
+  range: 480
+  group: walls
+  heatColor: ff0000
+  outlineColor: 000000
+  consumes: {}
+  drawer: {
+    type: DrawTurret
+    parts: [
+      //{
+      //  type: RegionPart
+      //}
+      {
+        type: RegionPart
+        suffix: -blades
+        moveY: -5
+        progress: {
+          type: heat
+          op: compress
+          start: 0
+          end: 1
+        }
+      }
+    ]
+  }
+  shootY: 2
+  shootType: {
+    type: BasicBulletType
+    width: 10
+    height: 25
+    speed: 12
+    damage: 55
+    lifetime: 40
+    frontColor: ff5555
+    backColor: ff0000
+    hitSound: explosion
+    fragBullet: {
+      type: BasicBulletType
+      width: 2
+      height: 5
+      speed: 6
+      damage: 5
+      lifetime: 10
+      frontColor: ff5555
+      backColor: ff0000
+      despawnShake: 2
+      splashDamage: 5
+      splashDamageRadius: 8
+      hitEffect: [
+        {
+          length: 5
+          lifetime: 10
+          particles: 17
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 3
+          lifetime: 10
+          particles: 12
+          colorTo: ff0000
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow5In
+        }
+        {
+          type: WaveEffect
+          lifetime: 5
+          sizeFrom: 0
+          sizeTo: 8
+          strokeFrom: 2
+          strokeTo: 0
+          colorTo: ff0000
+        }
+      ]
+    }
+    fragBullets: 5
+    despawnShake: 4
+    splashDamage: 10
+    splashDamageRadius: 32
+    hitEffect: [
+      {
+        length: 15
+        lifetime: 20
+        particles: 17
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 2
+        sizeTo: 0
+        interp: pow10Out
+        sizeInterp: pow3In
+      }
+      {
+        length: 14
+        lifetime: 30
+        particles: 12
+        colorTo: ff0000
+        sizeFrom: 2
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: pow5In
+      }
+      {
+        type: WaveEffect
+        lifetime: 15
+        sizeFrom: 0
+        sizeTo: 26
+        strokeFrom: 3
+        strokeTo: 0
+        colorTo: ff0000
+      }
+    ]
+  }
+  size: 2
+  category: defense
+  requirements: [
+    dark-plates/24
+    electronium/18
+    rubber/6
+    ai-combat/1
+  ]
+  research: {
+    parent: 0p-1-02-guard-tower
+  }
+}

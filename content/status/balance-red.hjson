@@ -1,0 +1,7 @@
+reloadMultiplier: 0.5
+healthMultiplier: 2
+opposites:[
+  blasted
+  boss
+  disassembly
+]

@@ -1,0 +1,30 @@
+{
+  name: Doom Reconstructor
+  type: Reconstructor
+  size: 11
+  research: 0c-0-02-meep-reconstructor
+  constructTime: 20000
+  category: units
+  consumes: {
+    power: 75
+    items: [
+      silicon/5000
+      titanium/5000
+      infinitite/750
+      time-crystal/500
+    ]
+  }
+  upgrades: [
+    [
+      0c-0-03-mip-t3
+      0c-0-04-death
+    ]
+  ]
+  requirements: [
+    silicon/5000
+    plastanium/1500
+    titanium/2500
+    time-crystal/2000
+    surge-alloy/1000
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  name: Box
+  type: StorageBlock
+  research: container
+  size: 1
+  researchCostMultiplier: 0.6
+  health: 105
+  itemCapacity: 100
+  category: effect
+  requirements: [
+    lead/50
+  ]
+}

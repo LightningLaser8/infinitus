@@ -1,0 +1,32 @@
+{
+  type: PowerTurret
+  health: 1337
+  reload: 120
+  shootCone: 15
+  range: 200
+  shootSound: spark
+  size: 4
+  shoot: {
+    shots: 8
+    spread: 15
+  }
+  consumes: {
+    power: 36
+  }
+  shootType: {
+    type: LightningBulletType
+    damage: 225
+    lightningLength: 54
+    status: recoded
+    statusDuration: 6000
+    lightningColor: 8cdeff
+  }
+  requirements: [
+    dark-plates/1200
+    electronium/6000
+    battery/1000
+    rubber/500
+  ]
+  category: turret
+  research: 0p-0-05-blaze
+}

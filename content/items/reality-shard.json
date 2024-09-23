@@ -1,0 +1,12 @@
+{
+    "name": "[red]Reality Shard",
+    "description": "Composite material influencing the very fabric of the universe...",
+    "explosiveness": 0.5,
+    "flammability": 0,
+    "research": "spatial-shard",
+    "radioactivity": 2,
+    "charge": 0.75,
+    "cost": 10,
+    "color": "ff3333"
+    }
+    

@@ -1,0 +1,10 @@
+{
+    "name": "[#88cfd3]Frosted III",
+    "description": "An icy death",
+    "speedMultiplier": 0,
+    "reloadMultiplier": 0,
+    "opposites": ["burning", "melting"],
+    "affinities": ["wet", "freezing"],
+    "transitionDamage": 400,
+    "applyColor": "88cfd3"
+}

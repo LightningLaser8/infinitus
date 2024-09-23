@@ -1,0 +1,117 @@
+type: legs
+hitSize: 29
+health: 60000
+armor: 9
+speed: 0.6
+landShake: 2
+rotateSpeed: 2.5
+commandLimit: 8
+legCount: 4
+legLength: 14
+research: darkener
+legBaseOffset: 11
+legMoveSpace: 1.5
+legTrns: 0.58
+hovering: true
+visualElevation: 0.2
+allowLegStep: true
+drawShields: false
+weapons: [
+{
+  name: dark-corvus-weapon
+  x: 0
+  y: 0
+  shootSound: laserblast
+  chargeSound: lasercharge
+  soundPitchMin: 1
+  top: false
+  mirror: false
+  shake: 18
+  shootY: 5
+  reload: 300
+  recoil: 0
+  cooldownTime: 150
+  shootStatusDuration: 120
+  shootStatus: unmoving
+  shoot: {
+  firstShotDelay: 120
+         },
+  minWarmup: 0.5
+  bullet: {
+    type: LaserBulletType
+    length: 660
+    damage: 4000
+    buildingDamageMultiplier: 0.1
+    width: 100
+    lifetime: 65
+    lightningSpacing: 15
+    lightningLength: 10
+    lightningDelay: 1.1
+    lightningLengthRand: 20
+    lightningDamage: 400
+    lightningAngleRand: 40
+    largeHit: true
+    lightColor: 74f0a8
+    lightningColor: 74f0a8
+    shootEffect: {
+                            type: ParticleEffect,
+                            particles: 1,
+                            sizeFrom: 2,
+                            sizeTo: 37,
+                            length: 0,
+                            spin: 11,
+                            lifetime: 65,
+                            region: infinitus-spike-dual,                           
+                            colorFrom: 62AE7FFF,
+                            colorTo: 84F491FF
+                        },
+    healPercent: 100
+    collidesTeam: true
+    sideAngle: 15
+    sideWidth: 6
+    sideLength: 20
+    colors: [
+      84F49148, 62AE7FFF, ffffff
+    ]
+          chargeEffect: {
+          type: multiEffect,
+          lifetime: 500,
+          effects: [
+                        {
+                            type: ParticleEffect,
+                            particles: 1,
+                            sizeFrom: 37,
+                            sizeTo: 2,
+                            length: 0,
+                            spin: 11,
+                            lifetime: 125,
+                            region: infinitus-spike-dual,                           
+                            colorFrom: 62AE7FFF,
+                            colorTo: 84F491FF
+                        },
+                        {
+                            type: ParticleEffect,
+                            particles: 1,
+                            sizeFrom: 46,
+                            sizeTo: 2,
+                            length: 0,
+                            spin: -11,
+                            lifetime: 125,
+                            region: infinitus-spike-dual,
+                            colorFrom: 62AE7FFF,
+                            colorTo: 84F491FF
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 120,
+                            "sizeFrom": 70,
+                            "sizeTo": 0,
+                            "strokeFrom": 7,
+                            "strokeTo": 0,
+                            "colorFrom": "62AE7FFF",
+                            "colorTo": "84F491FF"
+                        },
+                    ]
+      }
+  }
+}]

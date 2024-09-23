@@ -1,0 +1,102 @@
+{
+  type: GenericCrafter
+  size: 3
+  craftTime: 210
+  liquidCapacity: 60
+  squareSprite: false
+  drawer: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: void-essence
+      padding: 2
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawGlowRegion
+      color: ff0000
+      alpha: 0.6
+    }
+  ]
+  consumes: {
+    power: 0.75
+    liquid: {
+      liquid: void-essence
+      amount: 0.5
+    }
+    items: [
+      shadow-steel/3
+    ]
+  }
+  outputItem: dark-plates/2
+  ambientSoundVolume: 0.015
+  category: crafting
+  requirements: [
+    shadow-steel/100
+    tinted-glass/25
+    electronium/50
+    iron/100
+  ]
+  craftEffect: {
+    type: RadialEffect
+    rotationOffset: 45
+    lengthOffset: 8
+    effect: {
+      length: 12
+      lifetime: 120
+      interp: pow3Out
+      sizeInterp: pow2In
+      cone: 35
+      particles: 12
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000bb
+      colorTo: ff0000bb
+    }
+  }
+  research: 0p-0-04-glass-maker
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 12
+      sizeTo: 24
+      strokeFrom: 9
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+}

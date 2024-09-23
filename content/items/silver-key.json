@@ -1,0 +1,12 @@
+{
+    "name": "[#aaaaaa]Silver Key",
+    "description": "A silver key.",
+    "explosiveness": 0,
+    "research": "prototype-start",
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "cost": 1,
+    "color": "aaaaaa"
+    }
+    

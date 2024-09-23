@@ -1,0 +1,10 @@
+{
+  type: Wall
+  health: 350
+  size: 1
+  requirements: [
+    raw-infinitite/6
+  ]
+  category: defense
+  research: infinite-start
+}

@@ -1,0 +1,24 @@
+{
+  type: Wall
+  health: 550
+  size: 1
+  baseExplosiveness: 5
+  absorbLasers: true
+  requirements: [
+    shadow-steel/6
+  ]
+  category: defense
+  research: 0p-0-01-electronium-wall
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 4
+    sizeTo: 8
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

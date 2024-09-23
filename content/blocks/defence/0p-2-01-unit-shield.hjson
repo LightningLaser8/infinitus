@@ -1,0 +1,61 @@
+{
+  type: BaseShield
+  health: 400
+  radius: 8.75
+  size: 3
+  customShadow: true
+  hasPower: true
+  consumes: {
+    power: 10
+    liquids: [
+      helium/0.01666666666666666666666666666666666666667
+    ]
+  }
+  category: defense
+  squareSprite: false
+  research: 0p-0-05-dark-plating-wall-large
+  requirements: [
+    electronium/100
+    dark-plates/54
+    rubber/12
+  ]
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 12
+      sizeTo: 24
+      strokeFrom: 9
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+type: Floor
+variants: 0
+blendGroup: chrono-floor
+wall: chrono-wall

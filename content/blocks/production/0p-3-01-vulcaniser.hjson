@@ -1,0 +1,55 @@
+{
+  type: GenericCrafter
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawRegion
+        suffix: -bottom
+      }
+      {
+        type: DrawLiquidTile
+        drawLiquid: oil
+        padding: 0
+        alpha: 1
+      }
+      {
+        type: DrawLiquidTile
+        drawLiquid: co2
+        padding: 0
+        alpha: 0.6
+      }
+      {
+        type: DrawFlame
+        flameColor: ff0000
+      }
+      {
+        type: DrawDefault
+      }
+    ]
+  }
+  size: 2
+  hasPower: true
+  hasLiquids: true
+  hasItems: true
+  itemCapacity: 20
+  craftTime: 120
+  craftEffect: smeltsmoke
+  updateEffect: none
+  consumes: {
+    power: 3
+    liquids: {
+      liquids: [
+        oil/0.1
+        co2/0.25
+      ]
+    }
+  }
+  requirements: [
+    shadow-steel/200
+    tinted-glass/100
+  ]
+  category: crafting
+  research: 0p-0-01-shadow-forge
+  outputItem: rubber/2
+}

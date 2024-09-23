@@ -1,0 +1,6 @@
+[{#fffa9f (VX) or #ff0000 (Other)}]Prototype Log Entry[]
+SD: {Name e.g. 23VX (regex [0-9]{2}[A-Z]{2})}
+
+[#ffd484]{Map Name / Topic}[]
+
+{Message}

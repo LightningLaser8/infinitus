@@ -1,0 +1,53 @@
+{
+  type: GenericCrafter
+  research: 0p-0-01-shadow-forge
+  health: 1000
+  size: 2
+  category: crafting
+  outputItem: infinitite/2
+  hasLiquids: false
+  itemCapacity: 80
+  hasItems: true
+  craftTime: 60
+  hasPower: true
+  ambientSound: smelter
+  requirements: [
+    shadow-steel/25
+    raw-infinitite/100
+  ]
+  consumes: {
+    power: 1.5
+    items: {
+      items: [
+        raw-infinitite/8
+      ]
+    }
+  }
+  craftEffect: {
+    type: multiEffect
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: CCFFFFFF
+        colorTo: 00CCCC55
+      }
+    ]
+  }
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawFlame
+        flameColor: CCFFFFFF
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+type: ParticleWeather
+color: ff4444
+noiseColor: 5e0000
+particleRegion: particle
+sizeMax: 25
+sizeMin: 1
+density: 3000
+status: burning
+useWindVector: true
+drawNoise: true
+opacityMultiplier: 0.75
+baseSpeed: 6.1
+sound: fire
+soundVol: 0.65
+force: 0.5
+attrs: {
+  heat: 1.4
+  water: -0.5
+  spores: -0.9
+  light: 2
+}

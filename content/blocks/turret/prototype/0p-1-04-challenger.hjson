@@ -1,0 +1,27 @@
+{
+  type: UnitCargoLoader
+  health: 2500
+  size: 7
+  category: turret
+  unitType: 0p-7-04-challenger
+  buildTime: 1800
+  consumes: {
+    liquid: {
+      liquid: helium
+      amount: 0.25
+    }
+  }
+  liquidCapacity: 450.25
+  polyColor: ff0000
+  polySides: 8
+  polyStroke: 1
+  polyRadius: 0
+  requirements: [
+    dark-plates/4000
+    tinted-glass/500
+    rubber/1600
+    plutonium/1000
+    ai-combat/5
+    ai-support/4
+  ]
+}

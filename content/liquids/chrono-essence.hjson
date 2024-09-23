@@ -1,0 +1,9 @@
+{
+  name: "[green]Chronoessence[]"
+  description: Time-dilating fluid.
+  temperature: 0.5
+  viscosity: 0.9
+  effect: time-slow-t1
+  capPuddles: false
+  color: 68ec26
+}

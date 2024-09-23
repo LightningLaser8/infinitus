@@ -1,0 +1,13 @@
+{
+    "name": "[#ff0000]Shadow Steel",
+    "description": "Strong, but unstable. Liable to explode. Used extensively in [#ff0000]Prototype[] tech.",
+    "explosiveness": 2,
+    "flammability": 0,
+    "research": "prototype-start",
+    "radioactivity": 0,
+    "hardness": 5,
+    "charge": 0.1,
+    "cost": 10,
+    "color": "CC0000"
+    }
+    

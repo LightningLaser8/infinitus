@@ -1,0 +1,65 @@
+{
+  type: PowerTurret
+  health: 200
+  name: "[#8cdeff]Induction[]"
+  description: Shoots homing lightning orbs
+  size: 1
+  range: 192
+  research: duo
+  outlineColor: 000000
+  squareSprite: false
+  shootSound: spark
+  recoil: 3
+  reload: 30
+  shootY: 5
+  consumes: {
+    power: 6
+  }
+  shootCone: 9
+  aimChangeSpeed: 3.2
+  rotateSpeed: 4.8
+  shootEffect: none
+  shootType: {
+    type: BasicBulletType
+    inaccuracy: 9
+    weaveMag: 20
+    weaveScl: 40
+    frontColor: ffffff
+    backColor: 8cdeff
+    sprite: infinitus-color-laser-center
+    damage: 15
+    lifetime: 48
+    status: shocked
+    height: 6
+    ammoMultiplier: 1
+    width: 6
+    shrinkY: 0
+    lightning: 10
+    lightningLength: 3
+    lightningLengthRand: 4
+    lightningColor: 8cdeff
+    lightningDamage: 5
+    trailWidth: 1.5
+    trailLength: 8
+    trailColor: 8cdeff
+    homingRange: 75
+    homingPower: 0.075
+    speed: 4
+    hitEffect: {
+      type: ParticleEffect
+      line: true
+      particles: 9
+      cone: -360
+      strokeFrom: 2.5
+      strokeTo: 0
+      lenFrom: 8
+      lenTo: 0
+      colorFrom: ffffff
+      colorTo: 8cdeff
+    }
+  }
+  requirements: [
+    electronium/50
+  ]
+  category: turret
+}

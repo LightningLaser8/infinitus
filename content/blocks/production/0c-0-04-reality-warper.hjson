@@ -1,0 +1,147 @@
+{
+  type: GenericCrafter
+  size: 3
+  category: crafting
+  outputItem: reality-shard/1
+  hasLiquids: false
+  itemCapacity: 50
+  hasItems: true
+  craftTime: 300
+  hasPower: true
+  ambientSound: smelter
+  squareSprite: false
+  craftEffect: {
+    type: multiEffect
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 40
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: FFCCCCFF
+        colorTo: CC000055
+      }
+      {
+        type: WaveEffect
+        lifetime: 60
+        sides: 3
+        sizeFrom: 0
+        sizeTo: 60
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: FFCCCCFF
+        colorTo: CC000055
+      }
+      {
+        type: WaveEffect
+        lifetime: 60
+        rotation: 180
+        sides: 3
+        sizeFrom: 0
+        sizeTo: 60
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: FFCCCCFF
+        colorTo: CC000055
+      }
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 20
+        sizeTo: 0
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: CCFFCCFF
+        colorTo: 00CC0055
+      }
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 30
+        sizeTo: 10
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: CCCCFFFF
+        colorTo: 0000CC55
+      }
+    ]
+  }
+  drawer: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawBlurSpin
+      suffix: -fansmol
+      blurThresh: 0.4
+      rotateSpeed: 120
+    }
+    {
+      type: DrawBlurSpin
+      suffix: -fan
+      blurThresh: 0.75
+      rotateSpeed: 70
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+  consumes: {
+    power: 7.5
+    items: {
+      items: [
+        temporal-shard/1
+        spatial-shard/1
+      ]
+    }
+  }
+  category: crafting
+  requirements: [
+    spatial-shard/50
+    temporal-shard/300
+    shadow-steel/150
+    time-crystal/250
+  ]
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 12
+      sizeTo: 24
+      strokeFrom: 9
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+}

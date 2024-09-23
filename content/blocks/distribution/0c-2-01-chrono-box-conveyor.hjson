@@ -1,0 +1,12 @@
+{
+  type: PayloadConveyor
+  size: 1
+  payloadLimit: 1
+  moveTime: 15
+  research: 0c-0-01-chrono-rail
+  interp: linear
+  requirements: [
+    time-crystal/6
+    spatial-shard/1
+  ]
+}

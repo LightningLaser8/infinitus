@@ -1,0 +1,12 @@
+{
+    "name": "[blue]Spatial Shard",
+    "description": "Has space-warping properties. Used in instant transport structures and as turret ammo.",
+    "explosiveness": 0,
+    "flammability": 0,
+    "research": "time-crystal",
+    "radioactivity": 1.5,
+    "charge": 1,
+    "cost": 7.5,
+    "color": "0000FF"
+    }
+    

@@ -1,0 +1,52 @@
+type: flying,
+hitSize: 8,
+hidden: true,
+health: 450,
+range: 1000,
+speed: 2.5,
+flying: true,
+drag: 0.8,
+drawCell: false,
+accel: 0.2,
+rotateSpeed: 3,
+engineOffset: -2,
+engineSize: 0,
+createScorch: false,
+createWreck: false,
+fallSpeed: 100,
+lightRadius: 45,
+lightColor: e65555,
+weapons: [
+{
+  name: blaster-weapon,
+  shootCone: 0,
+  shake: 10,
+  shootStatusDuration: 220
+  shootStatus: unmoving
+  shoot: {
+    firstShotDelay: 90
+         }
+  reload: 60,
+  chargeSound: blooster,
+  shootSound: none,
+  x: 0,
+  rotateSpeed: 300,
+  baseRotateSpeed: 300,
+  y: 0,
+  mirror: false,
+  bullet: {
+    killShooter: true
+    incendAmount: 0
+    incendChance: 0
+    type: ContinuousLaserBulletType
+    damage: 10
+    width: 10
+    colors: [ffffffaa, ffffffcc, ffffff]
+    length: 1000
+    lifetime: 75
+  }
+}
+]
+deathSound: none
+deathExplosionEffect: none
+

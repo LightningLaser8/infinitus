@@ -1,0 +1,218 @@
+{
+  type: flying
+  lowAltitude: true
+  faceTarget: true
+  speed: 2
+  itemCapacity: 500
+  accel: 0.3
+  flying: true
+  health: 9000
+  armor: 15
+  research: 0p-0-03-prototype-constructor
+  faceTarget: true
+  outlineColor: 000000
+  hitSize: 72
+  armor: 15
+  range: 640
+  maxRange: 640
+  engineOffset: 16
+  engineSize: 6
+  targetAir: true
+  weapons: [
+    {
+      type: PointDefenseWeapon
+      name: prototype-point-laser
+      layerOffset: 25
+      x: 40
+      y: 14
+      rotate: true
+      rotateSpeed: 360
+      shootSound: none
+      controllable: false
+      autoTarget: true
+      targetInterval: 0
+      targetSwitchInterval: 0
+      recoil: 0
+      bullet: {
+        maxRange: 160
+        damage: 70
+        speed: 90
+        hitEffect: hitMeltdown
+        shootEffect: hitMeltdown
+        smokeEffect: none
+      }
+    }
+    {
+      type: PointDefenseWeapon
+      name: prototype-point-laser
+      layerOffset: 25
+      x: 35
+      y: -4
+      rotate: true
+      rotateSpeed: 360
+      shootSound: none
+      controllable: false
+      autoTarget: true
+      targetInterval: 0
+      targetSwitchInterval: 0
+      recoil: 0
+      bullet: {
+        maxRange: 160
+        damage: 70
+        speed: 90
+        hitEffect: hitMeltdown
+        shootEffect: hitMeltdown
+        smokeEffect: none
+      }
+    }
+    {
+      type: PointDefenseWeapon
+      name: prototype-point-laser
+      layerOffset: 25
+      x: 40
+      y: -24
+      rotate: true
+      rotateSpeed: 360
+      shootSound: none
+      controllable: false
+      autoTarget: true
+      targetInterval: 0
+      targetSwitchInterval: 0
+      recoil: 0
+      bullet: {
+        maxRange: 160
+        damage: 70
+        speed: 90
+        hitEffect: hitMeltdown
+        shootEffect: hitMeltdown
+        smokeEffect: none
+      }
+    }
+    {
+      name: prototype-launcher
+      reload: 180
+      rotate: true
+      rotateSpeed: 2
+      recoil: 5
+      recoilTime: 25
+      x: 15
+      y: -10
+      shootY: 12
+      mirror: false
+      shoot: {
+        shots: 4
+        shotDelay: 18
+        firstShotDelay: 9
+      }
+      shootSound: artillery
+      shake: 3
+      heatColor: e65555
+      cooldownTime: 55
+      bullet: {
+        type: BulletType
+        spawnUnit: infinitus-missile-s
+      }
+    }
+    {
+      name: prototype-launcher
+      reload: 180
+      rotate: true
+      rotateSpeed: 2
+      recoil: 5
+      recoilTime: 25
+      x: -15
+      y: -10
+      shootY: 12
+      mirror: false
+      shoot: {
+        shots: 4
+        shotDelay: 18
+        firstShotDelay: 9
+      }
+      shootSound: artillery
+      shake: 3
+      heatColor: e65555
+      cooldownTime: 55
+      bullet: {
+        type: BulletType
+        spawnUnit: infinitus-missile-s
+      }
+    }
+    {
+      name: prototype-point-beam
+      cooldownTime: 120
+      reload: 60
+      rotate: true
+      rotateSpeed: 4
+      x: 10
+      y: 20
+      alternate: false
+      continuous: true
+      alwaysContinuous: true
+      shootY: 10
+      shootSound: torch
+      bullet: {
+        type: ContinuousLaserBulletType,
+        colors: [
+          ff0000AA
+          ff5555FF
+          FFFFFF
+        ]
+        lifetime: 100
+        length: 320
+        width: 3
+        damage: 100
+        incendChance: 0
+        incendAmount: 0
+        makeFire: false
+        colors: [
+          ff0000AA
+          ff5555FF
+          FFFFFF
+        ]
+        length: 320
+        hitEffect: {
+          type: ParticleEffect,
+          line: true
+          particles: 1
+          cone: -360
+          strokeFrom: 2.5
+          strokeTo: 0
+          lenFrom: 8
+          lenTo: 0
+          colorFrom: ff0000,
+          colorTo: ff0000
+        }
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: UnitSpawnAbility,
+      spawnX: 0
+      spawnY: -35
+      unit: 0p-0-02-meep-proto,
+      spawnTime: 300
+    }
+    {
+      type: UnitSpawnAbility,
+      spawnX: -10
+      spawnY: -35
+      unit: 0p-0-01-mip-proto,
+      spawnTime: 300
+    }
+    {
+      type: UnitSpawnAbility,
+      spawnX: 10
+      spawnY: -35
+      unit: 0p-0-01-mip-proto,
+      spawnTime: 300
+    }
+  ]
+  immunities: [
+    disassembly
+    frosted-1
+    frosted-2
+    frosted-3
+  ]
+}

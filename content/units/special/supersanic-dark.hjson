@@ -1,0 +1,94 @@
+type: flying 
+flying: true
+health: 1200
+shadowElevationScl: 3.7
+speed: 8
+accel: 0.03
+drag: 0.02
+engineSize: 3.5
+engineOffset: 5
+engineColor: 10136b
+engineLayer: 115.01
+outlines: false 
+drawCell: false 
+buildSpeed: 2.25
+drawBuildBeam: false 
+engines: [
+  {
+    x: 5
+    y: -2
+    radius: 2
+    rotation: 315
+  }
+  {
+    x: -5
+    y: -2
+    radius: 2
+    rotation: 225
+  }
+]
+parts: [
+  {
+    type: RegionPart
+    outline: false
+    layer: 115.02
+  }
+  {
+    type: RegionPart
+    suffix: -flare
+    outline: false
+    blending: additive
+    layer: 115.03
+    color: 10136bbb
+  }
+]
+weapons: [
+  {
+    type: BuildWeapon
+    x: 8
+    y: -1
+  }
+{
+  name: laser-eyes,
+  shootCone: 8,
+  shake: 10,
+  reload: 30,
+  shootSound: shockBlast,
+  x: 3,
+  y: 5,
+  mirror: true,
+  alternate: false
+  continuous: true
+  bullet: {
+    type: laserBulletType,
+    shootEffect: hitMeltdown,
+    damage: 5000,
+    sideAngle: 0,
+    sideWidth: 0,
+    sideLength: 0,
+    width: 10,
+    colors:[FF0000AA, FF0000FF, FFFFFF],
+    length: 300,
+    collidesAir: true
+  }
+}
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.1
+    y: -5
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 115
+      lifetime: 15
+      sizeFrom: 3.5
+      sizeTo: 0
+      colorFrom: 10136b
+      colorTo: 2126d3
+    }
+  }
+]

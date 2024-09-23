@@ -1,0 +1,7 @@
+research: {
+  root: true
+  name: "[#ffe18f]Solis"
+  requiresUnlock: false
+  planet: infernos
+}
+show: false

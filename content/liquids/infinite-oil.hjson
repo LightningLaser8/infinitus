@@ -1,0 +1,12 @@
+{
+  name: "[#008a8a]Infinity Oil[]"
+  description: Infinitite, mixed with oil. Found deep underground",
+  temperature: 0.5
+  viscosity: 0.7
+  heatCapacity: 0.25
+  flammability: 0.5
+  effect: infinitised-weak
+  capPuddles: false
+  color: 00ffff
+  coolant: false
+}

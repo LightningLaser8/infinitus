@@ -1,0 +1,137 @@
+{
+  type: Battery
+  localizedName: Plasma Battery
+  size: 6
+  description: Uses high-temperature plasma to store energy.
+  hasPower: true
+  outputsPower: true
+  consumesPower: true
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawPower
+        suffix: -light
+        emptyLightColor: 000000
+        fullLightColor: ff0000
+        rotateSpeed: 3
+      }
+      {
+        type: DrawBlurSpin
+        suffix: -fan
+        rotateSpeed: 2
+      }
+      {
+        type: DrawRegion
+        suffix: -cover
+      }
+      {
+        type: DrawRegion
+        suffix: -glass
+      }
+      {
+        type: DrawRegion
+        suffix: -top
+      }
+      {
+        type: DrawPower
+        suffix: -top-lights
+        emptyLightColor: 000000
+        fullLightColor: ff0000
+      }
+    ]
+  }
+  hasItems: false
+  itemCapacity: 0
+  canOverdrive: false
+  health: 1200
+  idleSound: none
+  group: power
+  consumes: {
+    powerBuffered: 1048576
+  }
+  category: power
+  research: prototype-start
+  requirements: [
+    dark-plates/600
+    electronium/1200
+    rubber/720
+  ]
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 39
+      lifetime: 20
+      sides: 4
+      sizeFrom: 24
+      sizeTo: 48
+      strokeFrom: 18
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: meep-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: meep-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      baseLength: 6
+      length: 18
+      lifetime: 35
+      useRotation: false
+      region: meep-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      baseLength: 6
+      length: 18
+      lifetime: 35
+      useRotation: false
+      region: meep-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

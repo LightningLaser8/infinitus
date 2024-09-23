@@ -1,0 +1,12 @@
+{
+    "name": "[#ffe18f]Solarium",
+    "description": "A purified form of sunstone.",
+    "explosiveness": 0.3,
+    "research": "sunstone",
+    "flammability": 0.5,
+    "radioactivity": 0.3,
+    "charge": 0,
+    "cost": 1,
+    "color": "ffe18f"
+    }
+    

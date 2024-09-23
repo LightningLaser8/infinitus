@@ -1,0 +1,3 @@
+type: OreBlock
+itemDrop: raw-infinitite
+oreDefault: false

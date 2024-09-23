@@ -1,0 +1,9 @@
+{
+  name: "[scarlet]Antiproton Lava"
+  description: Indistinguishable from regular matter, but will make it violently turn into photons.
+  temperature: 5
+  viscosity: 0.7
+  effect: annihilate
+  capPuddles: false
+  color: ff0000
+}

@@ -1,0 +1,11 @@
+{
+    "name": "[#8cdeff]Power Cell",
+    "description": "A dense energy cell made of electronium",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 15,
+    "cost": 8,
+    "color": "6aafcb"
+    }
+    

@@ -1,0 +1,7 @@
+research: {
+  root: true
+  name: "[cyan]Infinite"
+  requiresUnlock: false
+  planet: infernos
+}
+show: false

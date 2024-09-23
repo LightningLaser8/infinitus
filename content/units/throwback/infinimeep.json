@@ -1,0 +1,66 @@
+{
+    "type": "flying",
+    "lowAltitude": true,
+    "name": "[red]Old[] [green]Moment[], [cyan]Infinite[] variant"
+    "description": "[cyan]Infini[green]Mini[][]. Really? Also OP."
+    "speed": 5,
+    "itemCapacity": 20000,
+    "mineTier": 99999999999999999,
+    "mineSpeed": 30,
+    "accel": 0.5,
+    "payloadCapacity": 99999999999999999999999,
+    "hidden": true,
+    "flying": true,
+    "buildSpeed": 30,
+    "buildPower": 30,
+    "health": 3000,
+    "hitSize": 5,
+    "armor": 5,
+    "range": 180,
+    "maxRange": 180,
+    "engineOffset": 6,
+    "targetAir": true,
+    "faceTarget": true,
+    "weapons": [{
+            "name": "heal-weapon-mount",
+	    //No, I don't know what heal-weapon-mount is or where it came from, but as far as I'm concerned, it can go to heck.
+            "shootSound": "lasershoot",
+            "reload": 12.5,
+	    "mirror": false,
+	    "alternate": false,
+            "x": 0,
+            "y": -0,
+            "rotate": true,
+            "bullet": { 
+                "type": "LaserBoltBulletType",
+		"sprite": "infinitus-arrow"
+          	"status": "bip",
+                "statusDuration": 6000,
+                "lifetime": 100,
+                "healPercent": 20,
+                "collidesTeam": true,
+                "backColor": "00CC55FF",
+                "frontColor":  "55FFCCFF",
+		"damage": 40,
+                "shrinkY": 5,
+                "shrinkX": 5,
+                "pierce": true,
+                "pierceBuilding": true,
+		"speed": 7.5,
+		"width": 6,
+		"height": 4,
+                "trailChance": 1,
+                "trailRotation": true,
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "length": 0,
+                    "lifetime": 10,
+                    "sizeFrom": 4,
+                    "colorFrom": "55FFCCFF",
+                    "colorTo": "00CC55AA"
+                },
+                "homingRange": 8000,
+                "homingPower": 100
+}}]
+}

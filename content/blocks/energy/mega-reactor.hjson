@@ -1,0 +1,116 @@
+{
+  type: ConsumeGenerator
+  size: 6
+  health: 999999999999999999999999
+  canOverdrive: false
+  destructible: false
+  breakable: false
+  itemDuration: 999999999999999999999999
+  consumes: {
+    items: {
+      items: [
+        reactor-key/1
+      ]
+    }
+  }
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawRegion
+        suffix: -rotator0
+        rotateSpeed: 4.5
+        spinSprite: true
+      }
+      {
+        type: DrawBlurSpin
+        suffix: -rotator1
+        rotateSpeed: -45
+      }
+      {
+        type: DrawRegion
+        suffix: -top
+      }
+    ]
+  }
+  powerProduction: 120
+  category: power
+  buildVisibility: editorOnly
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 39
+      lifetime: 20
+      sides: 4
+      sizeFrom: 24
+      sizeTo: 48
+      strokeFrom: 18
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: meep-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: meep-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      baseLength: 6
+      length: 18
+      lifetime: 35
+      useRotation: false
+      region: meep-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      baseLength: 6
+      length: 18
+      lifetime: 35
+      useRotation: false
+      region: meep-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

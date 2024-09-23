@@ -1,0 +1,8 @@
+{
+  gas: true
+  color: 919bff
+  name: Oxygen
+  description: Extremely reactive gas used in chemical reactions.
+  flammability: 0.75
+  explosiveness: 0.5
+}

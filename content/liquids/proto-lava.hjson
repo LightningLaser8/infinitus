@@ -1,0 +1,11 @@
+{
+  name: "[scarlet]Virus Juice"
+  description: Should be hidden
+  hidden: true
+  shown: false
+  temperature: 5
+  viscosity: 0.7
+  effect: disassembly
+  capPuddles: false
+  color: FF0000
+}

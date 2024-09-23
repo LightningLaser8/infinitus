@@ -1,0 +1,12 @@
+{
+    "name": "[#fffa9f]Nanite Alloy",
+    "description": "Dark plating with integrated nanotech, allowing self-repair.",
+    "explosiveness": 0,
+    "flammability": 0,
+    "research": "dark-plates",
+    "radioactivity": 0,
+    "charge": 0.4,
+    "cost": 25,
+    "color": "fffa9f"
+    }
+    

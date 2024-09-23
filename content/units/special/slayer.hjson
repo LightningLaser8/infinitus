@@ -1,0 +1,181 @@
+
+  name: Doomslayer
+  type: mech
+  description: "I told them that one day, I would be more powerful than a god.\nThey told me to go to hell.\nSo you know what?\n[red]I did.[]"
+  speed: 3
+  hitSize: 13
+  rotateSpeed: 3
+  targetAir: true
+  health: 1000000
+  canBoost: true
+  boostMultiplier: 2.5
+  armor: 2000
+  mechFrontSway: 0.55
+  parts: [
+	{
+	type: RegionPart
+	suffix: -arm2
+	x: 9
+	y:1
+	layer: 90
+	}
+	{
+	type: RegionPart
+	suffix: -arm
+	x: -9
+	y:1
+	layer: 90
+	}
+	{
+	type: RegionPart
+	suffix: -cover
+	outline: false
+	x:0
+	y:0
+	layer: 90.01
+	}
+	]
+  weapons: [
+    {
+      name: bfg
+      top: false
+      y: 11
+      mirror: false
+      x: -10
+      recoil: 5
+      shake: 2
+      ejectEffect: none
+      smokeEffect: smokelarge
+      parts: [
+	{
+	  suffix: -nuke-l
+	  under: true
+	  moveX: -3
+	  progress: {
+		type: warmup
+		op: compress
+		start: 0
+		end: 0.66
+		}
+	}
+	{
+	  suffix: -nuke-r
+	  under: true
+	  moveX: 3
+	  progress: {
+		type: warmup
+		op: compress
+		start: 0
+		end: 0.66
+		}
+	}
+		]
+      shootSound: laserblast
+      minWarmup: 0.9
+      shootWarmupSpeed: 0.03
+      reload: 90
+      bullet: {
+        type: BasicBulletType
+        knockback: 10
+        lifetime: 140
+        sprite: infinitus-bfg-shot-mono-intense
+	spin: 10
+        speed: 5
+        damage: 2000
+        width: 30
+        shrinkY: 0
+	shrinkX: 0
+        height: 30
+        collides: true
+        collidesTiles: true
+        splashDamageRadius: 60
+        splashDamage: 2000
+        backColor: 88ff77
+        frontColor: 88ff77
+	intervalBullet: {
+  		type: LightningBulletType
+  		damage: 1250
+  		lightningLength: 14
+  		lightningColor: 88ff77
+			}
+	intervalBullets: 1
+	bulletInterval: 1
+	hitColor: 88ff77
+	hitEffect: {
+		type: MultiEffect
+		effects: [
+			{
+         		length: 0
+          		particles: 1
+          		lifetime: 60
+          		layer: 98
+          		interp: pow5Out
+ 	  		spin: 2.3
+ 	  		region: infinitus-singularity-ring-color
+          		sizeFrom: 20
+    	 		sizeTo: 80
+          		colorFrom: 88ff77
+  	  		colorTo: 88ff7700
+ 	 		}
+ 	 		{
+  	  		length: 0
+  	  		particles: 1
+  	  		lifetime: 60
+  	  		layer: 106
+  	  		interp: pow5Out
+  	  		sizeFrom: 20
+ 	  		spin: 2.3
+ 	  		region: infinitus-bfg-blast-mono
+  	  		sizeTo: 60
+ 	  		colorFrom: 88ff77
+ 	  		colorTo: 88ff7700
+ 	 		}
+ 	 		{
+  	  		length: 0
+  	  		particles: 1
+  	  		lifetime: 60
+  	  		layer: 106
+  	  		interp: pow5In
+  	  		sizeFrom: 60
+ 	  		spin: 2.3
+ 	  		region: infinitus-bfg-blast-mono
+  	  		sizeTo: 20
+ 	  		colorFrom: 88ff77
+ 	  		colorTo: 88ff7700
+ 	 		}
+			]
+		}
+      }
+    }
+    {
+	name: crucible-handle
+	rotate: true
+	rotateSpeed: 12
+	minWarmup: 0.4
+	y: 9
+	x: 10
+	mirror: false
+	shootY: 5
+	rotationLimit: 80
+	shootSound: laserbeam
+	alwaysShooting: true
+        reload: 90
+	heatColor: ff0000ff
+	shake: 0
+	continuous: true
+	alwaysContinuous: true
+	bullet: {
+		type: ContinuousLaserBulletType
+		width: 1
+		shake: 0.1
+		backLength: 5
+		length: 15
+		frontLength: 15
+		colors: [000000,000000,000000,000000]
+		incendChance: 0
+		incendAmount: 0
+		damage: 7234
+		}
+     }
+  ]
+

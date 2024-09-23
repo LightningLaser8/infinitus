@@ -1,0 +1,12 @@
+{
+    "name": "[gold]Reactor Key",
+    "description": "Used to start a Prototype reactor",
+    "explosiveness": 0,
+    "research": "prototype-start",
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "cost": 1,
+    "color": "ffce00"
+    }
+    

@@ -1,0 +1,9 @@
+{
+    "displayName": "[][#00ffff[]]Infinitus", 
+    "name": "infinitus",
+    "author": "infinity",
+    "subtitle": "One element, infinite potential",
+    "description": "Adds a lot of random stuff\n\n< Version 0.8.0 >\n\"This isn't favouritism!\"\nContent:\n - New Prototype units: Divide\n - In-depth lore for Prototype\n - A lot of code optimisation.",
+    "version": "0.8.0",
+    "minGameVersion": "140.4"
+}

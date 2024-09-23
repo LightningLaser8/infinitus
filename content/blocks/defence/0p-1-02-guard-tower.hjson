@@ -1,0 +1,83 @@
+{
+  type: PowerTurret
+  health: 3200
+  armor: 20
+  reload: 10
+  recoil: 3
+  shake: 1
+  shootSound: shootBig
+  shootCone: 40
+  range: 120
+  group: walls
+  heatColor: ff0000
+  outlineColor: 000000
+  consumes: {}
+  shootY: 2
+  shootType: {
+    type: BasicBulletType
+    width: 10
+    height: 25
+    speed: 6
+    damage: 10
+    lifetime: 20
+    frontColor: ff5555
+    backColor: ff0000
+    splashDamage: 15
+    splashDamageRadius: 32
+    despawnShake: 4
+    hitSound: explosion
+    hitEffect: [
+      {
+        length: 15
+        lifetime: 55
+        particles: 28
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 4
+        sizeTo: 0
+        interp: pow10Out
+        sizeInterp: pow5In
+      }
+      {
+        length: 15
+        lifetime: 35
+        particles: 17
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 2
+        sizeTo: 0
+        interp: pow10Out
+        sizeInterp: pow3In
+      }
+      {
+        length: 14
+        lifetime: 45
+        particles: 12
+        colorTo: ff0000
+        sizeFrom: 2
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: pow5In
+      }
+      {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 0
+        sizeTo: 26
+        strokeFrom: 3
+        strokeTo: 0
+        colorTo: ff0000
+      }
+    ]
+  }
+  size: 2
+  category: defense
+  requirements: [
+    dark-plates/24
+    electronium/12
+    ai-combat/1
+  ]
+  research: {
+    parent: 0p-0-05-dark-plating-wall-large
+  }
+}

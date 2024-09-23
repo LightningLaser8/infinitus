@@ -1,0 +1,48 @@
+{
+  type: flying
+  flying: true
+  health: 300
+  speed: 4.3
+  drag: 0.03
+  accel: 0.1
+  rotateSpeed: 5.5
+  circleTarget: true
+  drawCell: false
+  drawShields: false
+  drawEngine: false
+  drawBody: false
+  deathExplosionEffect: none
+  deathSound: none
+  fallSpeed: 1000
+  fallEffect: none
+  fallEngineEffect: none
+  lightRadius: 20
+  engineOffset: 3
+  engineSize: 0
+  weapons: []
+  abilities: [
+    {
+      type: EnergyFieldAbility
+      damage: 600
+      x: 0
+      y: 0
+      maxTargets: 1
+      range: 250
+      reload: 120
+      healPercent: 10
+      healEffect: none
+      effectRadius: 6
+      shootSound: spark
+      status: shocked
+      sectors: 5
+      rotateSpeed: 5
+      color: 8cdeff
+    }
+    {
+      type: SpawnDeathAbility
+      unit: 0p-5-01-entity-lightning-ball
+      amount: 4
+      spread: 20
+    }
+  ]
+}

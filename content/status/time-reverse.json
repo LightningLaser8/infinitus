@@ -1,0 +1,15 @@
+{
+    "speedMultiplier": -1,
+    "applyColor": "CCFFCCEE"
+    "effect": {
+	 "type": "WaveEffect"
+ 	 "lifetime": 60
+ 	 "sizeFrom": 0
+ 	 "sizeTo": 20
+ 	 "strokeFrom": 1
+ 	 "strokeTo": 0
+ 	 "colorFrom": CCFFCCEE
+ 	 "colorTo": 55CC55AA
+	}
+    "effectChance": 0.05
+}

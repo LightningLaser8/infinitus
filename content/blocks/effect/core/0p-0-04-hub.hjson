@@ -1,0 +1,94 @@
+{
+  name: "[#FF0000]The Hub"
+  type: CoreBlock
+  research: 0p-0-03-element-core
+  health: 100000
+  armor: 12
+  size: 8
+  itemCapacity: 50000
+  unitCapModifier: 50
+  unitType: core-control
+  requirements: [
+    electronium/13000
+    iron/20000
+    dark-plates/20000
+    rubber/20000
+    tinted-glass/15000
+    plutonium/10000
+  ]
+  category: effect
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 39
+      lifetime: 20
+      sides: 4
+      sizeFrom: 32
+      sizeTo: 64
+      strokeFrom: 18
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      baseLength: 6
+      length: 24
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      baseLength: 6
+      length: 24
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

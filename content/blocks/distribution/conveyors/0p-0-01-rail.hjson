@@ -1,0 +1,73 @@
+type: StackConveyor
+health: 60
+itemCapacity: 8
+speed: 0.05
+recharge: 3
+research: prototype-start
+loadEffect: {
+  type: ParticleEffect
+  line: true
+  lifetime: 30
+  length: 8
+  lenFrom: 2
+  lenTo: 0
+  strokeFrom: 0.5
+  strokeTo: 0.5
+  colorTo: ff000075
+}
+unloadEffect: {
+  type: ParticleEffect
+  line: true
+  lifetime: 30
+  length: 8
+  lenFrom: 2
+  lenTo: 0
+  strokeFrom: 0.5
+  strokeTo: 0.5
+  colorTo: ff000075
+}
+requirements: [
+  shadow-steel/1
+]
+destroyBullet: {
+  type: BulletType
+  speed: 0
+  lifetime: 0
+  collides: false
+  absorbable: false
+  hittable: false
+  hitEffect: none
+  despawnEffect: none
+  fragBullets: 5
+  fragLifeMin: 0.01
+  fragBullet: {
+    type: BulletType
+    damage: 0
+    collides: false
+    absorbable: false
+    hittable: false
+    reflectable: false
+    hitEffect: none
+    despawnEffect: none
+    speed: 0.01
+    lifetime: 12
+    lightning: 1
+    lightningLength: 3
+    lightningLengthRand: 6
+    lightningCone: 0
+    lightningColor: ff0000
+    lightningDamage: 10
+  }
+}
+breakEffect: {
+  type: WaveEffect
+  rotation: 43
+  lifetime: 20
+  sides: 4
+  sizeFrom: 4
+  sizeTo: 8
+  strokeFrom: 3
+  strokeTo: 0
+  colorFrom: ff0000
+  colorTo: ff0000
+}

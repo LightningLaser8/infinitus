@@ -1,0 +1,91 @@
+{
+  name: "[scarlet]Core: Atom"
+  description: A repurposed production building previously used for an unknown item.
+  type: CoreBlock
+  research: 0p-0-01-proton-core
+  health: 15000
+  size: 6
+  itemCapacity: 12000
+  unitCapModifier: 20
+  unitType: 0p-2-02-prototype-v2
+  requirements: [
+    electronium/10000
+    iron/8000
+    shadow-steel/10000
+  ]
+  category: effect
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 39
+      lifetime: 20
+      sides: 4
+      sizeFrom: 24
+      sizeTo: 48
+      strokeFrom: 18
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      baseLength: 6
+      length: 18
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      baseLength: 6
+      length: 18
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

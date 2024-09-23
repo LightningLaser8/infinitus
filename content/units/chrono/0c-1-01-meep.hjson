@@ -1,0 +1,90 @@
+{
+  type: payload
+  lowAltitude: true
+  speed: 5
+  itemCapacity: 20
+  mineTier: 2
+  mineSpeed: 6
+  payloadCapacity: 64
+  faceTarget: false
+  accel: 0.5
+  flying: true
+  buildSpeed: 3
+  buildPower: 3
+  health: 300
+  hitSize: 8
+  armor: 5
+  range: 180
+  maxRange: 180
+  engineOffset: 6
+  targetAir: true
+  weapons: [
+    {
+      name: meep-laser
+      shootSound: lasershoot
+      reload: 7.5
+      recoil: 1
+      mirror: true
+      alternate: true
+      x: 3
+      y: -3
+      rotate: true
+      bullet: {
+        type: LaserBoltBulletType
+        sprite: infinitus-chrono-bullet
+        status: time-slow-t1
+        statusDuration: 300
+        lifetime: 50
+        buildingDamageMultiplier: 0.01
+        healPercent: 2.5
+        collidesTeam: true
+        backColor: 00CC00FF
+        frontColor: 55FF55FF
+        damage: 10
+        pierce: true
+        pierceCap: 5
+        pierceBuilding: false
+        speed: 5
+        width: 1.5
+        height: 2.5
+        trailChance: 1
+        trailRotation: true
+        trailEffect: {
+          type: ParticleEffect
+          particles: 1
+          length: 0
+          lifetime: 10
+          sizeFrom: 3
+          colorFrom: 55FF55FF
+          colorTo: 00CC00AA
+        }
+        homingRange: 200
+        homingPower: 0.2
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: mindustry.entities.abilities.RepairFieldAbility
+      healEffect: {
+        type: WaveEffect
+        line: true
+        particles: 1
+        lifetime: 40
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 55FF55FF
+        colorTo: 00CC00AA
+      }
+      range: 100
+      amount: 80
+      reload: 180
+    }
+  ]
+  immunities: [
+    time-slow-t1
+    time-slow-t2
+    time-slow-t3
+    time-stop
+  ]
+}

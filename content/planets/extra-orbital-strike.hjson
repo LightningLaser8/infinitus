@@ -1,0 +1,61 @@
+{
+  generator: SerpuloPlanetGenerator
+  localizedName: Orbital Strike Station
+  alwaysUnlocked: false
+  research: {
+    parent: prototype-start
+    objectives: [
+      {
+        type: SectorComplete
+        preset: island
+      }
+    ]
+  }
+  mesh: {
+    type: NoiseMesh
+    planet: extra-orbital-strike
+    seed: 21474
+    divisions: 2
+    color1: 494949
+    color2: 888888
+    radius: 0.02
+    octaves: 3
+    persistence: 1
+    scale: 0.5
+    mag: 1
+  }
+  defaultEnv: 1
+  sectorSize: 0.1
+  parent: infinitus-moon-infernos-b
+  allowLaunchSchematics: true
+  allowLaunchLoadout: true
+  allowSectorInvasion: true
+  hasAtmosphere: true
+  prebuildBase: true
+  startSector: 0
+  orbitSpacing: 2
+  orbitOffset: 110
+  radius: 0.3
+  minZoom: 1.5
+  drawOrbit: true
+  atmosphereRadIn: 0
+  atmosphereRadOut: 0.3
+  accessible: true
+  orbitRadius: 4
+  updateLighting: false
+  sectorSeed: 585678
+  bloom: false
+  visible: true
+  atmosphereColor: 00000000
+  iconColor: 494949
+  hasAtmosphere: true
+  allowWaveSimulation: true
+  allowLaunchToNumbered: false
+  clearSectorOnLose: false
+  allowWaves: true
+  defaultCore: 0p-0-01-proton-core
+  solarSystem: sun
+  launchCandidates: [
+    infinitus-infernos
+  ]
+}

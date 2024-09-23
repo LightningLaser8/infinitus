@@ -1,0 +1,12 @@
+{
+    "name": "AI Controller: Support",
+    "description": "Circuit board to control units.\n\n[#84f491]Support[]: One of the following:\n- Repairs damaged buildings\n- Assists the player with building, and rebuilds destroyed structures\n- Defends allied units, staying close to protect them\n- Mines resources\n\nAlso used in repair turrets",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0.5,
+    "cost": 1,
+    "color": "84f491"
+    }
+    
+//BuilderAI, DefenderAI, MinerAI, RepairAI

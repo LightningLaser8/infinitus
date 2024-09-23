@@ -1,0 +1,60 @@
+{
+  type: flying
+  lowAltitude: true
+  speed: 4
+  itemCapacity: 10
+  faceTarget: true
+  accel: 0.5
+  flying: true
+  research: 0p-0-01-shadow-assembler
+  health: 50
+  hitSize: 3
+  range: 180
+  maxRange: 180
+  engineOffset: 4
+  outlineColor: 000000
+  engineSize: 1
+  targetAir: true
+  weapons: [
+    {
+      name: proto-mip-laser
+      shootSound: lasershoot
+      reload: 30
+      x: 0
+      y: 0
+      rotate: false
+      mirror: false
+      alternate: false
+      bullet: {
+        type: BasicBulletType
+        sprite: infinitus-arrow
+        lifetime: 50
+        backColor: CC0000FF
+        frontColor: FF0000FF
+        damage: 20
+        shrinkY: 5
+        shrinkX: 5
+        pierce: true
+        pierceCap: 5
+        shootEffect: hitMeltdown
+        pierceBuilding: false
+        speed: 7.5
+        width: 3
+        height: 6
+        trailWidth: 0.75
+        trailLength: 5
+        trailColor: ff0000
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: LiquidExplodeAbility
+      liquid: proto-lava
+      amount: 100
+    }
+  ]
+  immunities: [
+    disassembly
+  ]
+}

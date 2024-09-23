@@ -1,0 +1,15 @@
+reloadMultiplier: 2
+healthMultiplier: 0.5
+opposites:[
+  electrified
+  chrono-hyperspeed
+  time-slow-t1
+  time-slow-t2
+  time-slow-t3
+  time-stop
+  time-reverse
+  time-speed
+  time-speed-t2
+  time-speed-t3
+  no-build
+]

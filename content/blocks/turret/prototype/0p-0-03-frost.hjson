@@ -1,0 +1,175 @@
+{
+  type: ContinuousLiquidTurret
+  health: 1250
+  size: 3
+  range: 256
+  minWarmup: 0.9999
+  research: 0p-0-01-gun-deconstructor
+  liquidConsumed: 0.1
+  squareSprite: false
+  haloProgress: warmup
+  outlineColor: 0F0F0F
+  cooldownTime: 180
+  hasPower: true
+  loopSound: torch
+  shake: 1
+  shootSound: shockBlast
+  recoil: 0
+  shootY: 10
+  shootCone: 3
+  aimChangeSpeed: 6.4
+  rotateSpeed: 3.6
+  consumes: {
+    power: 3
+  }
+  shootEffect: {
+    type: multiEffect
+    effects: [
+      {
+        type: ParticleEffect
+        particles: 5
+        length: 15
+        lifetime: 15
+        line: true
+        cone: 70
+        lenFrom: 8
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeFrom: 0
+        sizeTo: 20
+        colorFrom: 88cfd3
+        colorTo: 88cfd3
+      }
+    ]
+  }
+  ammoTypes: {
+    water: {
+      type: PointLaserBulletType
+      color: caffca
+      status: frosted-1
+      sprite: infinitus-ice-laser
+      damage: 10
+      beamEffectSize: 3
+      oscScl: 4
+      length: 640
+      drawSize: 150
+      statusDuration: 10
+      hitEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        lifetime: 30
+        startDelay: 10
+        region: infinitus-spike-dual
+        sizeFrom: 16
+        cone: 360
+        sizeTo: 16
+        colorFrom: 88ffa3
+        colorTo: 88ffa300
+      }
+    }
+    cryofluid: {
+      type: PointLaserBulletType
+      color: ffffff
+      status: frosted-2
+      sprite: infinitus-ice-laser
+      damage: 10
+      beamEffectSize: 3
+      oscScl: 4
+      length: 640
+      drawSize: 150
+      statusDuration: 10
+      hitEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        lifetime: 30
+        startDelay: 10
+        region: infinitus-spike-dual
+        sizeFrom: 16
+        cone: 360
+        sizeTo: 16
+        colorFrom: 88cfd3
+        colorTo: 88cfd300
+      }
+    }
+  }
+  requirements: [
+    electronium/350
+    shadow-steel/300
+    tinted-glass/100
+    iron/350
+  ]
+  category: turret
+  drawer: {
+    type: DrawTurret
+    parts: [
+      {
+        type: ShapePart
+        progress: warmup
+        rotateSpeed: 1
+        color: 88cfd3
+        sides: 4
+        mirror: true
+        hollow: true
+        stroke: 0
+        strokeTo: 1.5
+        radius: 8
+        y: 10
+      }
+      {
+        type: ShapePart
+        progress: warmup
+        rotateSpeed: -1
+        color: 88cfd3
+        sides: 3
+        mirror: true
+        hollow: true
+        stroke: 0
+        strokeTo: 1.5
+        radius: 4
+        y: 10
+      }
+    ]
+  }
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 12
+      sizeTo: 24
+      strokeFrom: 9
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+}

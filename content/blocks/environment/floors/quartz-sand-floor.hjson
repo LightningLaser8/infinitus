@@ -1,0 +1,6 @@
+type: Floor
+itemDrop: quartz-sand
+playerUnmineable: true
+attributes: {
+  oil: 0.2
+}

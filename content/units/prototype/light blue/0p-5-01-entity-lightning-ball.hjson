@@ -1,0 +1,43 @@
+{
+  type: flying
+  flying: true
+  health: 100
+  speed: 4.3
+  drag: 0.03
+  accel: 0.1
+  rotateSpeed: 5.5
+  circleTarget: true
+  drawCell: false
+  drawShields: false
+  research: 0p-0-01-shadow-assembler
+  drawEngine: false
+  drawBody: false
+  deathExplosionEffect: none
+  deathSound: none
+  fallSpeed: 1000
+  fallEffect: none
+  fallEngineEffect: none
+  lightRadius: 20
+  engineOffset: 3
+  engineSize: 0
+  weapons: []
+  abilities: [
+    {
+      type: EnergyFieldAbility
+      damage: 25
+      x: 0
+      y: 0
+      maxTargets: 5
+      range: 200
+      reload: 60
+      healPercent: 0
+      healEffect: none
+      effectRadius: 4
+      shootSound: spark
+      status: shocked
+      sectors: 5
+      rotateSpeed: 5
+      color: 8cdeff
+    }
+  ]
+}

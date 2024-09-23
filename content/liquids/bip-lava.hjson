@@ -1,0 +1,15 @@
+{
+  name: "[acid]Chronoresidue"
+  description:
+    '''
+    Only obtained through exploding a [green]Chronocollider[]. 
+
+
+    Don't do that, by the way.
+    '''
+  temperature: 5
+  viscosity: 1
+  effect: time-slow-t3
+  capPuddles: false
+  color: 83ed4e
+}

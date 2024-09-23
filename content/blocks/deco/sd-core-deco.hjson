@@ -1,0 +1,24 @@
+{
+  name: "[#fffa9f]VX Port[]"
+  description: Decorative core for Campaign encounters with 23VX
+	details:
+	'''
+	"It's not decorative.
+	I live here."
+	'''
+  type: UnitCargoLoader
+  health: 1000
+  buildTime: 225
+  unitType: vx
+  size: 2
+  itemCapacity: 100
+  consumes: {}
+  breakable: false
+  destructible: false
+  category: effect
+  polyColor: fffa9f
+  polySides: 4
+  polyStroke: 1
+  polyRadius: 6
+  buildVisibility: sandboxOnly
+}

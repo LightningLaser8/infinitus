@@ -1,0 +1,48 @@
+{
+    "reloadMultiplier": 60,
+    "speedMultiplier": 6,
+    "damageMultiplier": 60,
+    "buildSpeedMultiplier": 60,
+    "opposites":[
+	"transformed-4",
+	"transformed-5",
+    ]
+    "applyColor": "ffFFCCEE"
+    "effect": {
+	"type": "MultiEffect",
+	"lifetime": 500,
+	"effects": [{
+	 "type": "WaveEffect"
+ 	 "lifetime": 60
+ 	 "sizeFrom": 20
+ 	 "sizeTo": 0
+ 	 "strokeFrom": 0
+ 	 "strokeTo": 1
+ 	 "colorFrom": ffFFCCEE
+ 	 "colorTo": ccCC55AA
+		},
+		{
+	 "type": "ParticleEffect"
+	 "region": "infinitus-spike-dual"
+ 	 "lifetime": 60
+ 	 "sizeFrom": 0
+ 	 "sizeTo": 20
+	 "spin": 11
+	 "followParent": true
+ 	 "colorFrom": ffFFCCEE
+ 	 "colorTo": ccCC55AA
+		}]
+	}
+    "applyEffect": {
+	 "type": "WaveEffect"
+ 	 "lifetime": 600
+ 	 "strokeFrom": 6
+ 	 "strokeTo": 90
+ 	 "sizeFrom": 0
+	 "sizeTo": 3000
+ 	 "colorFrom": "ffFFCCEE"
+	 "colorTo": "ccCC5500"
+ 	 "sizeInterp": "linear"
+		}
+    "effectChance": 0.03
+}

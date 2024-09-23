@@ -1,0 +1,18 @@
+dragMultiplier: 0
+speedMultiplier: 2
+reloadMultiplier: 0.5
+permanent: true
+damage: 0.1
+effect: {
+  type: ParticleEffect
+  particles: 2
+  line: true
+  length: 0.01
+  lifetime: 12
+  colorFrom: ffffff
+  colorTo: 8ca4f5
+  lenFrom: 10
+  lenTo: 10
+  strokeFrom: 2
+  strokeTo: 0
+}

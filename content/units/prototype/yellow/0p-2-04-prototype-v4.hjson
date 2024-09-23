@@ -1,0 +1,172 @@
+{
+  type: flying
+  lowAltitude: true
+  faceTarget: true
+  speed: 3
+  itemCapacity: 400
+  mineTier: 10
+  mineSpeed: 4
+  accel: 0.3
+  flying: true
+  buildSpeed: 40
+  buildPower: 40
+  health: 1400
+  faceTarget: true
+  outlines: false
+  hitSize: 72
+  armor: 5
+  range: 180
+  maxRange: 180
+  engineOffset: 16
+  parts: [
+    {
+      type: RegionPart
+      layer: 90.02
+      outline: false
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      blending: additive
+      layer: 91
+      color: fffa9f
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      layer: 140
+      color: fffa9f25
+      blending: additive
+    }
+  ]
+  engineSize: 6
+  targetAir: true
+  weapons: [
+    {
+      name: prototype-death
+      shootSound: laserblast
+      top: false
+      reload: 200
+      chargeSound: lasercharge
+      x: 0
+      y: 0
+      shootStatusDuration: 100
+      shootStatus: unmoving
+      shoot: {
+        firstShotDelay: 60
+      }
+      minWarmup: 0.5
+      mirror: false
+      alternate: false
+      shake: 4
+      recoil: 0
+      rotate: false
+      bullet: {
+        type: laserBulletType
+        shootEffect: hitMeltdown
+        damage: 200
+        sideAngle: 135
+        buildingDamageMultiplier: 0.01
+        largeHit: true
+        sideWidth: 2
+        sideLength: 40
+        width: 70
+        chargeEffect: {
+          type: multiEffect
+          lifetime: 500
+          effects: [
+            {
+              type: WaveEffect
+              lifetime: 60
+              sizeFrom: 50
+              sizeTo: 0
+              strokeFrom: 7
+              strokeTo: 0
+              colorFrom: fff65855
+              colorTo: fffa9fFF
+            }
+          ]
+        }
+        colors: [
+          fffa9fAA
+          fff658FF
+          FFFFFF
+        ]
+        length: 400
+      }
+    }
+    {
+      name: prototype-engine-burn
+      rotate: false
+      x: 0
+      y: -40
+      useAmmo: false
+      shootSound: none
+      alwaysShooting: true
+      alwaysContinuous: true
+      controllable: false
+      aiControllable: false
+      mirror: false
+      alternate: false
+      ignoreRotation: true
+      bullet: {
+        type: ContinuousFlameBulletType
+        colors: [
+          ffff00AA
+          fff9abff
+          fffcccff
+          ffffffff
+        ]
+        flareWidth: 4
+        flareLength: 20
+        flareColor: fff9abff
+        length: -40
+        range: 200
+        maxRange: 200
+        width: 7
+        shootCone: 360
+        damage: 15
+        lifetime: 25
+        lightColor: fff9abff
+        sideAngle: 25
+        buildingDamageMultiplier: 0.01
+        sideLength: 1
+        sideWidth: 1
+        status: sublimating
+        statusDuration: 90
+        hitEffect: {
+          type: ParticleEffect
+          line: true
+          particles: 5
+          lifetime: 10
+          offset: 20
+          length: 35
+          cone: -360
+          lenFrom: 5
+          lenTo: 0
+          colorFrom: ffffffff
+          colorTo: fff9abff
+        }
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: UnitSpawnAbility,
+      spawnX: 0
+      spawnY: -10
+      unit: 0p-4-01-mip-nanite,
+      spawnTime: 700
+    }
+    {
+      type: RegenAbility
+      amount: 2
+    }
+  ]
+  immunities: [
+    disassembly
+    disassemblyL2
+  ]
+}

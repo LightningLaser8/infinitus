@@ -1,0 +1,102 @@
+{
+  type: GenericCrafter
+  research: 0p-0-02-infinitite-kiln
+  health: 750
+  size: 3
+  category: crafting
+  outputItem: shadow-steel/5
+  hasLiquids: true
+  itemCapacity: 50
+  hasItems: true
+  craftTime: 180
+  hasPower: true
+  ambientSound: smelter
+  requirements: [
+    iron/450
+    infinitite/200
+    shadow-steel/150
+    electronium/50
+    quartz/200
+  ]
+  consumes: {
+    power: 8
+    items: {
+      items: [
+        infinitite/5
+      ]
+    }
+    liquids: {
+      liquids: [
+        void-essence/0.5
+      ]
+    }
+  }
+  craftEffect: {
+    type: multiEffect
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: FF0000FF
+        colorTo: CC000055
+      }
+    ]
+  }
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawPlasma
+        plasmas: 7
+        plasma1: ff0000ff
+        plasma2: cc0000ff
+      }
+    ]
+  }
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 12
+      sizeTo: 24
+      strokeFrom: 9
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+}

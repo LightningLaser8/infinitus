@@ -1,0 +1,67 @@
+{
+  type: AttributeCrafter
+  health: 500
+  armor: 26
+  size: 4
+  maxBoost: 3.5
+  attribute: light
+  liquidCapacity: 150
+  hasLiquids: true
+  drawer: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawBubbles
+      color: a36ad5
+      timeScl: 35
+      sides: 12
+      recurrence: 6
+      spread: 12
+      radius: 2
+      amount: 200
+      strokeMin: 0
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: arcanite
+      padding: 0
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top
+      layer: 30
+      color: ffb380bb
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top-glow
+      layer: 30
+      color: ffb380bb
+    }
+  ]
+  consumes: {
+    items: {
+      items: [
+        arcane-crystals/5
+      ]
+    }
+  }
+  outputLiquid: arcanite/0.625
+  ambientSoundVolume: 0.05
+  category: crafting
+  research: {
+    parent: solis-start
+  }
+  requirements: [
+    metaglass/50
+    arcane-crystals/60
+    sunstone/140
+  ]
+  ambientSound: steam
+  ambientSoundVolume: 0.05
+}

@@ -1,0 +1,47 @@
+{
+  type: legs
+  health: 420
+  speed: 0.8
+  armor: 1
+  hitSize: 12
+  legCount: 4
+  legLength: 12
+  legForwardScl: 0.4
+  legMoveSpace: 1
+  hovering: true
+  groundLayer: 72
+  shadowElevation: 0.1
+  weapons: [
+    {
+      name: divide-weapon
+      x: 5.75
+      y: 0.5
+      reload: 10
+      top: false
+      mirror: true
+      alternate: true
+      ejectEffect: casing1
+      shoot: {
+        type: ShootPattern
+        shots: 2
+        shotDelay: 3
+      }
+      bullet: {
+        type: BasicBulletType
+        speed: 4
+        damage: 10
+        width: 7
+        height: 9
+        lifetime: 70
+        backColor: ff5555
+        frontColor: ffffff
+      }
+    }
+  ]
+  research: {
+    parent: 0p-0-02-shadow-reconstructor
+    objectives: [
+      0p-6-01-impact
+    ]
+  }
+}

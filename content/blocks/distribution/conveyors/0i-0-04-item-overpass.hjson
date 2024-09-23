@@ -1,0 +1,13 @@
+type: BufferedItemBridge
+category: distribution
+bufferCapacity: 15
+itemCapacity: 15
+speed: 40
+health: 140
+hasPower: false
+range: 5
+transportTime: 0.015
+research: 0i-0-01-item-transporter
+    requirements: [
+    raw-infinitite/15
+]

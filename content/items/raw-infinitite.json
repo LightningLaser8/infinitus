@@ -1,0 +1,13 @@
+{
+    "name": "[blue]Raw [cyan]Infinitite",
+    "description": "Infinite potential, embedded in stone. If only it could be extracted...",
+    "explosiveness": 0.5,
+    "flammability": 0.65,
+    "radioactivity": 0.5,
+    "research": "infinite-start",
+    "hardness": 5,
+    "charge": 0.3,
+    "cost": 2,
+    "color": "00CCCC"
+    }
+    

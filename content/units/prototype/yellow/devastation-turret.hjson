@@ -1,0 +1,158 @@
+{
+  type: "flying"
+//hidden: true
+  details:
+  '''
+  "Autonomous sentries. They would guard the entrance.
+  Allow allies in.
+  Keep others out.
+  Alert us when anything happened.
+  
+  Now they're weapons.
+  What happened?"
+  '''
+  flying: true
+  hitSize: 9.25
+  health: 600
+  outlineColor: 000000
+  canBoost: false
+  canAttack: true
+  canDrown: false
+  speed: 0
+  rotateSpeed: 0
+  createWreck: false
+  createScorch: true
+  lightColor: ffffff
+  lightRadius: 0
+  lowAltitude: true
+  physics: false
+  playerControllable: true
+  useUnitCap: false
+  drawBody: false
+  drawCell: false
+  bounded: true
+  engineSize: 1
+  engineColor: fffa9f
+  engineColorInner: fffdd4
+  engines: [
+    {
+      x: -6
+      y: 6
+      radius: 2
+      rotation: 135
+      engineColor: fffa9f
+      engineColorInner: fffdd4
+    }
+    {
+      x: 6
+      y: 6
+      radius: 2
+      rotation: 45
+      engineColor: fffa9f
+      engineColorInner: fffdd4
+    }
+    {
+      x: 6
+      y: -6
+      radius: 2
+      rotation: 315
+      engineColor: fffa9f
+      engineColorInner: fffdd4
+    }
+    {
+      x: -6
+      y: -6
+      radius: 2
+      rotation: 225
+      engineColor: fffa9f
+      engineColorInner: fffdd4
+    }
+  ]
+  parts: [
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      blending: additive
+      layer: 90.03
+      color: fffa9f
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      layer: 90.04
+      color: fffa9f25
+      blending: additive
+    }
+    {
+      type: RegionPart
+      layer: 90.02
+      outline: false
+    }
+  ]
+  weapons: [
+    {
+      name: devastation-turret-pew-pew
+      baseRotation: 90
+      layerOffset: 0.04
+      shootSound: laser
+      reload: 60
+      x: 0
+      y: 0
+      rotate: true
+      mirror: false
+      alternate: false
+      continuous: true
+      recoil: 1.5
+      parts: [
+        {
+          type: RegionPart
+          layer: 90.06
+        }
+        {
+          type: RegionPart
+          suffix: -flare
+          outline: false
+          blending: additive
+          layer: 90.07
+          color: fffa9f
+        }
+        {
+          type: RegionPart
+          suffix: -flare
+          outline: false
+          blending: additive
+          layer: 90.08
+          color: fffa9f25
+        }
+      ]
+      bullet: {
+        type: LaserBulletType
+        lifetime: 20
+        colors: [
+          fffa9fAA
+          fff658FF
+          FFFFFF
+        ]
+        damage: 50
+        sideAngle: 30
+        sideWidth: 1
+        sideLength: 15
+        shootEffect: hitMeltdown
+        width: 10
+        length: 128
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: RegenAbility
+      amount: 2
+    }
+  ]
+  immunities: [
+    disassembly
+    disassemblyL2
+  ]
+}

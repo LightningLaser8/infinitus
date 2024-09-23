@@ -1,0 +1,13 @@
+variants: 0
+albedo: 0.5
+name: "[#222222]Void Essence"
+liquidDrop: void-essence
+type:floor
+isLiquid:true
+status: tarred
+cacheLayer: water
+statusDuration: 300
+speedMultiplier: 0.9
+attributes: {
+    void: 0.3
+}

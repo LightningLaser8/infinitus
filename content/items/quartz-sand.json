@@ -1,0 +1,14 @@
+{
+    "name": "[#ffffff]Quartz Sand",
+    "description": "",
+    "explosiveness": 0,
+    "research": "prototype-start",
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0.1,
+    "hardness": 1.15,
+    "cost": 1,
+    "lowPriority": true,
+    "color": "ffffff"
+    }
+    

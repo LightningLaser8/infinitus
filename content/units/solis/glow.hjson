@@ -1,0 +1,118 @@
+type: legs
+speed: 1
+rotateSpeed: 4
+health: 1100
+armor: 10
+outlineColor: 48483f
+hitSize: 16
+drawCell: false
+stepShake: 1
+legCount: 4
+legLength: 16
+lockLegBase: true
+legContinuousMove: true
+legExtension: -3
+legBaseOffset: 4
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: 0.96
+legForwardScl: 0.7
+legMoveSpace: 1.2
+hovering: true
+flying: false
+shadowElevation: 0.2
+groundLayer: 74
+weapons: [ {
+  name: glow-weapon
+  x: 6.25
+  y: 0.5
+  recoil: 3
+  reload: 30
+  top: false
+  bullet: {
+    type: BasicBulletType
+  }
+}
+  {
+  name: glow-light-orb
+  x: 15
+  y: -5
+  top: false
+  reload: 30
+  recoil: 0
+  shootY: 0
+  shootSound: bolt
+  alternate: true
+  bullet: {
+    type: BasicBulletType
+    sprite: infinitus-light-orb
+    speed: 1
+    damage: 60
+    shrinkX: 0
+    shrinkY: 0
+    splashDamage: 60
+    splashDamageRadius: 35
+    buildingDamageMultiplier: 0.5
+    width: 8
+    height: 8
+    lifetime: 60
+    keepVelocity: false
+    drag: -0.05
+    status: burning
+    frontColor: ffffff
+    trailColor: ffe18f
+    trailLength: 15
+    trailWidth: 1
+    trailChance: 0.5
+    homingRange: 60
+    homingPower: 0.05
+    shootEffect: {
+      type: ParticleEffect
+      particles: 7
+      length: 5
+      sizeFrom: 2
+      sizeTo: 0
+      lifetime: 30
+      colorFrom: ffe18f
+      colorTo: ad825e
+    }
+    hitEffect: {
+      type: MultiEffect
+      effects: [ {
+        type: ParticleEffect
+        particles: 5
+        length: 18
+        sizeFrom: 2.5
+        line: true
+        sizeTo: 0
+        lifetime: 20
+        colorFrom: ffe18f
+        colorTo: ad825e
+      }
+        {
+        type: WaveEffect
+        sides: 5
+        sizeFrom: 0
+        sizeTo: 35
+        strokeFrom: 3
+        strokeTo: 0
+        lifetime: 12
+        colorFrom: ffe18f
+        colorTo: ad825e
+      }      
+      ]
+    }
+    despawnHit: true
+    smokeEffect: {
+      type: ParticleEffect
+      particles: 7
+      length: 10
+      sizeFrom: 3
+      sizeTo: 0
+      lifetime: 14
+      colorFrom: ffe18f
+      colorTo: ad825e
+    }
+  }
+}
+]

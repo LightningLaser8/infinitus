@@ -1,0 +1,48 @@
+{
+  type: flying
+  lowAltitude: true
+  speed: 2.5
+  accel: 0.25
+  flying: true
+  health: 100
+  hitSize: 10
+  armor: 5
+  research: 0p-0-01-shadow-assembler
+  range: 180
+  maxRange: 180
+  engineOffset: 6
+  targetAir: true
+  outlineColor: 000000
+  faceTarget: true
+  weapons: [
+    {
+      name: laser-weapon-mount
+      shootSound: lasershoot
+      reload: 180
+      x: 0
+      y: 0
+      rotate: true
+      bullet: {
+        type: basicBulletType
+        sprite: infinitus-arrow
+        lifetime: 300
+        backColor: CC0000FF
+        frontColor: FF5555FF
+        damage: 30
+        pierce: true
+        pierceBuilding: false
+        speed: 7.5
+        width: 8
+        height: 16
+        trailWidth: 2
+        trailLength: 10
+        trailColor: ff0000
+        homingRange: 100
+        homingPower: 100
+      }
+    }
+  ]
+  immunities: [
+    disassembly
+  ]
+}

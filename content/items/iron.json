@@ -1,0 +1,14 @@
+{
+    "name": "Iron",
+    "description": "Basic material. Corrodes easily unless painted, so seldom used in building. Magnetic.",
+    "details": "7517th mod adding this"
+    "explosiveness": 0,
+    "flammability": 0,
+    "research": "prototype-start",
+    "radioactivity": 0,
+    "charge": 0,
+    "hardness": 3,
+    "cost": 1,
+    "color": "cccccc"
+    }
+    

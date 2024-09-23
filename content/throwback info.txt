@@ -1,0 +1,8 @@
+Throwback blocks and units are from the oldest surviving version of indev Infinitus,
+when it was called 'baby-core', and everything was (more) unbalanced.
+Oddly enough, Dark Corvus existed, and the sprite for Removal's point defense existed, but was unused,
+and has been modified for the newer versions.
+All stats are unchanged, it's mostly a direct copy-paste, but the bundle has been replaced with 'name' and
+'description' attributes for the actual content. Nothing is officially obtainable, but I may use it in the
+Chrono campaign, seeing as it's mostly Meepium stuff that was ported, which turned into Temporum,
+and Chrono is time-based, and time... Old stuff... No?

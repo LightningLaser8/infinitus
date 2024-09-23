@@ -1,0 +1,51 @@
+{
+  generator: SerpuloPlanetGenerator
+  localizedName: Infernos A
+  alwaysUnlocked: true
+  mesh: {
+    type: NoiseMesh
+    planet: moon-infernos-a
+    seed: 21474
+    divisions: 5
+    color1: 494949
+    color2: ff5500
+    radius: 0.2
+    octaves: 3
+    persistence: 1
+    scale: 0.5
+    mag: 1
+  }
+  defaultEnv: 1
+  sectorSize: 1
+  parent: infinitus-infernos
+  allowLaunchSchematics: true
+  allowLaunchLoadout: true
+  hasAtmosphere: true
+  allowSectorInvasion: true
+  prebuildBase: true
+  startSector: 0
+  orbitSpacing: 12
+  radius: 0.25
+  minZoom: 1
+  drawOrbit: true
+  atmosphereRadIn: 0
+  atmosphereRadOut: 0.3
+  accessible: true
+  orbitRadius: 4
+  updateLighting: false
+  sectorSeed: 585678
+  bloom: false
+  visible: true
+  atmosphereColor: 00000000
+  iconColor: ff5500
+  hasAtmosphere: true
+  allowWaveSimulation: true
+  allowLaunchToNumbered: false
+  clearSectorOnLose: false
+  allowWaves: true
+  defaultCore: 0p-0-01-proton-core
+  solarSystem: sun
+  launchCandidates: [
+    infinitus-infernos
+  ]
+}

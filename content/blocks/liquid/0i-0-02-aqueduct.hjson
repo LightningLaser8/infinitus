@@ -1,0 +1,12 @@
+{
+  type: LiquidBridge
+  category: liquid
+  health: 140
+  range: 5
+  liquidCapacity: 14
+  requirements: [
+    raw-infinitite/8
+    quartz/4
+  ]
+  research: 0i-0-01-liquid-pipe
+}

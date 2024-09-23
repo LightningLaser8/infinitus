@@ -1,0 +1,33 @@
+{
+  name: "[lime]Temporum [green]Reconstructor"
+  type: Reconstructor
+  size: 3
+  research: 0c-0-01-meep-construct
+  category: units
+  constructTime: 1800
+  consumes: {
+    power: 6
+    items: [
+      infinitite/40
+      time-crystal/60
+      silicon/50
+    ]
+  }
+  upgrades: [
+    [
+      0c-0-01-mip-t1
+      0c-0-02-mip-t2
+    ]
+    [
+      0c-4-01-cm
+      0c-4-02-m
+    ]
+    //["0c-5-01-","0c-5-02-charge"]
+  ]
+  requirements: [
+    silicon/300
+    plastanium/100
+    titanium/200
+    infinitite/75
+  ]
+}

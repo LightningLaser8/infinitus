@@ -1,0 +1,11 @@
+{
+  name: "[#fffa9f]Nanite Acid"
+  description: haha murder drones
+  temperature: 0.5
+  viscosity: 0.7
+  heatCapacity: 0.5
+  effect: disassemblyL2
+  capPuddles: false
+  color: FFFF55
+  coolant: false
+}

@@ -1,0 +1,13 @@
+{
+    "name": "[#9f3333]Plutonium",
+    "description": "Radioactive material. Cannot be found naturally.",
+    "explosiveness": 0.3,
+    "research": "prototype-start",
+    "flammability": 0,
+    "radioactivity": 1,
+    "charge": 0,
+    "hardness": 2,
+    "cost": 3,
+    "color": "9f3333"
+    }
+    

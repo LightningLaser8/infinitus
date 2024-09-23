@@ -1,0 +1,56 @@
+{
+  type: GenericCrafter
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawRegion
+        suffix: -bottom
+      }
+      {
+        type: DrawArcSmelt
+        flameColor: ff5555
+        midColor: ff3333
+        particleLife: 35
+      }
+      {
+        type: DrawDefault
+      }
+    ]
+  }
+  size: 2
+  hasPower: true
+  hasItems: true
+  itemCapacity: 20
+  squareSprite: false
+  craftTime: 240
+  craftEffect: smeltsmoke
+  updateEffect: none
+  consumes: {
+    power: 3
+    items: {
+      items: [
+        ai-combat/1
+        ai-support/1
+        ai-command/2
+      ]
+    }
+  }
+  requirements: [
+    shadow-steel/200
+    dark-plates/200
+    tinted-glass/100
+    rubber/75
+  ]
+  category: crafting
+  research: {
+    parent: 0p-3-02-charger
+    objectives: [
+      0p-4-01-1-ai-combat-creator
+      0p-4-01-2-ai-command-creator
+      0p-4-01-3-ai-support-creator
+      0p-4-01-4-ai-drone-creator
+    ]
+  }
+  outputItem: ai-vx/1
+}

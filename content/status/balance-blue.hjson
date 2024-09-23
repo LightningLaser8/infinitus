@@ -1,0 +1,14 @@
+damage: 1
+buildSpeedMultiplier: 2
+opposites:[
+  wet
+  freezing
+  frosted-1
+  frosted-2
+  frosted-3
+  infinitised
+  infinitised-weak
+  unstable
+  recoded
+  shocked
+]

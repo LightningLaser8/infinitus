@@ -1,0 +1,105 @@
+{
+  type: ContinuousTurret
+  health: 200
+  size: 1
+  range: 192
+  minWarmup: 0.999
+  research: prototype-start
+  squareSprite: false
+  haloProgress: warmup
+  outlineColor: 000000
+  cooldownTime: 180
+  hasPower: true
+  loopSound: torch
+  shake: 1
+  shootSound: shockBlast
+  recoil: 0
+  shootY: 5
+  shootCone: 3
+  aimChangeSpeed: 9.6
+  rotateSpeed: 7.2
+  consumes: {
+    power: 3
+  }
+  shootEffect: {
+    type: multiEffect
+    effects: [
+      {
+        type: ParticleEffect
+        particles: 5
+        length: 15
+        lifetime: 15
+        line: true
+        cone: 70
+        lenFrom: 8
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeFrom: 0
+        sizeTo: 20
+        colorFrom: ff0000
+        colorTo: ff0000
+      }
+    ]
+  }
+  shootType: {
+    type: PointLaserBulletType
+    color: ff0000
+    status: disassembly
+    sprite: infinitus-color-laser-small
+    damage: 30
+    beamEffectSize: 1.5
+    oscScl: 4
+    length: 640
+    drawSize: 150
+    statusDuration: 540
+    hitEffect: {
+      type: ParticleEffect
+      line: true
+      particles: 1
+      cone: -360
+      strokeFrom: 2.5
+      strokeTo: 0
+      lenFrom: 8
+      lenTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  }
+  requirements: [
+    electronium/30
+    shadow-steel/25
+    iron/20
+  ]
+  category: turret
+  drawer: {
+    type: DrawTurret
+    parts: [
+      {
+        type: ShapePart
+        progress: warmup
+        rotateSpeed: 1
+        color: ff0000
+        sides: 3
+        mirror: true
+        hollow: true
+        stroke: 0
+        strokeTo: 1
+        radius: 5.5
+        y: 5
+      }
+    ]
+  }
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 4
+    sizeTo: 8
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

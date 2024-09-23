@@ -1,0 +1,20 @@
+{
+  type: tether
+  flying: true
+  hoverable: false
+  defaultController: AssemblerAI
+  playerControllable: false
+  speed: 6
+  drag: 0.1
+  accel: 0.3
+  buildSpeed: 3
+  buildBeamOffset: 8
+  engineOffset: 9
+  hidden: true
+  immunities: [
+    time-slow-t1
+    time-slow-t2
+    time-slow-t3
+    time-stop
+  ]
+}

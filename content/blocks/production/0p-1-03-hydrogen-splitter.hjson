@@ -1,0 +1,94 @@
+{
+  type: GenericCrafter
+  squareSprite: false
+  itemCapacity: 25
+  craftTime: 600
+  invertFlip: true
+  research: 0p-1-02-oxygen-rearranger
+  liquidCapacity: 50
+  drawer: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: proton-lava
+      padding: 2
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: hydrogen
+      padding: 2
+    }
+    {
+      type: DrawArcSmelt
+      flameColor: ff5555
+      midColor: ff3333
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+  size: 3
+  hasPower: true
+  hasItems: false
+  hasLiquids: true
+  craftEffect: none
+  consumes: {
+    power: 5
+    liquids: [
+      hydrogen/0.06666666666666666666666666666666666666666667
+    ]
+  }
+  outputLiquid: proton-lava/0.133333333333333333333333333333333333333333333333333333333
+  outputItem: electronium/1
+  ambientSound: hum
+  ambientSoundVolume: 0.2
+  category: crafting
+  research: 0p-1-02-oxygen-rearranger
+  requirements: [
+    shadow-steel/50
+    tinted-glass/75
+    electronium/100
+  ]
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 12
+      sizeTo: 24
+      strokeFrom: 9
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+}

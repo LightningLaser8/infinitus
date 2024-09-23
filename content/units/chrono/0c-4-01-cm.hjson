@@ -1,0 +1,53 @@
+{
+  type: flying
+  armor: 7.5
+  health: 500
+  speed: 6
+  flying: true
+  drag: 0.01
+  accel: 0.03
+  engineOffset: 4
+  hitSize: 7
+  engineSize: 1.5
+  canHeal: true
+  circleTarget: true
+  rotateShooting: false
+  omniMovement: true
+  engineColor: 0000ff
+  lowAltitude: true
+  weapons: []
+  abilities: [
+    {
+      type: MoveLightningAbility
+      offset: -16
+      width: 12
+      minSpeed: 5.5
+      maxSpeed: 6
+      chance: 1
+      length: 0
+      damage: 0
+      shootSound: none
+      shootEffect: {
+        type: ParticleEffect
+        cone: 0
+        length: -30
+        lifetime: 45
+        line: true
+        lenFrom: 3
+        lenTo: 1.5
+        strokeFrom: 2
+        strokeTo: 0
+        colorTo: 0000ff
+      }
+      bullet: {
+        type: RailBulletType
+        length: 4
+        damage: 12
+        pierceDamageFactor: 0
+      }
+    }
+  ]
+  research: {
+    parent: 0c-0-01-meep-construct
+  }
+}

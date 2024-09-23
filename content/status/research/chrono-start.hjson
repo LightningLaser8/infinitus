@@ -1,0 +1,7 @@
+research: {
+  root: true
+  name: "[green]Chrono"
+  requiresUnlock: false
+  planet: infernos
+}
+show: false

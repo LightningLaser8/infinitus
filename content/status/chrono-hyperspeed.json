@@ -1,0 +1,31 @@
+{
+    "reloadMultiplier": 3,
+    "speedMultiplier": 3,
+    "applyColor": "CCFFCCEE"
+    "effect": {
+	"type": "MultiEffect",
+	"lifetime": 500,
+	"effects": [{
+	 "type": "WaveEffect"
+ 	 "lifetime": 60
+ 	 "sizeFrom": 20
+ 	 "sizeTo": 0
+ 	 "strokeFrom": 0
+ 	 "strokeTo": 1
+ 	 "colorFrom": CCFFCCEE
+ 	 "colorTo": 55CC55AA
+		},
+		{
+	 "type": "ParticleEffect"
+	 "region": "infinitus-spike-dual"
+ 	 "lifetime": 60
+ 	 "sizeFrom": 0
+ 	 "sizeTo": 20
+	 "spin": 11
+	 "followParent": true
+ 	 "colorFrom": CCFFCCEE
+ 	 "colorTo": 55CC55AA
+		}]
+	}
+    "effectChance": 0.05
+}

@@ -1,0 +1,180 @@
+type: tether
+speed: 1
+rotateSpeed: 4
+flying: true
+engineSize: 0
+health: 1100
+defaultController: CombatAI
+armor: 10
+outlineColor: 48483f
+hitSize: 16
+drawCell: false
+shadowElevation: 0.2
+weapons: [
+{
+name: glow-light-orb
+x: 10
+y: -10
+top: false
+reload: 30
+recoil: 0
+shootY: 0
+shootSound: bolt
+alternate: true
+bullet: {
+type: BasicBulletType
+sprite: infinitus-light-orb
+speed: 1
+damage: 60
+shrinkX: 0
+shrinkY: 0
+splashDamage: 60
+splashDamageRadius: 35
+buildingDamageMultiplier: 0.5
+width: 8
+height: 8
+lifetime: 60
+keepVelocity: false
+drag: -0.05
+status: burning
+frontColor: ffffff
+trailColor: ffe18f
+trailLength: 15
+trailWidth: 1
+trailChance: 0.5
+homingRange: 60
+homingPower: 0.05
+shootEffect: {
+type: ParticleEffect
+particles: 7
+length: 5
+sizeFrom: 2
+sizeTo: 0
+lifetime: 30
+colorFrom: ffe18f
+colorTo: ad825e
+}
+hitEffect: {
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect
+particles: 5
+length: 18
+sizeFrom: 2.5
+line: true
+sizeTo: 0
+lifetime: 20
+colorFrom: ffe18f
+colorTo: ad825e
+}
+{
+type: WaveEffect
+sides: 5
+sizeFrom: 0
+sizeTo: 35
+strokeFrom: 3
+strokeTo: 0
+lifetime: 12
+colorFrom: ffe18f
+colorTo: ad825e
+}
+]
+}
+despawnHit: true
+smokeEffect: {
+type: ParticleEffect
+particles: 7
+length: 10
+sizeFrom: 3
+sizeTo: 0
+lifetime: 14
+colorFrom: ffe18f
+colorTo: ad825e
+}
+}
+}
+{
+name: glow-light-orb
+x: 12
+y: 6
+top: false
+reload: 30
+recoil: 0
+shootY: 0
+shootSound: bolt
+alternate: true
+bullet: {
+type: BasicBulletType
+sprite: infinitus-light-orb
+speed: 1
+damage: 60
+shrinkX: 0
+shrinkY: 0
+splashDamage: 60
+splashDamageRadius: 35
+buildingDamageMultiplier: 0.5
+width: 8
+height: 8
+lifetime: 60
+keepVelocity: false
+drag: -0.05
+status: burning
+frontColor: ffffff
+trailColor: ffe18f
+trailLength: 15
+trailWidth: 1
+trailChance: 0.5
+homingRange: 60
+homingPower: 0.05
+shootEffect: {
+type: ParticleEffect
+particles: 7
+length: 5
+sizeFrom: 2
+sizeTo: 0
+lifetime: 30
+colorFrom: ffe18f
+colorTo: ad825e
+}
+hitEffect: {
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect
+particles: 5
+length: 18
+sizeFrom: 2.5
+line: true
+sizeTo: 0
+lifetime: 20
+colorFrom: ffe18f
+colorTo: ad825e
+}
+{
+type: WaveEffect
+sides: 5
+sizeFrom: 0
+sizeTo: 35
+strokeFrom: 3
+strokeTo: 0
+lifetime: 12
+colorFrom: ffe18f
+colorTo: ad825e
+}
+]
+}
+despawnHit: true
+smokeEffect: {
+type: ParticleEffect
+particles: 7
+length: 10
+sizeFrom: 3
+sizeTo: 0
+lifetime: 14
+colorFrom: ffe18f
+colorTo: ad825e
+}
+}
+}
+]

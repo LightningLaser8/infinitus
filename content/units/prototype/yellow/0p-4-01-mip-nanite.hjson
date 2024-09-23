@@ -1,0 +1,102 @@
+{
+  type: flying
+  details:
+  '''
+  "The original units I developed.
+  Made in a cave, out of whatever I could find.
+  I based them on my original plans, the memories of which were still on my hard drive.
+  They could take my resources, my workspace, my license...
+  But they couldn't take my memory.
+  I rebuilt these, as the people of a new civilisation.
+  They were never meant for war.
+  I... I didn't want this.
+  It shouldn't have come to this.
+  They're alive, you understand? As alive as you or I.
+  They shouldn't be doing this.
+  They're civilians. Not fighters."
+  '''
+  lowAltitude: true
+  speed: 4
+  itemCapacity: 10
+  faceTarget: true
+  accel: 0.5
+  flying: true
+  health: 50
+  research: 0p-0-01-shadow-assembler
+  hitSize: 3
+  outlineColor: 000000
+  range: 180
+  drawCell: false
+  maxRange: 180
+  engineOffset: 3.5
+  engineSize: 1.6
+  targetAir: true
+  parts: [
+    {
+      type: RegionPart
+      layer: 90.02
+      outline: false
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      blending: additive
+      layer: 91
+      color: fffa9f
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      layer: 140
+      color: fffa9f25
+      blending: additive
+    }
+  ]
+  weapons: [
+    {
+      name: nanite-mip-laser
+      shootSound: lasershoot
+      reload: 30
+      x: 0
+      y: 0
+      rotate: false
+      mirror: false
+      alternate: false
+      bullet: {
+        type: BasicBulletType
+        sprite: infinitus-arrow
+        lifetime: 100
+        backColor: fffa9fFF
+        frontColor: fff86fFF
+        damage: 25
+        pierce: true
+        pierceCap: 5
+        shootEffect: hitMeltdown
+        pierceBuilding: false
+        speed: 7.5
+        width: 12
+        height: 12
+        trailWidth: 3
+        trailLength: 5
+        trailColor: fffa9f
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: LiquidExplodeAbility
+      liquid: nanite
+      amount: 100
+    }
+    {
+      type: RegenAbility
+      amount: 2
+    }
+  ]
+  immunities: [
+    disassembly
+    disassemblyL2
+  ]
+}

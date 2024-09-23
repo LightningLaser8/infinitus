@@ -1,0 +1,78 @@
+{
+  type: flying
+  lowAltitude: true
+  faceTarget: true
+  speed: 6
+  itemCapacity: 50
+  accel: 0.5
+  flying: true
+  health: 200
+  hitSize: 20
+  armor: 5
+  outlineColor: 000000
+  range: 180
+  drawCell: false
+  maxRange: 180
+  engineOffset: 10
+  engineSize: 4
+  targetAir: true
+  weapons: [
+    {
+      name: prototype-laser-invis
+      shootSound: lasershoot
+      reload: 30
+      x: 5
+      y: 8
+      rotate: false
+      bullet: {
+        type: BasicBulletType
+        sprite: infinitus-arrow
+        lifetime: 40
+        backColor: CC0000FF
+        frontColor: FF0000FF
+        damage: 10
+        pierce: true
+        pierceCap: 5
+        shootEffect: hitMeltdown
+        pierceBuilding: true
+        speed: 7.5
+        width: 6
+        height: 12
+        trailWidth: 1.5
+        trailLength: 5
+        trailColor: ff0000
+      }
+    }
+    {
+      name: prototype-railgun-invis
+      shootSound: laser
+      reload: 300
+      x: 0
+      y: -4
+      continuous: true
+      mirror: false
+      alternate: false
+      shake: 4
+      recoil: 4
+      rotate: false
+      bullet: {
+        type: laserBulletType
+        shootEffect: hitMeltdown
+        damage: 50
+        sideAngle: 180
+        sideWidth: 0.5
+        sideLength: 10
+        width: 25
+        colors: [
+          CC0000AA
+          FF0000FF
+          FFFFFF
+        ]
+        length: 320
+      }
+    }
+  ]
+  immunities: [
+    disassembly
+  ]
+}

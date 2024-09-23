@@ -1,0 +1,84 @@
+{
+  type: ConsumeGenerator
+  name: "[#ff0000]Fusion Reactor[]"
+  description: Fuses hydrogen to produce helium and large amounts of energy. Makes a small but damaging explosion if destroyed.
+  research: 0p-0-01-prototype-solar
+  size: 3
+  liquidCapacity: 600
+  idleSound: EnergyLoop2
+  idleSoundVolume: 0.5
+  warmupSpeed: 0.01
+  health: 1500
+  category: power
+  explosionRadius: 12
+  explosionDamage: 480
+  explosionPuddleLiquid: proto-lava
+  explosionPuddleRadius: 120
+  explosionPuddles: 80
+  drawer: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawPlasma
+      plasmas: 4
+      plasma1: ff0000
+      plasma2: ff0000
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+  powerProduction: 200
+  requirements: [
+    tinted-glass/175
+    dark-plates/250
+    shadow-steel/450
+    electronium/600
+  ]
+  consumes: {
+    liquid: hydrogen/3
+  }
+  outputLiquid: helium/0.75
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 12
+      sizeTo: 24
+      strokeFrom: 9
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+}

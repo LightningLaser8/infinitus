@@ -1,0 +1,38 @@
+{
+  type: UnitCargoLoader
+  health: 650
+  size: 2
+  category: turret
+  squareSprite: false
+  unitType: 0p-7-01-bandage
+  buildTime: 500
+  consumes: {
+    liquid: {
+      liquid: helium
+      amount: 0.05
+    }
+  }
+  liquidCapacity: 25.05
+  polyColor: ff0000
+  polySides: 8
+  polyStroke: 1
+  polyRadius: 0
+  requirements: [
+    shadow-steel/200
+    rubber/100
+    tinted-glass/100
+    ai-support/1
+  ]
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

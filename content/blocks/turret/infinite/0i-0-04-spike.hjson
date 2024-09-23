@@ -1,0 +1,74 @@
+{
+  type: ItemTurret
+  squareSprite: false
+  minWarmup: 0.7
+  outlineColor: 36363CFF
+  size: 4
+  health: 1600
+  reload: 10
+  range: 300
+  velocityRnd: 0.25
+  drawer: {
+    type: drawTurret
+    parts: [
+      {
+        type: RegionPart
+        suffix: -side
+        moveY: -2
+        moveRot: -19
+        mirror: true
+        progress: warmup
+      }
+    ]
+  }
+  shootCone: 10
+  recoil: 3
+  rotateSpeed: 2
+  shootSound: shotgun
+  ammoTypes: {
+    raw-infinitite: {
+      type: BasicBulletType
+      sprite: infinitus-spike-bullet
+      inaccuracy: 10
+      lifetime: 30
+      speed: 9
+      damage: 25
+      height: 20
+      width: 2.5
+      trailColor: 55ffFFFF
+      trailLength: 6
+      pierce: true
+      pierceCap: 3
+      trailWidth: 1.25
+      despawnHit: true
+      hitEffect: {
+        type: multiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            line: true
+            particles: 3
+            lifetime: 35
+            interp: circleOut
+            length: 65
+            cone: -40
+            strokeTo: 0
+            lightColor: A9D8FFFF
+            lenFrom: 8
+            lenTo: 0
+            strokeFrom: 3
+            colorFrom: 55ffFFFF
+            colorTo: 00555500
+          }
+        ]
+      }
+      frontColor: 55ffffff
+      backColor: 005555FF
+    }
+  }
+  requirements: [
+    silicon/1
+  ]
+  category: turret
+  research: 0i-0-03-pressure
+}

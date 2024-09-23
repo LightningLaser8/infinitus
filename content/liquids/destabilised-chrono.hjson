@@ -1,0 +1,9 @@
+{
+  name: "[acid]Destabilised Temporal Plasma[]"
+  description: Volatile liquid obtained through blowing up Temporum walls.
+  temperature: 3
+  viscosity: 0.9
+  effect: time-slow-t2
+  capPuddles: false
+  color: 83ed4e
+}

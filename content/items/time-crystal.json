@@ -1,0 +1,12 @@
+{
+    "name": "[green]Temporum",
+    "description": "Material that seems to influence the flow of time around itself...",
+    "explosiveness": 0,
+    "flammability": 0.4,
+    "research": "chrono-start",
+    "radioactivity": 2.5,
+    "charge": 0.5,
+    "cost": 5,
+    "color": "00FF00"
+    }
+    

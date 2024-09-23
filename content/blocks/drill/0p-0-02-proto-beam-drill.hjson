@@ -1,0 +1,35 @@
+{
+  type: BeamDrill
+  size: 2
+  tier: 6
+  drillTime: 75
+  optionalBoostIntensity: 2
+  consumes: {
+    power: 1
+    liquid: {
+      liquid: infinitus-helium
+      amount: 0.03
+      booster: true
+      optional: true
+    }
+  }
+  category: production
+  research: prototype-start
+  heatColor: ff0000e5
+  boostHeatColor: fffba3ff
+  requirements: [
+    shadow-steel/20
+  ]
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

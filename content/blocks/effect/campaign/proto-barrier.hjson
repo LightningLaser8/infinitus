@@ -1,0 +1,12 @@
+{
+  type: BaseShield
+  health: 1000
+  radius: 100
+  size: 2
+  hasPower: true
+  consumes: {
+    power: 6
+  }
+  category: effect
+  squareSprite: false
+}

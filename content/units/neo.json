@@ -1,0 +1,45 @@
+{
+  "name": "[#220022]Neo",
+  "description": "",
+  "health": 1500,
+  "flying": false,
+  "legCount": 4,
+  "legLength": 10,
+  "legForwardScl": 0.7,
+  "legMoveSpace": 1.2,
+  "hovering": true,
+  "allowLegStep": true,
+  "commandLimit": 4,
+  "speed": 1.5,
+  "outlineColor": "000000ff",
+  "rotateSpeed": 4,
+  "armor": 3,
+  "range": 80,
+  "mechSideSway": 0.25,
+  "type": "legs",
+  "hitSize": 10,
+  "weapons": [
+    {
+      "name": "nothing",
+      "x": 0,
+      "y": 0,
+      "reload": 60,
+      "shake": 2,
+      "rotateSpeed": 3,
+      "ejectEffect": "casing1",
+      "shootSound": "shoot",
+      "rotate": true,
+      "mirror": false,
+      "recoil": 1,
+      "bullet": {
+         "type": "LaserBulletType",
+         "damage": 60,
+         "width": 4,
+         "length": 150,
+         "colors": ["ff6bff","60d068","eeeeee"]
+         "shootEffect": "sparkShoot",
+         "smokeEffect": "sparkShoot",
+      }
+    },
+  ]
+}

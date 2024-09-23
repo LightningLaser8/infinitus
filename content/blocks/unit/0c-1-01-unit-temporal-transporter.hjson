@@ -1,0 +1,12 @@
+{
+  type: PayloadConveyor
+  health: 200
+  size: 7
+  moveTime: 140
+  payloadLimit: 7
+  category: units
+  requirements: [
+    time-crystal/150
+    spatial-shard/20
+  ]
+}

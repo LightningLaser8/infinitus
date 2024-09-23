@@ -1,0 +1,7 @@
+research: {
+  root: true
+  name: "[red]Prototype"
+  requiresUnlock: false
+  planet: infernos
+}
+show: false

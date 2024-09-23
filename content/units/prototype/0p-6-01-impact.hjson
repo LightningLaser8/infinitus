@@ -1,0 +1,251 @@
+{
+  speed: 0.6
+  hitSize: 8
+  health: 120
+  armor: 2
+  outlineColor: 000000
+  weapons: [
+    {
+      name: 0p-6-01-impact-weapon
+      x: 3.5
+      y: 0
+      reload: 10
+      top: false
+      shootStatus: death-effect
+      ejectEffect: casing1
+      bullet: {
+        type: PointBulletType
+        ammoMultiplier: 1
+        speed: 200
+        lifetime: 1
+        rangeOverride: 200
+        maxRange: 200
+        killShooter: true
+        shootStatus: death-effect
+        trailEffect: none
+        shootEffect: {
+          layer: 135
+          length: 56
+          randLength: false
+          lifetime: 30
+          sizeFrom: 5.5
+          sizeTo: 22
+          interp: pow5In
+          useRotation: false
+          particles: 1
+          cone: 0
+          spin: 0.25
+          baseRotation: 90
+          offset: -90
+          colorTo: ffffff00
+          region: infinitus-0p-6-01-impact-full
+        }
+        smokeEffect: {
+          type: MultiEffect
+          lifetime: 60
+          effects: [
+            {
+              length: 56
+              randLength: false
+              lifetime: 30
+              sizeFrom: 15
+              sizeTo: 60
+              interp: pow5In
+              useRotation: false
+              particles: 1
+              cone: 0
+              spin: 1
+              baseRotation: 90
+              offset: -45
+              colorFrom: ff0000
+              colorTo: ff000000
+              region: infinitus-spike-wide-hq
+            }
+            {
+              length: 56
+              randLength: false
+              lifetime: 30
+              sizeFrom: 15
+              sizeTo: 60
+              interp: pow5In
+              useRotation: false
+              particles: 1
+              cone: 0
+              spin: 1
+              baseRotation: 90
+              offset: 45
+              colorFrom: ff0000
+              colorTo: ff000000
+              region: infinitus-spike-wide-hq
+            }
+          ]
+        }
+        despawnEffect: {
+          startDelay: 60
+          length: -128
+          baseLength: 128
+          randLength: false
+          lifetime: 30
+          sizeFrom: 48
+          sizeTo: 12
+          useRotation: false
+          particles: 1
+          cone: 0
+          spin: 5
+          baseRotation: 90
+          offset: -90
+          region: infinitus-0p-6-01-impact-full
+          colorFrom: ffffff00
+        }
+        hitEffect: none
+        lightning: 1
+        lightningLength: 2
+        lightningCone: 0
+        lightningType: {
+          type: BulletType
+          speed: 0
+          lifetime: 0
+          collides: false
+          hittable: false
+          absorbable: false
+          hitEffect: none
+          despawnEffect: none
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragBullet: {
+            type: BulletType
+            speed: 0
+            lifetime: 100
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            fragBullets: 4
+            fragRandomSpread: 0
+            fragSpread: 90
+            fragBullet: {
+              type: ShrapnelBulletType
+              lifetime: 30
+              length: 12
+              width: 4
+              damage: 100
+              serrations: 8
+              serrationWidth: 2
+              toColor: ff0000
+            }
+          }
+          lightning: 1
+          lightningLength: 2
+          lightningCone: 0
+          lightningType: {
+            type: BulletType
+            speed: 0
+            lifetime: 0
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragBullet: {
+              type: BulletType
+              speed: 0
+              lifetime: 100
+              splashDamage: 360
+              splashDamageRadius: 60
+              collides: false
+              hittable: false
+              absorbable: false
+              hitEffect: {
+                type: MultiEffect
+                lifetime: 180
+                effects: [
+                  {
+                    length: 20
+                    lifetime: 60
+                    particles: 56
+                    colorFrom: 9f9f9f
+                    colorTo: 787878
+                    sizeFrom: 5
+                    sizeTo: 0
+                    interp: pow10Out
+                    sizeInterp: pow5In
+                  }
+                  {
+                    length: 40
+                    lifetime: 80
+                    particles: 24
+                    colorFrom: 9f9f9f
+                    colorTo: 787878
+                    sizeFrom: 2
+                    sizeTo: 0
+                    interp: pow10Out
+                    sizeInterp: pow3In
+                  }
+                  {
+                    length: 60
+                    lifetime: 20
+                    particles: 12
+                    colorTo: ff0000
+                    sizeFrom: 3
+                    sizeTo: 0
+                    interp: pow3Out
+                    sizeInterp: pow5In
+                  }
+                  {
+                    length: 90
+                    line: true
+                    lifetime: 10
+                    particles: 16
+                    colorTo: ff0000
+                    lenFrom: 8
+                    lenTo: 0
+                    strokeFrom: 3
+                    strokeTo: 1
+                    sizeInterp: pow2In
+                  }
+                  {
+                    type: WaveEffect
+                    lifetime: 30
+                    sizeFrom: 0
+                    sizeTo: 50
+                    strokeFrom: 5
+                    strokeTo: 0
+                    colorTo: ff0000
+                  }
+                  {
+                    type: WaveEffect
+                    lifetime: 40
+                    sizeFrom: 0
+                    sizeTo: 60
+                    strokeFrom: 7.5
+                    strokeTo: 0
+                    colorTo: ff0000
+                  }
+                  {
+                    type: WaveEffect
+                    lifetime: 50
+                    sizeFrom: 0
+                    sizeTo: 70
+                    strokeFrom: 10
+                    strokeTo: 0
+                    colorTo: ff0000
+                  }
+                ]
+              }
+              despawnEffect: none
+            }
+          }
+        }
+      }
+    }
+  ]
+  immunities: [
+    disassembly
+  ]
+  research: {
+    parent: 0p-0-01-shadow-assembler
+  }
+}

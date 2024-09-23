@@ -1,0 +1,28 @@
+{
+  type: PowerNode
+  size: 3
+  customShadow: true
+  health: 540
+  laserRange: 24
+  laserColor1: 00ffff
+  laserColor2: 00e1e1
+  maxNodes: 15
+  requirements: [
+    iron/10
+    infinitite/10
+  ]
+  category: power
+  research: infinite-start
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 8
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: 00ffff
+    colorTo: 00e1e1
+  }
+}

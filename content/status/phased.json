@@ -1,0 +1,19 @@
+{
+    "name": "Phased",
+    "description": "Well, thats confusing.",
+    "buildSpeedMultiplier": 0.5,
+    "speedMultiplier": -1,
+    "effect": {
+	 "type": "ParticleEffect"
+ 	 "particles": 2
+  	 "length": 0.01
+ 	 "line": true
+ 	 "lifetime": 30
+ 	 "strokeFrom": 2
+ 	 "strokeTo": 0
+ 	 "lenFrom": 12
+	 "lenTo": 12
+ 	 "colorTo": "ffd59e"
+ 	 "sizeInterp": "linear"
+		}
+}

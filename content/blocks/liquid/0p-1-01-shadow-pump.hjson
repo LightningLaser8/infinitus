@@ -1,0 +1,30 @@
+{
+  type: Pump
+  size: 2
+  hasPower: true
+  consumes: {
+    power: 0.2
+  }
+  pumpAmount: 0.1
+  squareSprite: false
+  liquidCapacity: 50
+  requirements: [
+    shadow-steel/10
+    electronium/20
+    tinted-glass/10
+  ]
+  category: liquid
+  research: 0p-0-01-shadow-conduit
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 4
+    sizeTo: 8
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

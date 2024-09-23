@@ -1,0 +1,12 @@
+{
+    "name": "[#ff0000]Key Code[]",
+    "description": "An encrypted code for firing the Orbital Strike Station.",
+    "explosiveness": 0,
+    "research": "prototype-start",
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "cost": 1,
+    "color": "917373"
+    }
+    

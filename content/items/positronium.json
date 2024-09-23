@@ -1,0 +1,13 @@
+{
+    "name": "[#ff7777]Positronium",
+    "description": "A material made of an electron and a positron orbiting each other. This stuff should annihilate in less than a picosecond, but somehow doesn't. One hard knock, and it would surely explode.",
+    "details": "Stay positive! Unlike this thing, which is all negative.",
+    "explosiveness": 100,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "cost": 5,
+    "hardness": 6,
+    "color": "ff7777"
+    }
+    

@@ -1,0 +1,21 @@
+{
+    "name": "[cyan]Infinitised[]",
+    "description": "Well, thats just overpowered.",
+    "buildSpeedMultiplier": 0.5,
+    "speedMultiplier": -0.5,
+    "damage": 3,
+    "reloadMultiplier": 0.25,
+    "effect": {
+	 "type": "ParticleEffect"
+ 	 "particles": 4
+  	 "length": 0.01
+ 	 "line": true
+ 	 "lifetime": 30
+ 	 "strokeFrom": 2
+ 	 "strokeTo": 0
+ 	 "lenFrom": 12
+	 "lenTo": 12
+ 	 "colorTo": "00ffff"
+ 	 "sizeInterp": "linear"
+		}
+}

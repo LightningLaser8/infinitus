@@ -1,0 +1,167 @@
+{
+  type: ItemTurret
+  size: 8
+  health: 26854
+  reload: 300
+  consumes: {
+    power: 100
+  }
+  range: 540
+  shootY: -8
+  maxAmmo: 100
+  shootSound: shootBig
+  shake: 3
+  recoil: 5
+  ammoPerShot: 100
+  ammoTypes: {
+    time-crystal: {
+      type: BasicBulletType
+      damage: 3000
+      ammoMultiplier: 1
+      width: 24
+      height: 90
+      lifetime: 300
+      homingRange: 2000
+      homingPower: 0.1
+      speed: 6
+      hittable: false
+      frontColor: 00ff00
+      shrinkY: 0
+      backColor: 83f793
+      sprite: infinitus-aeon-shot
+      fragSpread: 2.5
+      fragBullets: 36
+      fragRandomSpread: 0
+      fragBullet: {
+        type: LaserBulletType
+        damage: 200
+        incendChance: 0
+        incendAmount: 0
+        status: time-stop
+        statusDuration: 600
+        length: 540
+        width: 64
+        absorbable: true
+        colors: [
+          83f79320
+          83f79360
+          83f793
+          ffffff
+        ]
+        hitEffect: hitMeltHeal
+      }
+    }
+    temporal-shard: {
+      type: BasicBulletType
+      damage: 3500
+      width: 24
+      height: 90
+      lifetime: 300
+      homingRange: 2000
+      homingPower: 0.1
+      speed: 6
+      ammoMultiplier: 1
+      hittable: false
+      frontColor: 55ff55
+      shrinkY: 0
+      backColor: 00ff00
+      sprite: infinitus-aeon-shot
+      fragSpread: 2.5
+      fragBullets: 36
+      fragRandomSpread: 0
+      fragBullet: {
+        type: LaserBulletType
+        damage: 220
+        incendChance: 0
+        incendAmount: 0
+        status: time-stop
+        statusDuration: 1200
+        length: 540
+        width: 64
+        absorbable: true
+        colors: [
+          00ff0020
+          00ff0060
+          00ff00
+          ffffff
+        ]
+        hitEffect: hitMeltHeal
+      }
+    }
+    spatial-shard: {
+      type: PointBulletType
+      damage: 4000
+      speed: 500
+      trailSpacing: 20
+      trailEffect: instTrail
+      ammoMultiplier: 1
+      hitEffect: instHit
+      despawnEffect: instBomb
+      fragSpread: 2.5
+      fragBullets: 36
+      fragRandomSpread: 0
+      fragBullet: {
+        type: LaserBulletType
+        damage: 240
+        incendChance: 0
+        incendAmount: 0
+        length: 540
+        width: 64
+        absorbable: true
+        colors: [
+          0000ff020
+          0000ff60
+          0000ff
+          ffffff
+        ]
+        hitEffect: hitMeltHeal
+      }
+    }
+    reality-shard: {
+      type: BasicBulletType
+      damage: 3500
+      width: 24
+      height: 90
+      lifetime: 300
+      homingRange: 2000
+      homingPower: 0.1
+      speed: 6
+      ammoMultiplier: 1
+      hittable: false
+      frontColor: ff5555
+      shrinkY: 0
+      backColor: ff0000
+      sprite: infinitus-aeon-shot
+      fragSpread: 5
+      fragBullets: 72
+      fragRandomSpread: 0
+      fragBullet: {
+        type: LaserBulletType
+        damage: 220
+        incendChance: 0
+        incendAmount: 0
+        status: time-stop
+        statusDuration: 1200
+        length: 540
+        width: 64
+        absorbable: true
+        colors: [
+          ff000020
+          ff000060
+          ff0000
+          ffffff
+        ]
+        hitEffect: hitMeltdown
+      }
+    }
+  }
+  category: turret
+  research: 0c-0-05-millenium
+  requirements: [
+    silicon/6000
+    titanium/4000
+    plastanium/3000
+    temporal-shard/1000
+    time-crystal/7500
+  ]
+}

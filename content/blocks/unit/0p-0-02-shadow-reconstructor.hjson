@@ -1,0 +1,117 @@
+{
+  type: Reconstructor
+  size: 4
+  constructTime: 1200
+  liquidCapacity: 60
+  consumes: {
+    power: 8
+    items: {
+      items: [
+        tinted-glass/40
+        electronium/70
+        shadow-steel/50
+      ]
+    }
+    liquid: {
+      liquid: water
+      amount: 0.6
+    }
+  }
+  upgrades: [
+    [
+      0p-0-01-mip-proto
+      0p-0-02-meep-proto
+    ]
+    [
+      0p-4-01-mip-nanite
+      0p-4-02-deconstructor-unit
+    ]
+    [
+      0p-5-01-entity-lightning-ball
+      0p-5-02-spark
+    ]
+  ]
+  requirements: [
+    iron/500
+    electronium/400
+    shadow-steel/200
+  ]
+  category: units
+  research: {
+    parent: 0p-0-01-shadow-assembler
+  }
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 16
+      sizeTo: 32
+      strokeFrom: 12
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  type: PowerTurret
+  health: 400
+  size: 1
+  range: 350
+  minWarmup: 0.9999
+  research: 0c-0-01-reverse
+  squareSprite: false
+  reload: 120
+  haloProgress: warmup
+  cooldownTime: 180
+  hasPower: true
+  shake: 1
+  shootSound: shockBlast
+  recoil: 0
+  shootY: 5
+  shootCone: 3
+  rotateSpeed: 3
+  consumes: {
+    power: 3
+  }
+  shootEffect: {
+    type: multiEffect
+    effects: [
+      {
+        type: ParticleEffect
+        particles: 1
+        length: 15
+        lifetime: 15
+        line: true
+        cone: 70
+        lenFrom: 8
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeFrom: 0
+        sizeTo: 20
+        colorFrom: ff0000
+        colorTo: ff0000
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        length: 15
+        lifetime: 15
+        line: true
+        cone: 70
+        lenFrom: 8
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeFrom: 0
+        sizeTo: 20
+        colorFrom: ff5500
+        colorTo: ff5500
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        length: 15
+        lifetime: 15
+        line: true
+        cone: 70
+        lenFrom: 8
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeFrom: 0
+        sizeTo: 20
+        colorFrom: ffff00
+        colorTo: ffff00
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        length: 15
+        lifetime: 15
+        line: true
+        cone: 70
+        lenFrom: 8
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeFrom: 0
+        sizeTo: 20
+        colorFrom: 00ff00
+        colorTo: 00ff00
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        length: 15
+        lifetime: 15
+        line: true
+        cone: 70
+        lenFrom: 8
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeFrom: 0
+        sizeTo: 20
+        colorFrom: 0000ff
+        colorTo: 0000ff
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        length: 15
+        lifetime: 15
+        line: true
+        cone: 70
+        lenFrom: 8
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeFrom: 0
+        sizeTo: 20
+        colorFrom: ff00ff
+        colorTo: ff00ff
+      }
+    ]
+  }
+  shootType: {
+    type: BasicBulletType
+    frontColor: ff0000
+    damage: 50
+    lifetime: 10
+    speed: 5
+    width: 7
+    status: balance-red
+    statusDuration: 1800
+    height: 12
+    trailLength: 10
+    trailWidth: 1.2
+    trailColor: ff0000
+    hitEffect: {
+      type: ParticleEffect
+      line: true
+      particles: 5
+      cone: -360
+      strokeFrom: 2.5
+      strokeTo: 0
+      lenFrom: 8
+      lenTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    fragBullets: 1
+    fragRandomSpread: 0
+    fragSpread: 0
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragBullet: {
+      type: BasicBulletType
+      frontColor: ff5500
+      damage: 50
+      lifetime: 10
+      speed: 5
+      width: 7
+      status: balance-orange
+      statusDuration: 1800
+      height: 12
+      trailLength: 10
+      trailWidth: 1.2
+      trailColor: ff5500
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 5
+        cone: -360
+        strokeFrom: 2.5
+        strokeTo: 0
+        lenFrom: 8
+        lenTo: 0
+        colorFrom: ff5500
+        colorTo: ff5500
+      }
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        type: BasicBulletType
+        frontColor: ffff00
+        damage: 50
+        lifetime: 10
+        speed: 5
+        width: 7
+        status: balance-yellow
+        statusDuration: 1800
+        height: 12
+        trailLength: 10
+        trailWidth: 1.2
+        trailColor: ffff00
+        hitEffect: {
+          type: ParticleEffect
+          line: true
+          particles: 5
+          cone: -360
+          strokeFrom: 2.5
+          strokeTo: 0
+          lenFrom: 8
+          lenTo: 0
+          colorFrom: ffff00
+          colorTo: ffff00
+        }
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragSpread: 0
+        fragVelocityMin: 1
+        fragVelocityMax: 1
+        fragBullet: {
+          type: BasicBulletType
+          frontColor: 00ff00
+          damage: 50
+          lifetime: 10
+          speed: 5
+          width: 7
+          status: balance-green
+          statusDuration: 1800
+          height: 12
+          trailLength: 10
+          trailWidth: 1.2
+          trailColor: 00ff00
+          hitEffect: {
+            type: ParticleEffect
+            line: true
+            particles: 5
+            cone: -360
+            strokeFrom: 2.5
+            strokeTo: 0
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: 00ff00
+            colorTo: 00ff00
+          }
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragSpread: 0
+          fragVelocityMin: 1
+          fragVelocityMax: 1
+          fragBullet: {
+            type: BasicBulletType
+            frontColor: 0000ff
+            damage: 50
+            lifetime: 10
+            speed: 5
+            width: 7
+            status: balance-blue
+            statusDuration: 1800
+            height: 12
+            trailLength: 10
+            trailWidth: 1.2
+            trailColor: 0000ff
+            hitEffect: {
+              type: ParticleEffect
+              line: true
+              particles: 5
+              cone: -360
+              strokeFrom: 2.5
+              strokeTo: 0
+              lenFrom: 8
+              lenTo: 0
+              colorFrom: 0000ff
+              colorTo: 0000ff
+            }
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragSpread: 0
+            fragVelocityMin: 1
+            fragVelocityMax: 1
+            fragBullet: {
+              type: BasicBulletType
+              frontColor: ff00ff
+              damage: 50
+              lifetime: 10
+              speed: 5
+              width: 7
+              status: balance-purple
+              statusDuration: 1800
+              height: 12
+              trailLength: 10
+              trailWidth: 1.2
+              trailColor: ff00ff
+              hitEffect: {
+                type: ParticleEffect
+                line: true
+                particles: 5
+                cone: -360
+                strokeFrom: 2.5
+                strokeTo: 0
+                lenFrom: 8
+                lenTo: 0
+                colorFrom: ff00ff
+                colorTo: ff00ff
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  requirements: [
+    silicon/30
+    time-crystal/25
+    reality-shard/20
+  ]
+  category: turret
+  drawer: {
+    type: DrawTurret
+    parts: [
+      {
+        type: ShapePart
+        progress: warmup
+        rotateSpeed: 1
+        color: ff0000
+        sides: 3
+        mirror: false
+        hollow: true
+        stroke: 0
+        strokeTo: 0.2
+        radius: 5.5
+        y: 5
+      }
+      {
+        type: ShapePart
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.9
+        }
+        rotateSpeed: 1
+        color: ff5500
+        sides: 3
+        mirror: false
+        hollow: true
+        stroke: 0
+        strokeTo: 0.2
+        radius: 5.5
+        y: 5
+      }
+      {
+        type: ShapePart
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.95
+        }
+        rotateSpeed: 1
+        color: ffff00
+        sides: 3
+        mirror: false
+        hollow: true
+        stroke: 0
+        strokeTo: 0.2
+        radius: 5.5
+        y: 5
+      }
+      {
+        type: ShapePart
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.99
+        }
+        rotateSpeed: 1
+        color: 00ff00
+        sides: 3
+        mirror: false
+        hollow: true
+        stroke: 0
+        strokeTo: 0.2
+        radius: 5.5
+        y: 5
+      }
+      {
+        type: ShapePart
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.995
+        }
+        rotateSpeed: 1
+        color: 0000ff
+        sides: 3
+        mirror: false
+        hollow: true
+        stroke: 0
+        strokeTo: 0.2
+        radius: 5.5
+        y: 5
+      }
+      {
+        type: ShapePart
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.999
+        }
+        rotateSpeed: 1
+        color: ff00ff
+        sides: 3
+        mirror: false
+        hollow: true
+        stroke: 0
+        strokeTo: 0.2
+        radius: 5.5
+        y: 5
+      }
+      {
+        type: ShapePart
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.9995
+        }
+        rotateSpeed: 1
+        color: ffffff
+        sides: 3
+        mirror: false
+        mirror: false
+        hollow: true
+        stroke: 0
+        strokeTo: 0.9
+        radius: 5.5
+        y: 5
+      }
+    ]
+  }
+}

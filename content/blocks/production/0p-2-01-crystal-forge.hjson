@@ -1,0 +1,122 @@
+{
+  type: GenericCrafter
+  name: "[#ff0000]Crystal Forge[]"
+  description: "Fuses quartz sand into whole crystals."
+  details: "That makes no sense."
+  squareSprite: false
+  craftEffect: none
+  requirements: [
+    electronium/100
+    shadow-steel/50
+    iron/250
+  ]
+  research: 0p-0-01-shadow-forge
+  category: crafting
+  outputItem: quartz/2
+  craftTime: 120
+  size: 4
+  hasPower: true
+  hasLiquids: false
+  itemCapacity: 40
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawRegion
+        suffix: -bottom
+      }
+      {
+        type: DrawArcSmelt 
+	flameColor: ff5555
+	midColor: ff3333
+      }
+      {
+        type: DrawDefault 
+      }
+    ]
+  }
+  ambientSound: smelter
+  ambientSoundVolume: 0.14
+  consumes: {
+    power: 7
+    items: {
+      items: [
+        quartz-sand/3
+      ]
+    }
+  }
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 41
+    lifetime: 20
+    sides: 4
+    sizeFrom: 16
+    sizeTo: 32
+    strokeFrom: 12
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: infinitus-prototype-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: ff000000
+    colorTo: ff0000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: infinitus-prototype-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: ff0000
+    colorTo: ff000000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: infinitus-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: infinitus-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+]
+}

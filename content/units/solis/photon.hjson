@@ -1,0 +1,90 @@
+type: flying
+flying: true
+health: 300
+armor: 3
+speed: 4.3
+drag: 0.03
+accel: 0.1
+outlineColor: 48483f
+rotateSpeed: 5.5
+circleTarget: true
+drawCell: false
+drawShields: false
+deathExplosionEffect: none
+deathSound: none
+fallSpeed: 1000
+fallEffect: none
+fallEngineEffect: none
+lightRadius: 20
+engineOffset: 3
+engineSize: 1.5
+weapons: [
+  {
+    x: 0
+    reload: 90
+    shootSound: none
+    bullet: {
+      damage: 0
+      splashDamage: 200
+      splashDamageRadius: 150
+      buildingDamageMultiplier: 0.6
+      instantDisappear: true
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      killShooter: true
+      maxRange: 40
+      despawnEffect: {
+	type: MultiEffect
+	effects: [
+	{
+        type: ParticleEffect
+        lifetime: 120
+        length: 120
+        particles: 30
+        sizeFrom: 3
+        colorFrom: ffe18f
+        colorTo: ad825e
+        }
+	{
+        type: WaveEffect
+        lifetime: 120
+	sides: 5
+        sizeFrom: 0
+	sizeTo: 150
+	strokeFrom: 10
+	strokeTo: 0
+        colorFrom: ffe18f
+        colorTo: ad825e
+        }
+	{
+        type: WaveEffect
+        lifetime: 120
+	sides: 5
+        sizeFrom: 150
+	sizeTo: 150
+	strokeFrom: 10
+	strokeTo: 0
+        colorFrom: ffe18f
+        colorTo: ad825e
+        }
+       ]
+      }
+    }
+  }
+  {
+    reload: 1080
+    shootSound: none
+    useAmmo: false
+    bullet: {
+      damage: 0
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      maxRange: 600
+    }
+  }
+]

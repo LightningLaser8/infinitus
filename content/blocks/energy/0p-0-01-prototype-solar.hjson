@@ -1,0 +1,23 @@
+{
+  type: SolarGenerator
+  size: 2
+  powerProduction: 3
+  requirements: [
+    shadow-steel/50
+    electronium/20
+  ]
+  category: power
+  research: prototype-start
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "type": "Wall",
+    "health": 7648965189765873,
+    "name": "InfiniMeepium Wall"
+    "description": "honest to god why is everything so op"
+    "size": 1,
+    "lightningChance": 1,
+    "lightningDamage": 1000,
+    "lightningLength": 50,
+    "lightningColor": "CCFFEE",
+    "absorbLasers": true,
+    "category": "defense",
+    }
+    

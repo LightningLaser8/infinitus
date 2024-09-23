@@ -1,0 +1,133 @@
+{
+  type: UnitAssembler
+  health: 600
+  size: 5
+  droneConstructTime: 20
+  droneType: prototype-construction-drone
+  areaSize: 17
+  configurable: false
+  consumes: {
+    power: 13.333333333333334
+  }
+  plans: [
+    {
+      unit: infinitus-0p-0-03-instability
+      time: 3600
+      requirements: [
+        infinitus-0p-0-02-meep-proto/3
+        infinitus-0p-0-02-shadow-steel-wall/8
+        infinitus-0p-0-04-dark-plating-wall/8
+        infinitus-0p-0-01-electronium-wall/12
+      ]
+    }
+    {
+      unit: infinitus-0p-0-04-removal
+      time: 10800
+      requirements: [
+        infinitus-0p-0-02-meep-proto/30
+        segment/6
+        infinitus-0p-0-01-gun-deconstructor/4
+        infinitus-0p-0-05-dark-plating-wall-large/10
+        infinitus-0p-0-01-electronium-wall/24
+        infinitus-0p-0-01-shadow-assembler/3
+        infinitus-0p-0-02-shadow-reconstructor/1
+      ]
+    }
+    {
+      unit: infinitus-0p-0-05-deletion
+      time: 18000
+      requirements: [
+        infinitus-0p-0-02-meep-proto/50
+        infinitus-0p-0-01-gun-deconstructor/6
+        infinitus-0p-0-04-instance/2
+        infinitus-0p-0-05-dark-plating-wall-large/20
+        infinitus-0p-0-06-reactive-wall/40
+        infinitus-0p-0-01-shadow-assembler/2
+        infinitus-0p-0-02-shadow-reconstructor/2
+      ]
+    }
+  ]
+  category: units
+  requirements: [
+    shadow-steel/500
+    dark-plates/150
+    electronium/200
+    iron/500
+    ai-drone/4
+  ]
+  research: 0p-0-02-shadow-reconstructor
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 40
+      lifetime: 20
+      sides: 4
+      sizeFrom: 20
+      sizeTo: 40
+      strokeFrom: 15
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      baseLength: 6
+      length: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      baseLength: 6
+      length: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

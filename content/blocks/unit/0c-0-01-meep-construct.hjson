@@ -1,0 +1,41 @@
+{
+  type: UnitFactory
+  size: 3
+  consumes: {
+    power: 2
+  }
+  plans: [
+    {
+      unit: 0c-0-01-mip-t1
+      requirements: [
+        silicon/15
+        time-crystal/5
+      ]
+      time: 600
+    }
+    {
+      unit: 0c-4-01-cm
+      requirements: [
+        spatial-shard/10
+        time-crystal/10
+      ]
+      time: 400
+    }
+    {
+      unit: 0c-5-02-charge
+      requirements: [
+        time-crystal/15
+        silicon/15
+      ]
+      time: 800
+    }
+  ]
+  requirements: [
+    copper/60
+    lead/70
+    plastanium/50
+    infinitite/25
+  ]
+  category: units
+  research: chrono-start
+}

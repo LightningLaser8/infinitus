@@ -1,0 +1,55 @@
+{
+  type: MendProjector
+  health: 2800
+  hasPower: false
+  size: 2
+  reload: 45
+  healPercent: 5
+  range: 8
+  phaseBoost: 0
+  phaseRangeBoost: 0
+  phaseColor: 55ff55
+  category: defense
+  research: 0c-0-01-temporum-wall
+  requirements: [
+    time-crystal/24
+  ]
+  group: walls
+  destroyBullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    collides: false
+    absorbable: false
+    hittable: false
+    hitEffect: none
+    despawnEffect: none
+    lightning: 1
+    lightningLength: 0
+    lightningLengthRand: 0
+    lightningCone: 0
+    lightningColor: 55ff55
+    lightningDamage: 0
+    lightningType: {
+      type: BulletType
+      lifetime: 1
+      speed: 0
+      width: 0
+      height: 0
+      splashDamage: 20
+      puddles: 8
+      puddleRange: 20
+      puddleAmount: 40
+      puddleLiquid: destabilised-chrono
+      splashDamageRadius: 60
+      despawnEffect: {
+        type: ExplosionEffect
+        waveColor: 55ff55
+        sparkColor: 55ff55
+        waveRad: 60
+        smokeRad: 70
+        sparkRad: 75
+      }
+    }
+  }
+}

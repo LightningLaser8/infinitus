@@ -1,0 +1,22 @@
+{
+  localizedName: Island
+  description: First arrival on Infernos.
+  captureWave: 20
+  difficulty: 4
+  sector: 16
+  planet: infernos
+  research: {
+    parent: landing
+    objectives: [
+      {
+        type: SectorComplete
+        preset: landing
+      }
+      0i-0-01-infinitite-refinery
+      0i-0-01-item-transporter
+      0i-0-02-item-crossing
+      0i-0-03-item-splitter
+      0i-0-04-item-overpass
+    ]
+  }
+}

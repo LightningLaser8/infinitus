@@ -1,0 +1,11 @@
+{
+    "name": "[#170b5b]Dineutronium",
+    "description": "A material made entirely of neutrons. Why doesn't this explode?",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "cost": 20,
+    "color": "170b5b"
+    }
+    

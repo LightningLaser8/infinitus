@@ -1,0 +1,43 @@
+{
+  type: mech
+  speed: 1.2
+  hitSize: 15
+  name: "[green]Shockwave[]"
+  health: 1000
+  armor: 5
+  rotateSpeed: 6
+  mechFrontSway: 1
+  weapons: [
+    {
+      name: 0c-5-03-shockwave-weapon
+      x: 8.75
+      y: 0
+      reload: 180
+      top: false
+      shootSound: shootAltBig
+      shake: 1
+      recoil: -3
+      shoot: {
+        type: ShootSpread
+        shots: 25
+        spread: 0.4
+      }
+      bullet: {
+        type: BasicBulletType
+        damage: 10
+        speed: 8
+        lifetime: 10
+        width: 18
+        height: 14
+        backColor: 00ff00
+        frontColor: 00ff00
+        trailColor: 00ff00
+        pierce: true
+        pierceBuilding: false
+        trailWidth: 4
+        trailLength: 0.1
+        knockback: 5
+      }
+    }
+  ]
+}

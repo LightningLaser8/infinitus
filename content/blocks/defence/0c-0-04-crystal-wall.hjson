@@ -1,0 +1,46 @@
+{
+  type: MendProjector
+  health: 7000
+  hasPower: false
+  size: 2
+  healPercent: 5
+  customShadow: true
+  reload: 45
+  range: 8
+  phaseBoost: 0
+  phaseRangeBoost: 0
+  phaseColor: 55ff5500
+  category: defense
+  research: 0c-0-02-temporum-wall-large
+  requirements: [
+    temporal-shard/24
+  ]
+  destroyBullet: {
+    type: BulletType
+    lifetime: 0
+    collides: false
+    hittable: false
+    absorbable: false
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+    fragBullets: 65
+    fragVelocityMin: 0.7
+    fragVelocityMax: 1.8
+    fragLifeMin: 0.25
+    fragBullet: {
+      speed: 3
+      lifetime: 36
+      damage: 25
+      status: time-slow-t2
+      sprite: infinitus-arrow
+      width: 4
+      height: 8
+      frontColor: 55ff55
+      backColor: 00000000
+      despawnEffect: none
+    }
+  }
+  group: walls
+}

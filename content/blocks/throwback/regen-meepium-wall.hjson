@@ -1,0 +1,12 @@
+type: MendProjector
+health: 1250
+name: Regenerating Old Temporum Wall
+description: "'Regenerating Meepium Wall'... You needed this? And it's so OP..."
+hasPower: false
+reload: 45
+healPercent: 5
+range: 4
+phaseBoost: 0
+phaseRangeBoost: 0
+phaseColor: 74cf84
+category: defense

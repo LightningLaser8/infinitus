@@ -1,0 +1,10 @@
+{
+  name: "[#222222]Shade[]"
+  description: Darker, yet darker.
+  temperature: 0.25
+  viscosity: 0.7
+  heatCapacity: 0.5
+  capPuddles: false
+  color: "222222"
+  coolant: false
+}

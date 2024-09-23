@@ -1,0 +1,12 @@
+{
+    "name": "AI Controller: Drone",
+    "description": "Circuit board to control units.\n\n[#dc0000]Drone[]: Required for Assembly Drones, Effect Drones and missiles.",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0.5,
+    "cost": 1,
+    "color": "dc0000"
+    }
+    
+//AssemblerAI, DroneCenter.EffectDroneAI, CargoAI

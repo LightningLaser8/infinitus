@@ -1,0 +1,10 @@
+speedMultiplier: 0.5
+damageMultiplier: 2
+opposites:[
+  burning
+  overclock
+  overdrive
+  disassemblyL2
+  afflicted
+  phased
+]

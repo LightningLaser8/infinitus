@@ -1,0 +1,31 @@
+{
+  type: UnitAssembler
+  health: 1900
+  size: 14
+  droneConstructTime: 200
+  droneType: chrono-construction-drone
+  areaSize: 28
+  configurable: false
+  consumes: {
+    power: 16
+  }
+  plans: [
+    {
+      unit: infinitus-ratte
+      time: 10800
+      requirements: [
+        infinitus-0c-0-02-mip-t2/20
+        infinitus-0c-0-03-mip-t3/20
+        infinitus-0c-5-03-shockwave/16
+        infinitus-0c-0-04-death/3
+      ]
+    }
+  ]
+  category: units
+  requirements: [
+    time-crystal/9500
+    temporal-shard/4500
+    reality-shard/900
+  ]
+  research: 0c-0-04-doom-reconstructor
+}

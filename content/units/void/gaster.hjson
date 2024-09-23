@@ -1,0 +1,268 @@
+type: mech
+speed: 0.8
+health: 10000
+armor: 0
+canBoost: true
+boostMultiplier: 2
+buildSpeed: 1
+maxRange: 180
+lightRadius: 40
+lightColor: ffffff
+weapons: [
+  {
+    name: gaster-head
+    x: 0
+    rotate: true
+    y: 0
+    reload: 600
+    recoil: 0
+    mirror: false
+    shootY: 0
+    shootSound: lasershoot
+    shake: 0
+    bullet: {
+      type: basicBulletType
+      lifetime: 0
+      damage: 0
+      width: 0
+      height: 0
+      speed: 0
+      backColor: ffff00
+      frontColor: ffff00
+      sprite: infinitus-spike-tall
+    }
+  }
+  {
+    name: gaster-hand-yellow
+    x: 25
+    rotate: true
+    controllable: false
+    autoTarget: true
+    y: -2.5
+    reload: 3
+    recoil: 2
+    mirror: false
+    shootY: 5
+    shootSound: lasershoot
+    shake: 0.2
+    bullet: {
+      type: basicBulletType
+      lifetime: 20
+      damage: 10
+      recoil: 0
+      inaccuracy: 3
+      width: 15
+      buildingDamageMultiplier: 0.01
+      height: 20
+      speed: 10
+      backColor: ffff00
+      frontColor: ffff00
+      sprite: infinitus-spike-tall
+      trailChance: 1
+      trailRotation: true
+      trailEffect: {
+          type: ParticleEffect
+          particles: 1
+          length: 5
+          lifetime: 30,
+          sizeFrom: 2
+          colorFrom: FFFF00FF
+          colorTo: CCCC00AA
+              	}
+    }
+  }
+  {
+    name: gaster-hand-red
+    x: -10
+    y: -20
+    rotate: true
+    reload: 200
+    recoil: 2
+    mirror: false
+    continuous: true
+    controllable: false
+    autoTarget: true
+    shootY: 5
+    shootSound: laser
+    shake: 0.8
+    bullet: {
+      type: laserBulletType
+      damage: 100
+      sideAngle: 10
+      sideWidth: 0.5
+      sideLength: 7
+      length: 300
+      shootEffect: hitMeltdown
+      buildingDamageMultiplier: 0.01
+      recoil: 0
+      backColor: ff0000
+      frontColor: ff0000
+      colors: [CC0000AA, FF0000FF, FFFFFF]
+    }
+  }
+  {
+    name: gaster-hand-purple
+    x: -20
+    y: -10
+    rotate: true
+    mirror: false
+    controllable: false
+    autoTarget: true
+    continuous: true
+    shootY: 10
+    reload: 500
+    shootSound: laserblast
+    shake: 2
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 10
+      buildingDamageMultiplier: 0.01
+      lifetime: 100
+      length: 200
+      width: 3
+      shootEffect: hitMeltdown
+      colors: [5500CCAA, CC00FFFF, FFAAFF]
+    }
+  }
+  {
+    name: gaster-hand-blue
+    x: 20
+    y: -10
+    rotate: true
+    controllable: false
+    autoTarget: true
+    mirror: false
+    shootY: 5
+    reload: 150
+    shootSound: laser
+    shake: 2
+    bullet: {
+      type: basicBulletType
+      lifetime: 60
+      damage: 10
+      recoil: 0
+      width: 15
+      height: 20
+      speed: 10
+      splashDamage: 50
+      splashDamageRadius: 32
+      backColor: 0000ff
+      buildingDamageMultiplier: 0.01
+      frontColor: 0000ff
+      sprite: infinitus-arrow
+      trailChance: 1
+      trailRotation: true
+      trailEffect: {
+          type: ParticleEffect
+          particles: 1
+          length: 5
+          lifetime: 30
+          sizeFrom: 2
+          colorFrom: 0000FFFF
+          colorTo: 0000CCAA
+              	}
+      hitEffect: {
+          type: ParticleEffect
+          particles: 1
+          sizeFrom: 10
+          sizeTo: 32
+          length: 0
+	  spin: -11
+          lifetime: 20
+          region: infinitus-spike-dual
+          colorFrom: 0000FFFF
+          colorTo: 0000CCAA
+		     }
+      homingRange: 2000
+      homingPower: 0.01
+           }
+  }
+  {
+    name: gaster-hand-orange
+    x: -25
+    y: -2.5
+    rotate: true
+    controllable: false
+    autoTarget: true
+    reload: 6
+    recoil: 0
+    mirror: false
+    continuous: true
+    alwaysContinuous: true
+    shootY: 5
+    shootSound: torch
+    shake: 0.8
+    bullet: {
+      type: ContinuousFlameBulletType
+                colors: [e71507AA, ff8517ff, ffda5bff, fffeebff, ffffff]
+                length: 80
+		flareColor: ff8517ff
+		flareWidth: 4
+     		buildingDamageMultiplier: 0.01
+		flareLength: 20
+                range: 80
+                width: 3
+                damage: 7
+                lifetime: 75
+    }
+  }
+  {
+    name: gaster-hand-green
+    type: RepairBeamWeapon
+    y: -20
+    x: 10
+    targetBuildings: true
+    rotate: true
+    controllable: false
+    autoTarget: true
+    rotateSpeed: 360
+    mirror: false
+    shootY: 6
+    repairSpeed: 2.5
+    beamWidth: 0.75
+    pulseRadius: 3
+    laserColor: 00ff00ff
+    pulseStroke: 1
+    bullet: {
+      speed: 12
+      lifetime: 20
+      maxRange: 240
+    }
+  }
+  {
+    name: gaster-hand-cyan
+    x: 0
+    y: -22.5
+    rotate: true
+    reload: 6
+    recoil: 0
+    mirror: false
+    shootY: 5
+    shootSound: artillery
+    shake: 0.8
+    bullet: {
+      type: ArtilleryBulletType
+		frontColor: 00ffff
+		backColor: 00aaaa
+                range: 80
+                width: 1.5
+     		buildingDamageMultiplier: 0.01
+                damage: 7
+		splashDamage: 10
+		splashDamageRadius: 60
+                lifetime: 75
+		speed: 5
+		width: 10
+		height: 16
+    }
+  }
+]
+abilities: [
+  {
+    type: RegenAbility
+    amount: 2.5
+  }
+]
+immunities: [
+]
+research: void-core

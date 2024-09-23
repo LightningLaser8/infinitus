@@ -1,0 +1,107 @@
+{
+  type: LiquidTurret
+  extinguish: false
+  size: 3
+  shootCone: 60
+  health: 800
+  range: 160
+  reload: 8
+  recoil: 0.5
+  shoot: {
+    type: ShootSpread
+    shots: 10
+    spread: 2
+  }
+  shootSound: fire
+  ammoUseEffect: none
+  ammoPerShot: 40
+  outlineColor: 000000
+  cooldownTime: 120
+  rotateSpeed: 2.5
+  ammoTypes: {
+    oil: {
+      type: BulletType
+      ammoMultiplier: 1
+      damage: 10
+      speed: 8
+      incendAmount: 1
+      pierce: true
+      pierceBuilding: true
+      lifetime: 20
+      hittable: false
+      knockback: 2
+      collidesAir: true
+      hitEffect: none
+      despawnEffect: none
+      status: burning
+      puddles: 3
+      puddleLiquid: oil
+    }
+  }
+  shootEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        length: 180
+        lifetime: 110
+        cone: 20
+        particles: 1
+        interp: pow2Out
+        sizeInterp: linear
+        region: particle
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: f5d35e
+        colorTo: f5d35e
+      }
+      {
+        length: 180
+        lifetime: 110
+        cone: 20
+        particles: 2
+        interp: pow3Out
+        sizeInterp: linear
+        region: particle
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: d99126
+        colorTo: d99126
+      }
+      {
+        length: 200
+        lifetime: 110
+        cone: 15
+        particles: 3
+        interp: pow3Out
+        sizeInterp: linear
+        region: particle
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: ff8120
+        colorTo: ff8120
+      }
+    ]
+  }
+  smokeEffect: {
+    length: 160
+    lifetime: 110
+    layer: 55
+    cone: 25
+    particles: 1
+    interp: pow2Out
+    sizeInterp: linear
+    region: particle
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: f1ce68
+    colorTo: f1ce68
+  }
+  category: turret
+  research: 0p-0-03-frost
+  requirements: [
+    electronium/300
+    shadow-steel/350
+    tinted-glass/200
+    iron/250
+  ]
+}

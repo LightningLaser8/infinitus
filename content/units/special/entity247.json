@@ -1,0 +1,208 @@
+{
+  type: mech
+  name: Entity 247
+  description: deez nuts
+  speed: 2
+  hitSize: 22
+  rotateSpeed: 2.1
+  health: 69834676
+  armor: 69
+  mechFrontSway: 1
+  mechStepParticles: true
+  stepShake: 0.15
+  canBoost: true
+  buildSpeed: 0.1
+  mineSpeed: 4
+  drownTimeMultiplier: 4
+  weapons: [
+{
+  name: entity247-gun
+  x: 10.3
+  y: -1.5
+  shootSound: laserblast
+  chargeSound: lasercharge
+  soundPitchMin: 1
+  top: false
+  mirror: false
+  shake: 18
+  shootY: 5
+  reload: 1200
+  recoil: 2
+  continuous: true
+  cooldownTime: 2000
+  recoilTime: 240
+  shootStatusDuration: 240
+  shootStatus: unmoving
+  shoot: {
+  firstShotDelay: 120
+         }
+  minWarmup: 0.5
+  bullet: {
+    type: ContinuousLaserBulletType
+    length: 660
+    damage: 12
+    buildingDamageMultiplier: 0.1
+    width: 10
+    lifetime: 120
+    lightningSpacing: 15
+    lightningLength: 10
+    lightningDelay: 1.1
+    lightningLengthRand: 20
+    lightningDamage: 400
+    lightningAngleRand: 40
+    largeHit: true
+    lightColor: 33ffff
+    lightningColor: 33ffff
+    shootEffect: {
+         type: ParticleEffect
+         particles: 1
+         sizeFrom: 2
+         sizeTo: 37
+         length: 0
+         spin: 11
+         lifetime: 65
+         region: infinitus-spike-dual                           
+         colorFrom: 00ffffFF
+         colorTo: 55ffffFF
+                        }
+    incendChance: 0
+    incendAmount: 0
+    colors: [
+      00ffff48, 55ffffFF, ffffff
+    ]
+          chargeEffect: {
+          type: multiEffect
+          lifetime: 500
+          effects: [
+                        {
+                            type: ParticleEffect
+                            particles: 1
+                            sizeFrom: 37
+                            sizeTo: 2
+                            length: 0
+                            spin: 11
+                            lifetime: 125
+                            region: infinitus-spike-dual                           
+                            colorFrom: 00ffffFF
+                            colorTo: 55ffffFF
+                        }
+                        {
+                            type: ParticleEffect
+                            particles: 1
+                            sizeFrom: 46
+                            sizeTo: 2
+                            length: 0
+                            spin: -11
+                            lifetime: 125
+                            region: infinitus-spike-dual
+                            colorFrom: 00ffffFF
+                            colorTo: 55ffffFF
+                        }
+                        {
+                            type: WaveEffect
+                            lifetime: 120
+                            sizeFrom: 70
+                            sizeTo: 0
+                            strokeFrom: 7
+                            strokeTo: 0
+                            colorFrom: 00ffffFF
+                            colorTo: 55ffffFF
+                        }
+                    ]
+      }
+  }
+}
+{
+  name: entity247-gun-l
+  x: -10.3
+  y: -1.5
+  shootSound: shockBlast
+  chargeSound: lasercharge
+  soundPitchMin: 1
+  top: false
+  mirror: false
+  shake: 1.8
+  shootY: 5
+  reload: 600
+  recoil: 1
+  cooldownTime: 400
+  recoils: 5
+  recoilTime: 8
+  shoot: {
+  firstShotDelay: 60
+  shots: 5
+  shotDelay: 10
+         }
+  minWarmup: 0.5
+  bullet: { 
+                type: BasicBulletType
+		sprite: missile-large
+                lifetime: 33
+                backColor: f1d025FF
+                frontColor:  ffe665FF
+		damage: 12
+		buildingDamageMultiplier: 0.1
+                pierce: false
+		pierceCap: 5
+                shootEffect: hitMeltdown
+                pierceBuilding: false
+		splashDamage: 25
+		splashDamageRadius: 32
+		hitEffect:{
+			type: ExplosionEffect
+			waveRadBase: 0
+			waveRad: 32
+			sparks: 10
+			sparkLen: 5
+			sparkRad: 42
+			smokes: 0
+			waveColor: f1d025
+			sparkColor: ffe665
+		}
+		speed: 9
+		width: 12
+		height: 12
+                trailWidth: 3
+                trailLength: 5
+		trailColor: f1d025
+ 	 }
+}
+  ]
+abilities:[
+  {
+    type: StatusFieldAbility
+    duration: 6000
+    reload: 6000
+    range: 0.01
+    effect: infinitus-transformed-1
+  }
+  {
+    type: StatusFieldAbility
+    duration: 6000
+    reload: 12000
+    range: 0.01
+    effect: infinitus-transformed-2
+  }
+  {
+    type: StatusFieldAbility
+    duration: 6000
+    reload: 18000
+    range: 0.01
+    effect: infinitus-transformed-3
+  }
+  {
+    type: StatusFieldAbility
+    duration: 6000
+    reload: 24000
+    range: 0.01
+    effect: infinitus-transformed-4
+  }
+  {
+    type: StatusFieldAbility
+    duration: 30000
+    reload: 30000
+    range: 0.01
+    effect: infinitus-transformed-5
+  }
+]
+}

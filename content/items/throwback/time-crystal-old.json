@@ -1,0 +1,12 @@
+{
+    "name": "[red]Old[] [green]Temporum",
+    "description": "'Meepium'... What a weird name.",
+    "explosiveness": 0,
+    "flammability": 0.9,
+    "research": "chrono-start",
+    "radioactivity": 4.5,
+    "charge": 0.9,
+    "cost": 5,
+    "color": "00FF00"
+    }
+    

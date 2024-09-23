@@ -1,0 +1,12 @@
+{
+    "name": "[#a3a198]Sunstone",
+    "description": "A yellow-gray rock. May have some power.",
+    "explosiveness": 0,
+    "research": "solis-start",
+    "flammability": 0.1,
+    "radioactivity": 0.1,
+    "charge": 0,
+    "cost": 1,
+    "color": "a3a198"
+    }
+    

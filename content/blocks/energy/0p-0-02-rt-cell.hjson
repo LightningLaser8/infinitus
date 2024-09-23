@@ -1,0 +1,110 @@
+{
+  type: ConsumeGenerator
+  name: "[#ff0000]Radioisotope Cell[]"
+  description: Uses the heat of decaying plutonium-238 to generate small amounts of power forever! Melts down on destruction.
+  research: 0p-0-01-prototype-solar
+  size: 2
+  liquidCapacity: 600
+  idleSound: EnergyLoop2
+  idleSoundVolume: 0.5
+  health: 400
+  category: power
+  drawer: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawBlurSpin
+      suffix: -fan
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+  powerProduction: 8
+  requirements: [
+    shadow-steel/10
+    plutonium/50
+    electronium/20
+  ]
+  consumes: {}
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+//Violent meltdown
+  destroyBullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    collides: false
+    absorbable: false
+    hittable: false
+    hitEffect: none
+    despawnEffect: none
+    lightning: 1
+    lightningLength: 0
+    lightningLengthRand: 0
+    lightningCone: 0
+    lightningColor: ff0000
+    lightningDamage: 0
+    lightningType: {
+      type: BulletType
+      lifetime: 1
+      speed: 0
+      width: 0
+      height: 0
+      splashDamage: 400
+      splashDamageRadius: 100
+      despawnEffect: {
+        type: ExplosionEffect
+        waveColor: ff0000
+        sparkColor: ff0000
+        waveRad: 100
+        smokeRad: 120
+        sparkRad: 130
+      }
+    }
+    fragLifetimeMin: 0.5
+    fragLifetimeMax: 1.2
+    fragBullets: 6
+    fragBullet: {
+      type: BasicBulletType
+      sprite: infinitus-chrono-bullet
+      frontColor: ff0000
+      backColor: ff0000
+      trailColor: ff0000
+      trailWidth: 4
+      width: 16
+      height: 16
+      trailLength: 10
+      speed: 1.5
+      lifetime: 45
+      hitSound: bang
+      puddles: 3
+      puddleRange: 10
+      puddleAmount: 100
+      puddleLiquid: proto-lava
+      despawnEffect: {
+        type: ExplosionEffect
+        waveColor: ff0000
+        sparkColor: ff0000
+        waveRad: 10
+        smokeRad: 15
+        sparkRad: 18
+      }
+      splashDamage: 40
+      splashDamageRadius: 10
+    }
+  }
+}

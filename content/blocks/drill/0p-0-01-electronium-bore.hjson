@@ -1,0 +1,29 @@
+{
+  type: BeamDrill
+  size: 1
+  tier: 4
+  drillTime: 150
+  optionalBoostIntensity: 1
+  consumes: {
+    power: 0.5
+  }
+  category: production
+  research: prototype-start
+  heatColor: 8cdeffe5
+  boostHeatColor: 8cdeffff
+  requirements: [
+    electronium/20
+  ]
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 4
+    sizeTo: 8
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

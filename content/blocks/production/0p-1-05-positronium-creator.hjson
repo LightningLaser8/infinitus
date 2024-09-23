@@ -1,0 +1,78 @@
+{
+  type: GenericCrafter
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawRegion
+        suffix: -bottom
+      }
+  {
+    type: DrawLiquidTile
+    drawLiquid: positron-lava
+    padding: 2
+  }
+      {
+        type: DrawDefault
+      }
+      {
+        type: drawArcSmelt
+        flameColor: ff7777
+        midColor: ff5555
+        flameRad: 2
+        circleSpace: 2.6
+        circleStroke: 1.3
+        alpha: 5
+        particleRad: 15
+        particles: 60
+        particleLen: 5
+        particleStroke: 1.1
+        particleLife: 80
+      }
+      {
+        type: DrawRegion
+        suffix: -top
+      }
+    ]
+  }
+  size: 5
+  hasPower: true
+  hasLiquids: true
+  hasItems: true
+  itemCapacity: 80
+  craftTime: 600
+  craftEffect: {
+    type: ParticleEffect
+    particles: 15
+    length: 20
+    offset: 3
+    cone: 360
+    interp: circleOut
+    lifetime: 28
+    sizeFrom: 5
+    sizeTo: 0
+    colorTo: ff5555
+    colorFrom: ff3333
+  }
+  updateEffect: none
+  consumes: {
+    power: 20
+    items: {
+      items: [
+        electronium/1
+      ]
+    }
+    liquid: {
+      liquid: positron-lava
+      amount: 0.1
+    }
+  }
+  requirements: [
+    dark-plates/1000
+    shadow-steel/500
+    tinted-glass/300
+    rubber/400
+  ]
+  category: crafting
+  outputItem: positronium/1
+}

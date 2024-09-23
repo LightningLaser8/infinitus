@@ -1,0 +1,100 @@
+{
+  type: CanvasBlock
+  size: 4
+  palette: [
+    320018107
+    2426600635
+    1937961147
+    1515766971
+    3864352187
+    2906801339
+    1932341435
+    1734964155
+    1246450619
+    842218939
+    3908041403
+    3352155835
+    2644617403
+  ]
+  canvasSize: 24
+  padding: 6
+  category: logic
+  requirements: [
+    shadow-steel/25
+    tinted-glass/10
+  ]
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 16
+      sizeTo: 32
+      strokeFrom: 12
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

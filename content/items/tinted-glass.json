@@ -1,0 +1,12 @@
+{
+    "name": "[#ff0000]Tinted Glass",
+    "description": "Darkened glass, used in [#ff0000]Prototype[] liquid blocks",
+    "explosiveness": 2,
+    "flammability": 0,
+    "research": "shadow-steel",
+    "radioactivity": 0,
+    "charge": 0,
+    "cost": 5,
+    "color": "CC5555"
+    }
+    

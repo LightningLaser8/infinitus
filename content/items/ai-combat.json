@@ -1,0 +1,12 @@
+{
+    "name": "AI Controller: Combat",
+    "description": "Circuit board to control units.\n\n[#ffa566]Combat[]: Automatically finds and [red]destroys[] an enemy unit or building. Cannot be commanded.\nAlso used in advanced turrets.",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0.5,
+    "cost": 1,
+    "color": "ffa566"
+    }
+    
+//FlyingAI, GroundAI

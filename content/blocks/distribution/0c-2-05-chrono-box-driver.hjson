@@ -1,0 +1,21 @@
+{
+  type: PayloadMassDriver
+  size: 1
+  range: 480
+  maxPayloadSize: 1
+  reload: 16
+  chargeTime: 50
+  knockback: 1.25
+  grabWidth: 1.5
+  grabHeight: 1
+  length: 3.5
+  payloadSpeed: 1.5
+  outlineIcon: false
+  hasPower: false
+  research: 0c-2-01-chrono-box-conveyor
+  requirements: [
+    time-crystal/50
+    spatial-shard/20
+    temporal-shard/10
+  ]
+}

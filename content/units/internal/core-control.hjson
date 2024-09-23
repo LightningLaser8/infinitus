@@ -1,0 +1,108 @@
+{
+  name: "[#ff0000]Core Controller[]"
+  description: Sees all, nukes all
+  type: flying
+  hidden: true
+  flying: true
+  hittable: false
+  hitSize: 1
+  outlineColor: 000000
+  killable: false
+  targetable: false
+  healFlash: false
+  canBoost: false
+  canAttack: true
+  canDrown: false
+  canHeal: false
+  speed: 0
+  rotateSpeed: 0
+  buildRange: 2000
+  buildSpeed: 30
+  drawBuildBeam: false
+  buildBeamOffset: 0
+  drawCell: false
+  drawItems: true
+  itemCapacity: 50
+  drawShields: false
+  drawMinimap: false
+  engineSize: 0
+  coreUnitDock: false
+  createWreck: false
+  createScorch: false
+  lightColor: ffffff
+  lightRadius: 0
+  lowAltitude: true
+  mineFloor: true
+  mineWalls: true
+  mineRange: 2000
+  mineHardnessScaling: false
+  mineSpeed: 3
+  mineTier: 8
+  physics: false
+  playerControllable: true
+  useUnitCap: false
+  bounded: true
+  weapons: [
+    {
+      type: BuildWeapon
+      name: prototype-build
+      mirror: false
+      x: 11
+      y: 11
+      rotate: true
+      rotateSpeed: 1.5
+    }
+    {
+      type: BuildWeapon
+      name: prototype-build
+      mirror: false
+      x: -11
+      y: 11
+      rotate: true
+      rotateSpeed: 1.5
+    }
+    {
+      type: BuildWeapon
+      name: prototype-build
+      mirror: false
+      x: 11
+      y: -11
+      rotate: true
+      rotateSpeed: 1.5
+    }
+    {
+      type: BuildWeapon
+      name: prototype-build
+      mirror: false
+      x: -11
+      y: -11
+      rotate: true
+      rotateSpeed: 1.5
+    }
+    {
+      name: missile-burst
+      reload: 240
+      baseRotation: 0
+      recoil: 5
+      shootCone: 361
+      recoilTime: 25
+      x: 0
+      y: 0
+      shootY: 0
+      mirror: false
+      shoot: {
+        shots: 15
+        shotDelay: 5
+      }
+      shootSound: missileShoot
+      shake: 3
+      heatColor: e65555
+      cooldownTime: 55
+      bullet: {
+        inaccuracy: 360
+        type: BulletType
+        spawnUnit: infinitus-missile-tiny
+      }
+    }
+  ]
+}

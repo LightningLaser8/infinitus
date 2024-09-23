@@ -1,0 +1,12 @@
+{
+    "name": "AI Controller: Command",
+    "description": "Circuit board to control units.\n\n[#ffd27e]Command[]: Default controller. Does nothing unless told to do so.",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0.5,
+    "cost": 1,
+    "color": "ffd27e"
+    }
+    
+//CommandAI

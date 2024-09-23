@@ -1,0 +1,5 @@
+type: OreBlock
+itemDrop: bone-item
+oreDefault: true
+oreScale: 5.87
+oreThreshold: 0.94

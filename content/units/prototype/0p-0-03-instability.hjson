@@ -1,0 +1,66 @@
+{
+  type: flying
+  lowAltitude: true
+  faceTarget: true
+  speed: 3
+  itemCapacity: 400
+  accel: 0.5
+  flying: true
+  health: 1500
+  armor: 9
+  research: 0p-0-03-prototype-constructor
+  faceTarget: true
+  outlineColor: 000000
+  hitSize: 30
+  armor: 9
+  range: 180
+  maxRange: 180
+  engineOffset: 16
+  engineSize: 0
+  targetAir: true
+  weapons: [
+    {
+      name: instability-railgun
+      shootSound: laser
+      top: false
+      reload: 25
+      x: 20
+      y: 4
+      continuous: true
+      mirror: true
+      alternate: true
+      shake: 4
+      shootY: 10
+      rotate: false
+      bullet: {
+        type: laserBulletType
+        status: unstable
+        shootEffect: hitMeltdown
+        damage: 150
+        sideAngle: 180
+        lightningSpacing: 15
+        lightningLength: 2
+        lightningDelay: 1.1
+        lightningLengthRand: 2
+        lightningDamage: 40
+        lightningAngleRand: 40
+        lightningColor: ff0000
+        sideWidth: 1
+        sideLength: 20
+        width: 30
+        colors: [
+          CC0000AA
+          FF0000FF
+          FFFFFF
+        ]
+        length: 320
+      }
+    }
+  ]
+  immunities: [
+    disassembly
+    frosted-1
+    frosted-2
+    frosted-3
+  ]
+}

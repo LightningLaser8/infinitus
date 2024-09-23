@@ -1,0 +1,6 @@
+{
+  gas: true
+  color: 1e1b24
+  name: Carbon Dioxide
+  description: Gas produced as a byproduct of refining.
+}

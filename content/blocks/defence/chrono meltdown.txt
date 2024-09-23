@@ -1,0 +1,68 @@
+destroyBullet:{
+  type: BulletType
+  speed: 0
+  lifetime: 0
+  collides: false
+  absorbable: false
+  hittable: false
+  hitEffect: none
+  despawnEffect: none
+  lightning: 1
+  lightningLength: 0
+  lightningLengthRand: 0
+  lightningCone: 0
+  lightningColor: 55ff55
+  lightningDamage: 0
+  lightningType:{
+    type: BulletType
+    lifetime: 1
+    speed: 0
+    width: 0
+    height: 0
+    splashDamage: 20
+    puddles: 4
+    puddleRange: 20
+    puddleAmount: 40
+    puddleLiquid: destabilised-chrono
+    splashDamageRadius: 100
+    despawnEffect:{
+      type: ExplosionEffect
+      waveColor: 55ff55
+      sparkColor: 55ff55
+      waveRad: 100
+      smokeRad: 120
+      sparkRad: 130
+    }
+  }
+  fragLifetimeMin: 0.5
+  fragLifetimeMax: 1.2
+  fragBullets: 6
+  fragBullet: {
+    type: BasicBulletType
+    sprite: infinitus-chrono-bullet
+    frontColor: 55ff55
+    backColor: 55ff55
+    trailColor: 55ff55
+    trailWidth: 2
+    width: 8
+    height: 8
+    trailLength: 4
+    speed: 0.5
+    lifetime: 15
+    hitSound: bang
+    puddles: 1
+    puddleRange: 5
+    puddleAmount: 50
+    puddleLiquid: destabilised-chrono
+    despawnEffect:{
+      type: ExplosionEffect
+      waveColor: 55ff55
+      sparkColor: 55ff55
+      waveRad: 10
+      smokeRad: 15
+      sparkRad: 18
+    }
+    splashDamage: 4
+    splashDamageRadius: 10
+  }
+}

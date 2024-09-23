@@ -1,0 +1,32 @@
+{
+  type: UnitFactory
+  size: 3
+  consumes: {
+    power: 2
+  }
+  plans: [
+    {
+      unit: zero
+      requirements: [
+        silicon/15
+        void-crystal/20
+      ]
+      time: 600
+    }
+    {
+      unit: "null"
+      requirements: [
+        silicon/150
+        shadow-steel/100
+        void-crystal/50
+      ]
+      time: 1200
+    }
+  ]
+  requirements: [
+    void-crystal/50
+    infinitite/25
+  ]
+  category: units
+  research: void-start
+}

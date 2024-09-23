@@ -1,0 +1,14 @@
+{
+    "type": "Wall",
+    "health": 1250,
+    "name": "Old Temporum Wall"
+    "description": "'Meepium Wall'... This used to not regen?"
+    "size": 1,
+    "lightningChance": 0.25,
+    "lightningDamage": 40,
+    "lightningLength": 10,
+    "lightningColor": "CCFFCC",
+    "absorbLasers": true,
+    "category": "defense",
+    }
+    

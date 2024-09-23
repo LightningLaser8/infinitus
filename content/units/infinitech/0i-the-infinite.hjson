@@ -1,0 +1,158 @@
+type: flying
+flying: true
+lowAltitude: true
+hitSize: 24
+health: 16384
+speed: 5.25
+rotateSpeed: 8
+itemCapacity: 0
+engineOffset: 10
+engineSize: 6
+engineColor: 00ffff
+buildSpeed: 10
+buildPower: 20
+mineTier: 20
+mineSpeed: 60
+trailColor: 00ffff
+trailLength: 11
+faceTarget: false
+weapons: [
+  {
+    name: 0i-the-infinite-laser-mount
+    reload: 600
+    rotate: true
+    baseRotation: 0
+    recoil: 5
+    shootCone: 40
+    recoilTime: 25
+    x: 0
+    y: -5
+    shootY: 2
+    rotateSpeed: 3.2
+    mirror: false
+    shoot: {
+      shots: 6
+      shotDelay: 10
+    }
+    shootSound: laserShoot
+    shake: 3
+    heatColor: 55e6e6
+    cooldownTime: 55
+    bullet: {
+                type: LaserBulletType
+          	status: weak-point
+                buildingDamageMultiplier: 0.6
+                damage: 150
+                sideAngle: 60
+   		lightningSpacing: 15
+ 		lightningLength: 2
+  		lightningDelay: 1.1
+   		lightningLengthRand: 2
+   		lightningDamage: 40
+   		lightningAngleRand: 40
+   		lightningColor: 00ffff
+                sideWidth: 1
+                sideLength: 40
+                width: 30
+                colors:[00ccccAA, 00ffffFF, FFFFFF]
+                length: 200
+    }
+  }
+  {
+    name: 0i-the-infinite-missile
+    reload: 240
+    rotate: false
+    baseRotation: 0
+    recoil: 5
+    shootCone: 120
+    recoilTime: 25
+    x: 0
+    y: 5
+    shootY: 2
+    rotateSpeed: 3.2
+    mirror: false
+    shoot: {
+      shots: 5
+      shotDelay: 1
+    }
+    shootSound: missileShoot
+    shake: 3
+    heatColor: 55e6e6
+    cooldownTime: 55
+    bullet: {
+      inaccuracy: 45
+      type: BulletType
+      spawnUnit: infinitus-0i-the-infinite-missile
+    }
+  }
+  {
+    name: 0i-the-infinite-discharge
+    reload: 300
+    rotate: false
+    baseRotation: 0
+    recoil: 0
+    shootCone: 360
+    x: 0
+    y: 0
+    shootY: 0
+    mirror: false
+    shoot: {
+      shots: 50
+    }
+    shootSound: spark
+    shake: 20
+    heatColor: 55e6e6
+    cooldownTime: 100
+      bullet: {
+        type: LightningBulletType
+        knockback: 0.8
+        damage: 100
+        inaccuracy: 360
+	lightningLength: 100
+	lightningLengthRand: 20
+	lightningColor: 00ffff
+      }
+  }
+  {
+    name: 0i-the-infinite-death-discharge
+    controllable: false
+    shootOnDeath: true
+    display: false
+    rotate: false
+    baseRotation: 0
+    recoil: 0
+    shootCone: 360
+    x: 0
+    y: 0
+    shootY: 0
+    mirror: false
+    shoot: {
+      shots: 20
+    }
+    shootSound: spark
+    shake: 20
+    heatColor: 55e6e6
+    cooldownTime: 100
+      bullet: {
+        type: LightningBulletType
+        knockback: 0.8
+        damage: 1000
+        inaccuracy: 360
+	lightningLength: 100
+	lightningLengthRand: 20
+	lightningColor: 00ffff
+	lightningType: {
+	        type: BulletType
+        	lifetime: 0
+        	speed: 0
+		lightning: 5
+		lightningDamage: 200
+		lightningLength: 10
+		lightningLengthRand: 20
+		lightningColor: 00ffff
+        }
+      }
+  }
+]
+abilities: [
+]

@@ -1,0 +1,199 @@
+{
+  type: flying
+  details:
+  '''
+  "Demolition.
+  An odd name for such a gentle unit.
+  They were always there, like background characters in a movie.
+  Building away, constructing housing, taking care of new constructs.
+  Never hurting anyone.
+  Those who were hurt would feel the warm glow of their repair beams.
+  Those who were not would be protected.
+  But protection from what?
+  Not what happened. Nothing could protect us from that."
+  '''
+  lowAltitude: true
+  speed: 2
+  itemCapacity: 50
+  faceTarget: true
+  accel: 0.5
+  flying: true
+  health: 1200
+  research: nano-reconstructor
+  hitSize: 13
+  outlines: false
+  range: 180
+  drawCell: false
+  maxRange: 180
+  engineOffset: 3.5
+  engineSize: 1.6
+  targetAir: true
+  parts: [
+    {
+      type: RegionPart
+      layer: 90.02
+      outline: false
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      blending: additive
+      layer: 91
+      color: fffa9f
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      layer: 140
+      color: fffa9f25
+      blending: additive
+    }
+  ]
+  weapons: [
+    {
+      type: RepairBeamWeapon
+      y: -7
+      x: 0
+      targetBuildings: true
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      mirror: false
+      shootY: 0
+      repairSpeed: 2.5
+      beamWidth: 0.75
+      pulseRadius: 3
+      laserColor: fffa9fff
+      healColor: fffa9fff
+      pulseStroke: 1
+      bullet: {
+        speed: 12
+        lifetime: 20
+        maxRange: 240
+      }
+    }
+    {
+      type: RepairBeamWeapon
+      y: -7
+      x: 2
+      targetBuildings: true
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      mirror: false
+      shootY: 0
+      repairSpeed: 2.5
+      beamWidth: 0.75
+      pulseRadius: 3
+      laserColor: fffa9fff
+      healColor: fffa9fff
+      pulseStroke: 1
+      bullet: {
+        speed: 12
+        lifetime: 20
+        maxRange: 240
+      }
+    }
+    {
+      type: RepairBeamWeapon
+      y: -7
+      x: -2
+      targetBuildings: true
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      mirror: false
+      shootY: 0
+      repairSpeed: 2.5
+      beamWidth: 0.75
+      pulseRadius: 3
+      laserColor: fffa9fff
+      healColor: fffa9fff
+      pulseStroke: 1
+      bullet: {
+        speed: 12
+        lifetime: 20
+        maxRange: 240
+      }
+    }
+    {
+      type: RepairBeamWeapon
+      y: -9
+      x: 0
+      targetBuildings: true
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      mirror: false
+      shootY: 0
+      repairSpeed: 2.5
+      beamWidth: 0.75
+      pulseRadius: 3
+      laserColor: fffa9fff
+      healColor: fffa9fff
+      pulseStroke: 1
+      bullet: {
+        speed: 12
+        lifetime: 20
+        maxRange: 240
+      }
+    }
+    {
+      type: RepairBeamWeapon
+      y: -5
+      x: 0
+      targetBuildings: true
+      rotate: true
+      controllable: false
+      autoTarget: true
+      rotateSpeed: 360
+      mirror: false
+      shootY: 0
+      repairSpeed: 2.5
+      beamWidth: 0.75
+      pulseRadius: 3
+      laserColor: fffa9fff
+      healColor: fffa9fff
+      pulseStroke: 1
+      bullet: {
+        speed: 12
+        lifetime: 20
+        maxRange: 240
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: LiquidExplodeAbility
+      liquid: nanite
+      amount: 1000
+    }
+    {
+      type: SpawnDeathAbility
+      unit: 0p-4-01-mip-nanite
+      amount: 8
+      spread: 13
+    }
+    {
+      type: UnitSpawnAbility
+      spawnX: 0
+      spawnY: -5
+      unit: 0p-4-01-mip-nanite
+      spawnTime: 600
+    }
+    {
+      type: RegenAbility
+      amount: 2
+    }
+  ]
+  immunities: [
+    disassembly
+    disassemblyL2
+  ]
+}

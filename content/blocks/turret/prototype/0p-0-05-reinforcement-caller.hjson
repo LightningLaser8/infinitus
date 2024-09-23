@@ -1,0 +1,155 @@
+{
+  type: PowerTurret
+  size: 5
+  shootCone: 360
+  range: 1440
+  reload: 6000
+  shootSound: none
+  rotateSpeed: 0
+  recoil: 0
+  hasPower: true
+  powerUse: 10
+  shootY: 0
+  shoot: {
+    firstShotDelay: 180
+  }
+  moveWhileCharging: false
+  drawer: {
+    type: DrawTurret
+    parts: [
+      {
+        type: HaloPart
+        tri: true
+        progress: charge
+        shapes: 4
+        triLength: 0
+        triLengthTo: 560
+        radius: 0
+        radiusTo: 32
+        haloRotateSpeed: -0.5
+        color: ff0000
+        colorTo: ffffff
+        layer: 99.99
+      }
+      {
+        type: HaloPart
+        tri: true
+        progress: charge
+        shapes: 4
+        triLength: 0
+        triLengthTo: 480
+        radius: 0
+        radiusTo: 16
+        haloRotation: 45
+        haloRotateSpeed: 0.5
+        color: ff0000
+        colorTo: ffffff
+        layer: 99.99
+      }
+      {
+        type: ShapePart
+        circle: true
+        progress: charge
+        radius: 0
+        radiusTo: 60
+        color: ff0000
+        layer: 99.99
+      }
+      {
+        type: ShapePart
+        circle: true
+        progress: charge
+        radius: 0
+        radiusTo: 54
+        layer: 99.99
+      }
+    ]
+  }
+  shootType: {
+    lifetime: 1
+    speed: 0
+    despawnUnit: infinitus-wormhole
+  }
+  category: turret
+  research: 0p-0-01-gun-deconstructor
+  requirements: [
+    shadow-steel/1500
+    dark-plates/750
+    electronium/1000
+    iron/1750
+  ]
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 40
+      lifetime: 20
+      sides: 4
+      sizeFrom: 20
+      sizeTo: 40
+      strokeFrom: 15
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      baseLength: 6
+      length: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      baseLength: 6
+      length: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

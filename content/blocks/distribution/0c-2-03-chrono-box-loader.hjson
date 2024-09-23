@@ -1,0 +1,17 @@
+{
+  type: PayloadLoader
+  size: 1
+  payloadSpeed: 0.6
+  loadTime: 1.5
+  hasPower: false
+//remove default consumes
+  loadPowerDynamic: false
+  research: 0c-2-01-chrono-box-conveyor
+  consumes: {}
+  maxBlockSize: 1
+  requirements: [
+    time-crystal/25
+    temporal-shard/10
+    spatial-shard/5
+  ]
+}

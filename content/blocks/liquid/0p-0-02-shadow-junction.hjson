@@ -1,0 +1,25 @@
+{
+  type: LiquidJunction
+  name: "[#ff0000]Shadow Junction]"
+  description: Acts as a bridge for 2 crossing shadow conduits.
+  health: 120
+  liquidPressure: 1.5
+  requirements: [
+    shadow-steel/2
+    tinted-glass/2
+  ]
+  category: liquid
+  research: 0p-0-01-shadow-conduit
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 4
+    sizeTo: 8
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

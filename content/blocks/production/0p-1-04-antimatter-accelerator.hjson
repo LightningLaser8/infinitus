@@ -1,0 +1,135 @@
+type: GenericCrafter
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawRegion
+        suffix: -bottom
+      }
+  {
+    type: DrawLiquidTile
+    drawLiquid: proton-lava
+    padding: 2
+  }
+      {
+        type: DrawParticles
+        color: ff5555
+        alpha: 0.4
+        blending: additive
+        particleSize: 3
+        particleRad: 14
+        particles: 23
+        fadeMargin: 1
+        rotateScl: 4
+        particleLife: 30
+      }
+      {
+        type: DrawPlasma
+        suffix: -plasma-
+        plasma1: ffffffFF
+        plasma2: 8cdeff
+      }
+      {
+        type: DrawDefault
+      }
+    ]
+  }
+  size: 6
+  hasPower: true
+  hasLiquids: true
+  liquidCapacity: 400
+  craftTime: 600
+  craftEffect: none
+  updateEffect: none
+  consumes: {
+    power: 21
+    items: {
+      items: [
+        electronium/1
+      ]
+    }
+  }
+  requirements: [
+    shadow-steel/300
+    tinted-glass/200
+    electronium/500
+    rubber/250
+    silicon/100
+  ]
+  category: crafting
+  research: 0p-1-03-hydrogen-splitter
+  outputLiquid: positron-lava/0.1
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 39
+    lifetime: 20
+    sides: 4
+    sizeFrom: 24
+    sizeTo: 48
+    strokeFrom: 18
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: infinitus-prototype-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: ff000000
+    colorTo: ff0000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: infinitus-prototype-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: ff0000
+    colorTo: ff000000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    baseLength: 6
+    length: 18
+    lifetime: 35
+    useRotation: false
+    region: infinitus-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    baseLength: 6
+    length: 18
+    lifetime: 35
+    useRotation: false
+    region: infinitus-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+]

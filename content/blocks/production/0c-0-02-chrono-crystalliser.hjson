@@ -1,0 +1,65 @@
+{
+  type: GenericCrafter
+  research: 0c-0-01-temporum-machine
+  health: 2000
+  size: 3
+  category: crafting
+  outputItem: temporal-shard/1
+  hasLiquids: false
+  itemCapacity: 50
+  hasItems: true
+  craftTime: 1200
+  hasPower: true
+  ambientSound: smelter
+  requirements: [
+    infinitite/100
+    time-crystal/200
+    silicon/400
+    plastanium/250
+  ]
+  consumes: {
+    power: 0.5
+    items: {
+      items: [
+        time-crystal/2
+      ]
+    }
+  }
+  craftEffect: {
+    type: multiEffect
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: CCFFCCFF
+        colorTo: 00CC0055
+      }
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 20
+        sizeTo: 0
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: CCFFCCFF
+        colorTo: 00CC0055
+      }
+    ]
+  }
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawFlame
+        flameColor: CCFFCCFF
+      }
+    ]
+  }
+}

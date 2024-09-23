@@ -1,0 +1,16 @@
+{
+  localizedName: Cell
+  type: Battery
+  size: "2"
+  description: Stores power.
+  hasPower: true
+  consumes: {
+    powerBuffered: 2000
+  }
+  category: power
+  research: infinite-start
+  requirements: [
+    iron/50
+		silicon/25
+  ]
+}

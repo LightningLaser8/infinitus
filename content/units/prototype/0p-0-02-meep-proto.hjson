@@ -1,0 +1,79 @@
+{
+  type: flying
+  lowAltitude: true
+  speed: 5
+  itemCapacity: 20
+  faceTarget: true
+  research: {
+    parent: 0p-0-02-shadow-reconstructor
+    objectives: [
+      0p-0-01-mip-proto
+    ]
+  }
+  accel: 0.5
+  flying: true
+  health: 100
+  hitSize: 2
+  range: 180
+  maxRange: 180
+  engineOffset: 4
+  outlineColor: 000000
+  engineSize: 1
+  targetAir: true
+  weapons: [
+    {
+      name: proto-meep-laser
+      shootSound: lasershoot
+      reload: 30
+      x: 0
+      y: 0
+      rotate: true
+      mirror: false
+      alternate: false
+      bullet: {
+        type: BasicBulletType
+        sprite: infinitus-arrow
+        lifetime: 40
+        backColor: CC0000FF
+        frontColor: FF0000FF
+        damage: 10
+        splashDamage: 10
+        splashDamageRadius: 32
+        shootEffect: {
+          type: ParticleEffect
+          particles: 1
+          sizeFrom: 2
+          sizeTo: 10
+          length: 0
+          spin: 11
+          lifetime: 15
+          region: infinitus-spike-dual
+          colorFrom: FF0000FF
+          colorTo: CC0000AA
+        }
+        speed: 7.5
+        width: 9
+        height: 18
+        trailWidth: 2.25
+        trailLength: 5
+        trailColor: ff0000
+        hitEffect: {
+          type: ParticleEffect
+          particles: 1
+          sizeFrom: 10
+          sizeTo: 32
+          length: 0
+          spin: -11
+          lifetime: 20
+          region: infinitus-spike-dual
+          colorFrom: FF0000FF
+          colorTo: CC0000AA
+        }
+      }
+    }
+  ]
+  abilities: []
+  immunities: [
+    disassembly
+  ]
+}

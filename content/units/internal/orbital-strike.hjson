@@ -1,0 +1,329 @@
+{
+  type: flying
+  localizedName: yet another internal unit
+  health: 1000000000
+  speed: 0
+  flying: true
+  rotateSpeed: 0
+  fallSpeed: 1000
+  fallEffect: none
+  fallEngineEffect: false
+  engineSize: 0
+  lifetime: 300
+  hitSize: 0
+  physics: false
+  targetable: false
+  hittable: false
+  drawBody: false
+  drawCell: false
+  outlines: false
+  physics: false
+  createScorch: false
+  weapons: [
+    {
+      controllable: false
+      display: false
+      x: 0
+      shootOnDeath: true
+      shootCone: 360
+      shootSound: none
+      inaccuracy: 0
+      shootEffect: [
+        {
+          type: ParticleEffect
+          length: 0
+          particles: 1
+          lifetime: 60
+          layer: 105
+          interp: pow5In
+          spin: 2.3
+          region: infinitus-singularity-color
+          sizeFrom: 0
+          sizeTo: 300
+          colorFrom: ff0000
+          colorTo: ff000000
+        }
+      ]
+      bullet: {
+        type: ExplosionBulletType
+        hitEffect: none
+        killShooter: true
+        despawnEffect: none
+        fragBullets: 720
+        fragRandomSpread: 0
+        fragSpread: 0.5
+        fragBullet: {
+          type: RailBulletType
+          length: 160
+          damage: 150
+          collidesTiles: true
+          pierceDamageFactor: 0
+          buildingDamageMultiplier: 0.1
+          pierceEffect: none
+          hitEffect: {
+            length: 50
+            particles: 1
+            cone: 10
+            line: true
+            lifetime: 35
+            lenFrom: 6
+            lenTo: 0
+            strokeFrom: 2
+            strokeTo: 1
+            interp: pow3Out
+            sizeInterp: pow2In
+            colorTo: ff000050
+          }
+          knockback: 5
+          despawnEffect: [
+            {
+              particles: 1
+              length: 0
+              lifetime: 35
+              sizeFrom: 80
+              sizeTo: 0
+              sizeInterp: pow5In
+              interp: pow3Out
+              colorFrom: ff0000
+              colorTo: ff0000
+            }
+            {
+              particles: 4
+              region: circle-shadow
+              length: 0
+              lifetime: 35
+              sizeFrom: 80
+              sizeTo: 0
+              sizeInterp: pow5In
+              interp: pow3Out
+            }
+          ]
+        }
+        spawnBullets: [
+          {
+            type: BulletType
+            hittable: false
+            absorbable: false
+            intervalBullet: {
+              type: RailBulletType
+              length: 200
+              damage: 15
+              collidesTiles: true
+              pierceDamageFactor: 0
+              buildingDamageMultiplier: 0.1
+              pierceEffect: none
+              knockback: 0.2
+              hitEffect: {
+                length: 50
+                particles: 1
+                cone: 10
+                line: true
+                lifetime: 35
+                lenFrom: 6
+                lenTo: 0
+                strokeFrom: 2
+                strokeTo: 1
+                interp: pow3Out
+                sizeInterp: pow2In
+                colorTo: ff000050
+              }
+            }
+            bulletInterval: 5
+            intervalBullets: 720
+            intervalSpread: 0.5
+            intervalRandomSpread: 0
+            lifetime: 120
+            speed: 0
+            collides: false
+          }
+        ]
+      }
+    }
+    {
+      x: 0
+      reload: 300
+      mirror: false
+      alwaysShooting: true
+      shootCone: 360
+      shoot: {
+        firstShotDelay: 30
+      }
+      parts: [
+        {
+          type: HaloPart
+          layer: 110
+          tri: true
+          shapes: 3
+          radius: 0
+          radiusTo: 14
+          triLength: 35
+          triLengthTo: 35
+          haloRadius: 160
+          haloRadiusTo: 160
+          haloRotateSpeed: 2.5
+          progress: {
+            type: smoothReload
+            op: delay
+            amount: 0.1
+          }
+        }
+        {
+          type: HaloPart
+          layer: 110
+          tri: true
+          shapes: 3
+          radius: 0
+          radiusTo: 14
+          triLength: 35
+          triLengthTo: 35
+          shapeRotation: 180
+          haloRadius: 160
+          haloRadiusTo: 160
+          haloRotateSpeed: 2.5
+          progress: {
+            type: smoothReload
+            op: delay
+            amount: 0.1
+          }
+        }
+        {
+          type: ShapePart
+          layer: 109
+          circle: true
+          hollow: true
+          radius: 80
+          stroke: 0
+          strokeTo: 5
+          color: ff0000
+          colorTo: ff0000
+          progress: {
+            type: smoothReload
+            op: curve
+            interp: pow10Out
+          }
+        }
+        {
+          type: ShapePart
+          layer: 109
+          circle: true
+          hollow: true
+          radius: 80
+          radiusTo: 130
+          stroke: 0
+          strokeTo: 2.5
+          color: ff0000
+          colorTo: ff0000
+          progress: {
+            type: smoothReload
+            op: curve
+            interp: pow5Out
+          }
+        }
+        {
+          type: ShapePart
+          layer: 109
+          circle: true
+          hollow: true
+          radius: 80
+          radiusTo: 150
+          stroke: 0
+          strokeTo: 1.5
+          color: ff0000
+          colorTo: ff0000
+          progress: {
+            type: smoothReload
+            op: curve
+            interp: pow3Out
+          }
+        }
+        {
+          type: ShapePart
+          layer: 109
+          circle: true
+          hollow: true
+          radius: 80
+          radiusTo: 160
+          stroke: 0
+          strokeTo: 1
+          color: ff0000
+          colorTo: ff0000
+          progress: {
+            type: smoothReload
+            op: curve
+            interp: pow2Out
+          }
+        }
+      ]
+      shootY: 0
+      shootSound: none
+      bullet: {
+        shootEffect: none
+        hitEffect: none
+        despawnEffect: none
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: StatusFieldAbility
+      duration: 300
+      reload: 300
+      range: 0.01
+      effect: infinitus-death-effect
+    }
+  ]
+  deathExplosionEffect: [
+    {
+      length: 0
+      particles: 1
+      lifetime: 100
+      layer: 120
+      interp: pow5In
+      region: infinitus-orbital-strike-effect
+      sizeFrom: 2000
+      sizeTo: 2000
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      length: 0
+      particles: 1
+      lifetime: 180
+      layer: 98
+      interp: pow5In
+      spin: 2.3
+      region: infinitus-singularity-ring-color
+      sizeFrom: 160
+      sizeTo: 160
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      length: 0
+      particles: 1
+      lifetime: 180
+      layer: 106
+      interp: pow5In
+      sizeFrom: 160
+      spin: 2.3
+      region: infinitus-singularity-color
+      sizeTo: 80
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      length: 0
+      particles: 1
+      lifetime: 180
+      layer: 106
+      interp: pow5In
+      sizeFrom: 160
+      spin: -2.3
+      region: infinitus-singularity-color-backwards
+      sizeTo: 80
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+  deathSound: strikedown-impact
+}

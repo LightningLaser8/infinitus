@@ -1,0 +1,339 @@
+{
+  localizedName: "[green]Chrono Supertank[] 'Ratte'"
+  description: Definitely not stolen from any real-life sources.
+  type: tank
+  research: {
+    parent: 0c-0-05-chrono-assembler
+    requirements: []
+  }
+  faceTarget: false
+  squareShape: true
+  treadFrames: 18
+  treadPullOffset: 1
+  treadRects: [
+    {
+      x: 65
+      y: 70
+      width: 131
+      height: 180
+    }
+    {
+      x: 46
+      y: -248
+      width: 85
+      height: 63
+    }
+    {
+      x: 166
+      y: -183.5
+      width: 32
+      height: 39
+    }
+  ]
+  omniMovement: false
+  speed: 0.28
+  hitSize: 110
+  health: 450000
+  fogRadius: 80
+  crushDamage: 8
+  armor: 125
+  singleTarget: false
+  flying: false
+  targetAir: true
+  rotateSpeed: 0.45
+  weapons: [
+    {
+      name: ratte-small-pew-pew
+      x: 0
+      y: 60
+      mirror: false
+      reload: 15
+      rotateSpeed: 6
+      rotate: true
+      shootSound: pew-pew
+      bullet: {
+        type: BasicBulletType
+        damage: 60
+        speed: 12
+        lifetime: 45
+        frontColor: 00ff00
+        backColor: 00ff00
+        sprite: infinitus-chrono-bullet
+        width: 10
+        height: 10
+        trailWidth: 2.5
+        trailLength: 12
+        trailColor: 00ff00
+      }
+    }
+    {
+      name: ratte-aa
+      x: 35
+      y: -60
+      mirror: true
+      reload: 10
+      rotateSpeed: 6
+      rotate: true
+      recoil: 8
+      shake: 3
+      shootY: 20
+      controllable: false
+      autoTarget: true
+      shootSound: shootBig
+      bullet: {
+        type: BasicBulletType
+        damage: 450
+        collidesGround: false
+        speed: 12
+        lifetime: 45
+        frontColor: 00ff00
+        backColor: 00ff00
+        sprite: infinitus-chrono-bullet
+        width: 15
+        height: 30
+        trailWidth: 3.75
+        trailLength: 30
+        trailColor: 00ff00
+      }
+    }
+    {
+      name: ratte-aa
+      x: 50
+      y: -50
+      mirror: true
+      reload: 14
+      recoil: 8
+      rotateSpeed: 6
+      rotate: true
+      shake: 3
+      shootY: 20
+      controllable: false
+      autoTarget: true
+      shootSound: shootBig
+      bullet: {
+        type: BasicBulletType
+        damage: 450
+        collidesGround: false
+        speed: 12
+        lifetime: 45
+        frontColor: 00ff00
+        backColor: 00ff00
+        sprite: infinitus-chrono-bullet
+        width: 15
+        height: 30
+        trailWidth: 3.75
+        trailLength: 30
+        trailColor: 00ff00
+      }
+    }
+    {
+      name: ratte-aa
+      x: 15
+      y: -60
+      mirror: true
+      reload: 18
+      recoil: 8
+      rotateSpeed: 6
+      rotate: true
+      shake: 3
+      shootY: 20
+      controllable: false
+      autoTarget: true
+      shootSound: shootBig
+      bullet: {
+        type: BasicBulletType
+        damage: 450
+        collidesGround: false
+        speed: 12
+        lifetime: 45
+        frontColor: 00ff00
+        backColor: 00ff00
+        sprite: infinitus-chrono-bullet
+        width: 15
+        height: 30
+        trailWidth: 3.75
+        trailLength: 30
+        trailColor: 00ff00
+      }
+    }
+    {
+      name: ratte-main
+      layerOffset: 1.5
+      mirror: false
+      x: 0
+      y: -10
+      rotate: true
+      rotateSpeed: 0.6
+      shadow: 150
+      shootY: 40
+      shootSound: largeCannon
+      shake: 25
+      soundPitchMin: 1
+      reload: 165
+      recoilTime: 110
+      recoils: 2
+      shoot: {
+        type: ShootMulti
+        source: {
+          type: ShootAlternate
+          shots: 1
+          barrels: 2
+        }
+        dest: [
+          {
+            type: ShootBarrel
+            shots: 1
+            shotDelay: 30
+            barrels: [
+              16
+              0
+              0
+              -16
+              0
+              0
+            ]
+          }
+        ]
+      }
+      parts: [
+        {
+          y: 50
+          x: 16
+          moveY: -48
+          suffix: -barrel1
+          under: true
+          progress: recoil
+          recoilIndex: 0
+        }
+        {
+          y: -16
+          x: 16
+          moveY: -4
+          suffix: -barrel0
+          under: true
+          progress: recoil
+          recoilIndex: 0
+        }
+        {
+          y: 50
+          x: -16
+          moveY: -48
+          suffix: -barrel2
+          under: true
+          progress: recoil
+          recoilIndex: 1
+        }
+        {
+          y: -16
+          x: -16
+          moveY: -4
+          suffix: -barrel0
+          under: true
+          progress: recoil
+          recoilIndex: 1
+        }
+      ]
+      bullet: {
+        type: ArtilleryBulletType
+        collides: true
+        collidesTiles: true
+        damage: 4500
+        splashDamage: 2600
+        hitShake: 36
+        despawnShake: 36
+        splashDamageRadius: 60
+        lifetime: 210
+        speed: 7
+        collidesAir: false
+        width: 20
+        height: 30
+        shrinkX: -1
+        shrinkY: -2
+        frontColor: 00ff00
+        backColor: 00ff00
+        shrinkInterp: pow3In
+        trailLength: 18
+        trailWidth: 5
+        trailColor: 00ff00
+        shootEffect: [
+          {
+            length: 0
+            lifetime: 35
+            region: infinitus-shoot-spike
+            colorTo: 00ff00
+            sizeFrom: 90
+            sizeTo: 0
+          }
+          {
+            length: 0
+            offset: 35
+            lifetime: 35
+            region: infinitus-shoot-spike
+            colorTo: 00ff00
+            sizeFrom: 80
+            sizeTo: 0
+          }
+          {
+            length: 0
+            offset: -35
+            lifetime: 35
+            region: infinitus-shoot-spike
+            colorTo: 00ff00
+            sizeFrom: 80
+            sizeTo: 0
+          }
+          {
+            length: 0
+            cone: 0
+            lifetime: 45
+            region: infinitus-spike-tall-hq
+            colorTo: 00ff00
+            sizeFrom: 70
+            sizeTo: 0
+          }
+        ]
+        smokeEffect: [
+          {
+            particles: 20
+            length: 125
+            lifetime: 180
+            cone: 20
+            sizeFrom: 7
+            sizeTo: 0
+            colorFrom: 00ff00
+            colorTo: 656565
+            interp: pow5Out
+            sizeInterp: pow2In
+          }
+          {
+            particles: 20
+            lightOpacity: 0
+            length: 160
+            lifetime: 110
+            cone: 25
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: 999999
+            colorTo: 656565
+            interp: pow5Out
+            sizeInterp: pow3In
+          }
+        ]
+        fragBullets: 9
+        fragSpread: 40
+        fragRandomSpread: 0
+        fragBullet: {
+          type: ShrapnelBulletType
+          lifetime: 30
+          length: 30
+          width: 6
+          damage: 600
+          collidesAir: false
+          serrations: 8
+          serrationWidth: 3
+          toColor: 00ff00
+        }
+      }
+    }
+  ]
+}

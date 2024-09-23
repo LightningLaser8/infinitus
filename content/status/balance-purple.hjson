@@ -1,0 +1,7 @@
+speedMultiplier: 2
+damageMultiplier: 0.5
+opposites:[
+  sapped
+  sublimating
+  spore-slowed
+]

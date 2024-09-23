@@ -1,0 +1,22 @@
+{
+  type: UnitCargoLoader
+  health: 1600
+  size: 2
+  category: units
+  unitType: wave
+  buildTime: 225
+  consumes: {
+    liquid: {
+      liquid: arcanite
+      amount: 3
+    }
+  }
+  liquidCapacity: 675
+  polyColor: ffe18f
+  polySides: 5
+  polyStroke: 1
+  polyRadius: 6
+  requirements: [
+    sunstone/400
+  ]
+}

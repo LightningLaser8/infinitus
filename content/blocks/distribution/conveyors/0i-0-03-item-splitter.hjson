@@ -1,0 +1,7 @@
+type: Router
+health: 140
+requirements: [
+raw-infinitite/3
+]
+category: distribution
+research: 0i-0-01-item-transporter

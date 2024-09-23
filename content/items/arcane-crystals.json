@@ -1,0 +1,12 @@
+{
+    "name": "[#a36ad5]Arcane Crystals",
+    "description": "Purple crystals of magical origin.",
+    "explosiveness": 0.2,
+    "research": "solis-start",
+    "flammability": 0.2,
+    "radioactivity": 0.2,
+    "charge": 0.2,
+    "cost": 1,
+    "color": "a36ad5"
+    }
+    

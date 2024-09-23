@@ -1,0 +1,94 @@
+{
+  type: GenericCrafter
+  research: prototype-start
+  health: 500
+  size: 3
+  category: crafting
+  outputItem: shadow-steel/1
+  hasLiquids: false
+  itemCapacity: 50
+  hasItems: true
+  craftTime: 300
+  hasPower: true
+  ambientSound: smelter
+  requirements: [
+    raw-infinitite/100
+    iron/300
+  ]
+  consumes: {
+    power: 8
+    items: {
+      items: [
+        silicon/2
+        raw-infinitite/10
+        titanium/2
+      ]
+    }
+  }
+  craftEffect: {
+    type: multiEffect
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 3.5
+        strokeTo: 0
+        colorFrom: FF0000FF
+        colorTo: CC000055
+      }
+    ]
+  }
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawFlame
+        flameColor: FF0000FF
+      }
+    ]
+  }
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 12
+      sizeTo: 24
+      strokeFrom: 9
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+}

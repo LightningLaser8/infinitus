@@ -1,0 +1,278 @@
+{
+  type: flying
+  lowAltitude: true
+  faceTarget: true
+  speed: 1.5
+  itemCapacity: 500
+  accel: 0.3
+  flying: true
+  health: 20000
+  armor: 25
+  research: 0p-0-03-prototype-constructor
+  faceTarget: true
+  outlineColor: 000000
+  hitSize: 96
+  armor: 25
+  range: 640
+  maxRange: 640
+  engineOffset: 16
+  engineSize: 6
+  targetAir: true
+  weapons: [
+    {
+      name: deletion-beam
+      cooldownTime: 600
+      reload: 600
+      rotate: false
+      rotateSpeed: 4
+      recoil: 0
+      x: 0
+      y: 0
+      alternate: false
+      continuous: true
+      shootY: 15
+      shootSound: torch
+      bullet: {
+        type: ContinuousLaserBulletType,
+        colors: [
+          ff0000AA
+          ff5555FF
+          FFFFFF
+        ]
+        lifetime: 300
+        length: 320
+        width: 8
+        damage: 450
+        incendChance: 0
+        incendAmount: 0
+        makeFire: false
+        colors: [
+          ff0000AA
+          ff5555FF
+          FFFFFF
+        ]
+        length: 320
+        hitEffect: {
+          type: ParticleEffect,
+          line: true
+          particles: 1
+          cone: -360
+          strokeFrom: 2.5
+          strokeTo: 0
+          lenFrom: 8
+          lenTo: 0
+          colorFrom: ff0000,
+          colorTo: ff0000
+        }
+      }
+    }
+    {
+      name: deletion-railgun
+      x: 0
+      layerOffset: -1
+      mirror: false
+      shootY: 30
+      shoot: {
+        firstShotDelay: 20
+      }
+      chargeSound: energy-charge
+      reload: 360
+      recoil: 24
+      recoilTime: 300
+      shootSound: energy-shoot-2
+      shake: 12
+      bullet: {
+        type: RailBulletType
+        damage: 11000
+        length: 500
+        pierceDamageFactor: 0.9
+        recoil: 12
+        pointEffectSpace: 120
+        pointEffect: [
+          {
+            lightOpacity: 0.25
+            lightScl: 1
+            type: ParticleEffect
+            length: 0
+            baseLength: 30
+            randLength: false
+            lifetime: 110
+            particles: 1
+            cone: 0
+            interp: pow3In
+            sizeInterp: linear
+            region: infinitus-arrow-r
+            sizeFrom: 14
+            sizeTo: 7
+            colorFrom: ff0000
+            colorTo: ff000000
+          }
+          {
+            lightOpacity: 0.25
+            lightScl: 1
+            type: ParticleEffect
+            length: 0
+            baseLength: 38
+            randLength: false
+            lifetime: 110
+            particles: 1
+            cone: 0
+            interp: pow3In
+            sizeInterp: linear
+            region: infinitus-arrow-r
+            sizeFrom: 24
+            sizeTo: 10
+            colorFrom: ff0000
+            colorTo: ff000000
+          }
+          {
+            lightOpacity: 0.25
+            lightScl: 1
+            type: ParticleEffect
+            length: 0
+            lifetime: 110
+            particles: 1
+            cone: 0
+            interp: pow3In
+            sizeInterp: linear
+            region: infinitus-spike-wide-hq
+            sizeFrom: 40
+            sizeTo: 10
+            colorFrom: ff0000
+            colorTo: ff000000
+          }
+          {
+            lightOpacity: 0.4
+            lightScl: 0.65
+            type: ParticleEffect
+            length: 0
+            lifetime: 110
+            layer: 110.001
+            particles: 1
+            cone: 0
+            interp: pow3In
+            sizeInterp: linear
+            region: infinitus-spike-wide-hq
+            sizeFrom: 28
+            sizeTo: 6
+            colorTo: ffffff00
+          }
+        ]
+        smokeEffect: none
+        shootEffect: {
+          type: MultiEffect
+          lifetime: 140
+          effects: [
+            {
+              lightOpacity: 0.5
+              lightScl: 0.75
+              type: ParticleEffect
+              length: 0
+              lifetime: 140
+              particles: 1
+              cone: 0
+              region: infinitus-shoot-spike
+              sizeInterp: pow2In
+              sizeFrom: 60
+              sizeTo: 0
+              colorTo: ff0000
+            }
+            {
+              lightOpacity: 0.25
+              lightScl: 1
+              type: ParticleEffect
+              length: 0
+              offset: 30
+              lifetime: 110
+              particles: 1
+              cone: 0
+              region: infinitus-shoot-spike
+              sizeFrom: 45
+              sizeTo: 25
+              colorFrom: ff0000
+              colorTo: ff000000
+            }
+            {
+              lightOpacity: 0.25
+              lightScl: 1
+              type: ParticleEffect
+              length: 0
+              offset: -30
+              lifetime: 110
+              particles: 1
+              cone: 0
+              region: infinitus-shoot-spike
+              sizeFrom: 45
+              sizeTo: 25
+              colorFrom: ff0000
+              colorTo: ff000000
+            }
+            {
+              lightOpacity: 0.25
+              lightScl: 1
+              type: ParticleEffect
+              length: 0
+              lifetime: 50
+              particles: 1
+              cone: 0
+              region: infinitus-spike-tall-hq
+              sizeFrom: 70
+              sizeTo: 0
+              colorFrom: ff0000
+              colorTo: ff0000
+            }
+          ]
+        }
+      }
+    }
+    {
+      name: missile-burst
+      reload: 240
+      rotate: false
+      baseRotation: 180
+      recoil: 5
+      shootCone: 361
+      recoilTime: 25
+      x: 0
+      y: -45
+      shootY: 0
+      mirror: false
+      shoot: {
+        shots: 15
+        shotDelay: 5
+        firstShotDelay: 9
+      }
+      shootSound: missileShoot
+      shake: 3
+      heatColor: e65555
+      cooldownTime: 55
+      bullet: {
+        inaccuracy: 45
+        type: BulletType
+        spawnUnit: infinitus-missile
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: UnitSpawnAbility,
+      spawnX: 0
+      spawnY: -35
+      unit: 0p-0-02-meep-proto,
+      spawnTime: 600
+    }
+    {
+      type: UnitSpawnAbility,
+      spawnX: 0
+      spawnY: -35
+      unit: 0p-0-02-meep-proto,
+      spawnTime: 600
+    }
+  ]
+  immunities: [
+    disassembly
+    frosted-1
+    frosted-2
+    frosted-3
+  ]
+}

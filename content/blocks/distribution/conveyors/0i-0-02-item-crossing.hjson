@@ -1,0 +1,9 @@
+type: Junction
+health: 140
+requirements: [
+raw-infinitite/2
+]
+category: distribution
+speed: 26
+capacity: 8
+research: 0i-0-01-item-transporter

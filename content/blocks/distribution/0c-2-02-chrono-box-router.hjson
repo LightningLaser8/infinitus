@@ -1,0 +1,12 @@
+{
+  type: PayloadRouter
+  size: 1
+  payloadLimit: 1
+  moveTime: 15
+  research: 0c-2-01-chrono-box-conveyor
+  interp: linear
+  requirements: [
+    time-crystal/18
+    spatial-shard/3
+  ]
+}

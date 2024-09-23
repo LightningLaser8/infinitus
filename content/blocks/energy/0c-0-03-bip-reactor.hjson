@@ -1,0 +1,54 @@
+{
+  type: ImpactReactor
+  name: "[green]Chronocollider"
+  description:
+    '''
+    Uses [green]Temporum[] to generate power
+    [red]DO NOT[] let it be destroyed, the reaction is unstable and will cause a large explosion
+    '''
+  research: chrono-start
+  size: 4
+  idleSound: EnergyLoop2
+  idleSoundVolume: 0.5
+  health: 3000
+  category: power
+  explosionRadius: 60
+  explosionDamage: 2400
+  explosionPuddleLiquid: bip-lava
+  explosionPuddleRadius: 60
+  explosionPuddles: 40
+  plasma1: 83ed4e
+  plasma2: ccffcc
+  powerProduction: 165
+  itemDuration: 300
+  requirements: [
+    {
+      item: time-crystal
+      amount: 75
+    }
+    {
+      item: infinitite
+      amount: 250
+    }
+    {
+      item: temporal-shard
+      amount: 450
+    }
+    {
+      item: raw-infinitite
+      amount: 450
+    }
+  ]
+  consumes: {
+    power: 15
+    items: {
+      items: [
+        time-crystal/1
+      ]
+    }
+    liquid: {
+      liquid: cryofluid
+      amount: 0.1
+    }
+  }
+}

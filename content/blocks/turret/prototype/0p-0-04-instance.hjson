@@ -1,0 +1,575 @@
+{
+  type: ItemTurret
+  size: 4
+  reload: 280
+  recoil: 10
+  outlineColor: 000000
+  shake: 6
+  shootSound: railgun
+  targetGround: true
+  targetAir: true
+  rotateSpeed: 2.5
+  range: 530
+  health: 1300
+  cooldownTime: 120
+  recoilTime: 30
+  coolantMultiplier: 0.3
+  maxAmmo: 40
+  ammoPerShot: 8
+  ammoTypes: {
+    shadow-steel: {
+      type: RailBulletType
+      pierceArmor: true
+      pierce: true
+      pierceBuilding: true
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sides: 0
+            lifetime: 30
+            sizeFrom: 45
+            sizeTo: 45
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: ff0000
+            colorTo: ff0000
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 50
+            colorFrom: ff0000
+            colorTo: ff0000
+            region: infinitus-rail-hit
+          }
+        ]
+      }
+      length: 530
+      pierceEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 40
+            colorFrom: ff0000ff
+            colorTo: ff0000ff
+            region: infinitus-pierce-effect
+          }
+          {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 50
+            sizeTo: 50
+            strokeFrom: 3
+            strokeTo: 0
+            lifetime: 30
+            colorFrom: ff0000ff
+            colorTo: ff0000ff
+          }
+        ]
+      }
+      pointEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        lifetime: 30
+        sizeFrom: 40
+        colorFrom: ff0000ff
+        colorTo: ff0000ff
+        region: infinitus-shadow-rail-part
+      }
+      hitEffect: {
+        type: ExplosionEffect
+        waveRad: 50
+        smokeRad: 40
+        smokeSize: 8
+        waveLife: 15
+        waveColor: ff0000ff
+        sparks: 0
+      }
+      hitShake: 6
+      collides: true
+      smokeEffect: shootBig2
+      damage: 1600
+      lightning: 15
+      lightningCone: 60
+      lightningLength: 10
+      lightningLengthRand: 10
+      lightningColor: ff0000
+      lightningDamage: 50
+      ammoMultiplier: 1
+      pierceDamageFactor: 0
+    }
+    dark-plates: {
+      type: RailBulletType
+      pierceArmor: true
+      pierce: true
+      pierceBuilding: true
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sides: 0
+            lifetime: 30
+            sizeFrom: 45
+            sizeTo: 45
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: ff0000
+            colorTo: ff0000
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 50
+            colorFrom: ff0000
+            colorTo: ff0000
+            region: infinitus-rail-hit
+          }
+        ]
+      }
+      length: 530
+      pierceEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 40
+            colorFrom: ff0000ff
+            colorTo: ff0000ff
+            region: infinitus-pierce-effect
+          }
+          {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 50
+            sizeTo: 50
+            strokeFrom: 3
+            strokeTo: 0
+            lifetime: 30
+            colorFrom: ff0000ff
+            colorTo: ff0000ff
+          }
+        ]
+      }
+      pointEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        lifetime: 30
+        sizeFrom: 40
+        colorFrom: ff0000ff
+        colorTo: ff0000ff
+        region: infinitus-shadow-rail-part
+      }
+      hitEffect: {
+        type: ExplosionEffect
+        waveRad: 50
+        smokeRad: 40
+        smokeSize: 8
+        waveLife: 15
+        waveColor: ff0000ff
+        sparks: 0
+      }
+      hitShake: 9
+      collides: true
+      smokeEffect: shootBig2
+      damage: 2400
+      lightning: 15
+      lightningCone: 60
+      lightningLength: 10
+      lightningLengthRand: 10
+      lightningColor: ff0000
+      lightningDamage: 50
+      ammoMultiplier: 1
+      pierceDamageFactor: 0
+    }
+    nanite-alloy: {
+      type: RailBulletType
+      pierceArmor: true
+      pierce: true
+      pierceBuilding: true
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sides: 0
+            lifetime: 30
+            sizeFrom: 45
+            sizeTo: 45
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: fffa9f
+            colorTo: fffa9f
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 50
+            colorFrom: fffa9f
+            colorTo: fffa9f
+            region: infinitus-rail-hit
+          }
+        ]
+      }
+      length: 530
+      pierceEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 40
+            colorFrom: fffa9fff
+            colorTo: fffa9fff
+            region: infinitus-pierce-effect
+          }
+          {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 50
+            sizeTo: 50
+            strokeFrom: 3
+            strokeTo: 0
+            lifetime: 30
+            colorFrom: fffa9fff
+            colorTo: fffa9fff
+          }
+        ]
+      }
+      pointEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        lifetime: 30
+        sizeFrom: 40
+        colorFrom: fffa9fff
+        colorTo: fffa9fff
+        region: infinitus-shadow-rail-part
+      }
+      hitEffect: {
+        type: ExplosionEffect
+        waveRad: 50
+        smokeRad: 40
+        smokeSize: 8
+        waveLife: 15
+        waveColor: fffa9fff
+        sparks: 0
+      }
+      hitShake: 9
+      collides: true
+      smokeEffect: shootBig2
+      damage: 3000
+      lightning: 20
+      lightningCone: 60
+      lightningLength: 13
+      lightningLengthRand: 12
+      lightningColor: fffa9f
+      lightningDamage: 60
+      ammoMultiplier: 1
+      pierceDamageFactor: 0
+      status: disassemblyL2
+    }
+    electronium: {
+      type: RailBulletType
+      pierceArmor: true
+      pierce: true
+      pierceBuilding: true
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sides: 0
+            lifetime: 30
+            sizeFrom: 45
+            sizeTo: 45
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: 8cdeff
+            colorTo: 8cdeff
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 50
+            colorFrom: 8cdeff
+            colorTo: 8cdeff
+            region: infinitus-rail-hit
+          }
+        ]
+      }
+      length: 530
+      pierceEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 40
+            colorFrom: 8cdeffff
+            colorTo: 8cdeffff
+            region: infinitus-pierce-effect
+          }
+          {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 50
+            sizeTo: 50
+            strokeFrom: 3
+            strokeTo: 0
+            lifetime: 30
+            colorFrom: 8cdeffff
+            colorTo: 8cdeffff
+          }
+        ]
+      }
+      pointEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        lifetime: 30
+        sizeFrom: 40
+        colorFrom: 8cdeffff
+        colorTo: 8cdeffff
+        region: infinitus-shadow-rail-part
+      }
+      hitEffect: {
+        type: ExplosionEffect
+        waveRad: 50
+        smokeRad: 40
+        smokeSize: 8
+        waveLife: 15
+        waveColor: 8cdeffff
+        sparks: 0
+      }
+      hitShake: 6
+      collides: true
+      smokeEffect: shootBig2
+      damage: 1000
+      ammoMultiplier: 1
+      pierceDamageFactor: 0
+      lightning: 30
+      lightningCone: 60
+      lightningLength: 15
+      lightningLengthRand: 15
+      lightningColor: 8cdeff
+      lightningDamage: 100
+    }
+    positronium: {
+      type: RailBulletType
+      pierceArmor: true
+      pierce: true
+      pierceBuilding: true
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sides: 0
+            lifetime: 30
+            sizeFrom: 45
+            sizeTo: 45
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: ff7777
+            colorTo: ff5555
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 50
+            colorFrom: ff7777
+            colorTo: ff5555
+            region: infinitus-rail-hit
+          }
+        ]
+      }
+      length: 530
+      pierceEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 40
+            colorFrom: ff7777
+            colorTo: ff5555
+            region: infinitus-pierce-effect
+          }
+          {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 50
+            sizeTo: 50
+            strokeFrom: 3
+            strokeTo: 0
+            lifetime: 30
+            colorFrom: ff7777
+            colorTo: ff5555
+          }
+        ]
+      }
+      pointEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        lifetime: 30
+        sizeFrom: 40
+        colorFrom: ff7777
+        colorTo: ff5555
+        region: infinitus-shadow-rail-part
+      }
+      hitEffect: {
+        type: ExplosionEffect
+        waveRad: 50
+        smokeRad: 40
+        smokeSize: 8
+        waveLife: 15
+        waveColor: ff7777
+        sparks: 0
+      }
+      fragBullets: 1
+      fragBullet: {
+        type: BulletType
+        lifetime: 0
+        damage: 0
+        hittable: false
+        absorbable: false
+        splashDamage: 2000
+        splashDamageRadius: 50
+      }
+      hitShake: 6
+      collides: true
+      smokeEffect: shootBig2
+      damage: 1000
+      ammoMultiplier: 1
+      pierceDamageFactor: 0
+      lightning: 30
+      lightningCone: 60
+      lightningLength: 15
+      lightningLengthRand: 15
+      lightningColor: ff7777
+      lightningDamage: 100
+    }
+  }
+  consumes: {
+    power: 12
+  }
+  requirements: [
+    shadow-steel/1300
+    dark-plates/1000
+    battery/500
+    ai-combat/1
+  ]
+  category: turret
+  research: {
+    parent: 0p-0-02-attraction
+    objectives: [
+      {
+        type: OnSector
+        preset: island
+      }
+    ]
+  }
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 16
+      sizeTo: 32
+      strokeFrom: 12
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

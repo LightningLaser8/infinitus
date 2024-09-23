@@ -1,0 +1,8 @@
+{
+  name: "[scarlet]Proton Lava"
+  description: "[yellow][DESCRIPTION GOES HERE]"
+  temperature: 5
+  viscosity: 0.7
+  capPuddles: false
+  color: FF0000
+}

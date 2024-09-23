@@ -1,0 +1,94 @@
+{
+  type: Pump
+  size: 5
+  hasPower: true
+  consumes: {
+    power: 3.1
+  }
+  pumpAmount: 0.2
+  squareSprite: false
+  customShadow: true
+  liquidCapacity: 400
+  requirements: [
+    shadow-steel/150
+    electronium/200
+    tinted-glass/100
+    dark-plates/100
+  ]
+  category: liquid
+  research: 0p-1-01-shadow-pump
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 40
+      lifetime: 20
+      sides: 4
+      sizeFrom: 20
+      sizeTo: 40
+      strokeFrom: 15
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      baseLength: 6
+      length: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      baseLength: 6
+      length: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "[#8cdeff]Electronium",
+    "description": "A material made entirely of electrons. It's a wonder that it doesn't fly apart.",
+    "details": "Stay positive! Unlike this thing, which is all negative.",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 5,
+    "cost": 5,
+    "hardness": 3,
+    "color": "8cdeff"
+    }
+    

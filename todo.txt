@@ -1,0 +1,12 @@
+To-Do List (In order)
+
+UNITS:
+Prototype Support Air:
+  [ single repair drone,
+    radial shield drone,
+    ... ]
+
+Prototype Assault Ground:
+  [ Impact,
+    (self-yeeter, separates into 2 units, top and bottom: top is flying and attacks as normal, the bottom is autonomous and has 4 radial guns),
+    ... ]

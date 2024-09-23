@@ -1,0 +1,157 @@
+{
+  type: flying
+  armor: 12
+  health: 2000
+  speed: 6
+  flying: true
+  drag: 0.01
+  accel: 0.03
+  engineOffset: 6
+  hitSize: 7
+  engineSize: 6
+  canHeal: true
+  circleTarget: true
+  rotateShooting: false
+  omniMovement: true
+  engineColor: 0000ff
+  lowAltitude: true
+  weapons: [
+    {
+      x: 0
+      mirror: false
+      rotate: false
+      shootCone: 360
+      baseRotation: 135
+      reload: 45
+      shootSound: missile
+      bullet: {
+        damage: 5
+        speed: 4
+        lifetime: 45
+        splashDamage: 20
+        splashDamageRadius: 24
+        scaledSplashDamage: true
+        homingPower: 0.05
+        homingRange: 120
+        homingDelay: 20
+        hitSound: explosion
+        sprite: missile-large
+        width: 10
+        height: 14
+        frontColor: 4646ff
+        backColor: 0000ff
+        trailColor: 00ffff
+        trailWidth: 3
+        trailLength: 7
+        hitEffect: {
+          type: ExplosionEffect
+          lifetime: 35
+          waveRad: 24
+          sparkRad: 30
+          smokeRad: 19
+          waveLife: 5
+          waveStroke: 3
+          waveColor: 0000ff
+          sparks: 6
+          sparkLen: 4
+          sparkStroke: 2
+          sparkColor: 0000ff
+          smokes: 24
+          smokeColor: 787878
+          smokeSize: 3
+        }
+        shootEffect: shootBig
+        smokeEffect: shootBigSmoke
+      }
+    }
+    {
+      x: 0
+      mirror: false
+      rotate: false
+      shootCone: 360
+      baseRotation: 225
+      reload: 45
+      shootSound: missile
+      bullet: {
+        damage: 5
+        speed: 4
+        lifetime: 45
+        splashDamage: 20
+        splashDamageRadius: 24
+        scaledSplashDamage: true
+        homingPower: 0.05
+        homingRange: 120
+        homingDelay: 20
+        hitSound: explosion
+        sprite: missile-large
+        width: 10
+        height: 14
+        frontColor: 4646ff
+        backColor: 0000ff
+        trailColor: 00ffff
+        trailWidth: 3
+        trailLength: 7
+        hitEffect: {
+          type: ExplosionEffect
+          lifetime: 35
+          waveRad: 24
+          sparkRad: 30
+          smokeRad: 19
+          waveLife: 5
+          waveStroke: 3
+          waveColor: 0000ff
+          sparks: 6
+          sparkLen: 4
+          sparkStroke: 2
+          sparkColor: 0000ff
+          smokes: 24
+          smokeColor: 787878
+          smokeSize: 3
+        }
+        shootEffect: shootBig
+        smokeEffect: shootBigSmoke
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: MoveLightningAbility
+      offset: -16
+      width: 12
+      minSpeed: 11
+      maxSpeed: 11
+      chance: 1
+      length: 0
+      damage: 0
+      shootSound: none
+      shootEffect: {
+        type: ParticleEffect
+        cone: 0
+        length: -30
+        lifetime: 45
+        line: true
+        lenFrom: 6
+        lenTo: 3
+        strokeFrom: 4
+        strokeTo: 0
+        colorTo: 0000ff
+      }
+      bullet: {
+        type: RailBulletType
+        length: 4
+        damage: 36
+        pierceDamageFactor: 0
+      }
+    }
+    {
+      type: StatusFieldAbility
+      duration: 1800
+      reload: 1800
+      range: 1
+      effect: infinitus-hyperdrive
+    }
+  ]
+  research: {
+    parent: 0c-0-02-meep-reconstructor
+  }
+}

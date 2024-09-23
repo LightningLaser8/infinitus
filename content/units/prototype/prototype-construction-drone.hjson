@@ -1,0 +1,18 @@
+{
+  type: tether
+  flying: true
+  hoverable: false
+  defaultController: AssemblerAI
+  playerControllable: false
+  outlineColor: 000000
+  speed: 6
+  drag: 0.1
+  accel: 0.3
+  buildSpeed: 6
+  buildBeamOffset: 8
+  engineOffset: 9
+  hidden: true
+  immunities: [
+    disassembly
+  ]
+}

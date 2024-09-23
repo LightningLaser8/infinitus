@@ -1,0 +1,13 @@
+{
+  type: Wall
+  health: 3000
+  size: 2
+  absorbLasers: true
+  chanceDeflect: 1
+  glowColor: 7382f0
+  requirements: [
+    infinitite/24
+  ]
+  category: defense
+  research: infinite-start
+}

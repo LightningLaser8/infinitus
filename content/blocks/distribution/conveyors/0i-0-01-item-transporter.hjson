@@ -1,0 +1,11 @@
+type: Conveyor
+health: 140
+speed: 0.071
+displayedSpeed: 10
+requirements: [
+raw-infinitite/1
+]
+category: distribution
+research: infinite-start
+junctionReplacement: 0i-0-02-item-crossing
+bridgeReplacement: 0i-0-04-item-overpass

@@ -1,0 +1,187 @@
+{
+  type: ContinuousTurret
+  health: 14500
+  size: 6
+  range: 640
+  minWarmup: 0.9999
+  research: 0i-0-03-pressure
+  squareSprite: false
+  haloProgress: warmup
+  outlineColor: 0F0F0F
+  cooldownTime: 180
+  hasPower: true
+  loopSound: torch
+  shake: 10
+  shootSound: shockBlast
+  recoil: 0
+  shootY: 0
+  shootCone: 360
+  aimChangeSpeed: 3.2
+  rotateSpeed: 1.2
+  consumes: {
+    power: 35
+  }
+  shootEffect: {
+    type: multiEffect
+    effects: [
+      {
+        type: ParticleEffect
+        particles: 12
+        length: 50
+        lifetime: 55
+        line: true
+        cone: 40
+        lenFrom: 8
+        lenTo: 2
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeTo: 60
+        colorFrom: 40FFFF
+        colorTo: 40FFFF
+      }
+      {
+        type: ParticleEffect
+        particles: 21
+        length: 50
+        lifetime: 35
+        line: true
+        cone: 70
+        lenFrom: 8
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeFrom: 0
+        sizeTo: 60
+        colorFrom: 40FFFF
+        colorTo: 40FFFF
+      }
+      {
+        type: ParticleEffect
+        particles: 24
+        length: 70
+        lifetime: 25
+        line: true
+        cone: 40
+        lenFrom: 10
+        lenTo: 10
+        strokeFrom: 3
+        strokeTo: 0.5
+        sizeTo: 60
+        colorFrom: 40FFFF
+        colorTo: 40FFFF
+      }
+    ]
+  }
+  shootType: {
+    type: PointLaserBulletType
+    color: FFFF40
+    status: electrified
+    sprite: infinitus-color-laser
+    damage: 300
+    beamEffectSize: 3
+    oscScl: 4
+    length: 640
+    drawSize: 350
+    statusDuration: 540
+    hitEffect: {
+      type: ParticleEffect
+      line: true
+      particles: 7
+      cone: -360
+      strokeFrom: 2.5
+      strokeTo: 0
+      lenFrom: 8
+      lenTo: 0
+      colorFrom: FFFF40
+      colorTo: FFFF40
+    }
+  }
+  requirements: [
+    silicon/1850
+    surge-alloy/850
+    infinitite/100
+    titanium/1500
+  ]
+  category: turret
+  drawer: {
+    type: DrawTurret
+    parts: [
+      {
+        type: RegionPart
+        suffix: -main
+        heatProgress: warmup
+        heatColor: FFFFFFFF
+        x: 0
+        y: 0
+      }
+      {
+        type: RegionPart
+        mirror: true
+        delay: 100
+        suffix: -edge1
+        heatProgress: warmup
+        heatColor: FFFFFFFF
+        cooldownTime: 180
+        moveX: 1
+        moveY: 5
+        moveRot: -20
+        x: 0
+        y: 0
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.999
+        }
+      }
+      {
+        type: RegionPart
+        mirror: true
+        suffix: -edge2
+        heatProgress: warmup
+        heatColor: FFFFFFFF
+        cooldownTime: 180
+        moveX: 5
+        moveY: 5.5
+        moveRot: -30
+        x: 0
+        y: 0
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.99
+        }
+      }
+      {
+        type: RegionPart
+        mirror: true
+        suffix: -edge3
+        heatProgress: warmup
+        heatColor: FFFFFFFF
+        cooldownTime: 180
+        moveRot: -35
+        moveX: 10
+        moveY: 6
+        x: 0
+        y: 0
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.9
+        }
+      }
+      {
+        type: ShapePart
+        progress: warmup
+        rotateSpeed: 1
+        color: 40FFFF
+        sides: 5
+        mirror: true
+        hollow: true
+        stroke: 0
+        strokeTo: 1
+        radius: 5.5
+        y: 0
+      }
+    ]
+  }
+}

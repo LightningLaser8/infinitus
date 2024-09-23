@@ -1,0 +1,225 @@
+{
+  type: payload
+  lowAltitude: true
+  payloadCapacity: 2048
+  speed: 1.5
+  itemCapacity: 60
+  mineTier: 6
+  faceTarget: false
+  mineSpeed: 6
+  accel: 0.5
+  flying: true
+  research: 0c-0-04-doom-reconstructor
+  buildSpeed: 3
+  buildPower: 3
+  health: 9000
+  hitSize: 76
+  range: 180
+  maxRange: 180
+  engineOffset: 24
+  engineSize: 9
+  outlineColor: 000000
+  targetAir: true
+  weapons: [
+    {
+      name: death-laser
+      shootSound: lasershoot
+      reload: 7.5
+      recoil: 1
+      mirror: true
+      alternate: true
+      x: 26
+      y: 10
+      rotate: true
+      bullet: {
+        type: BasicBulletType
+        sprite: infinitus-chrono-bullet
+        status: time-slow-t2
+        statusDuration: 150
+        lifetime: 60
+        backColor: 62ae7fFF
+        frontColor: 84f491FF
+        damage: 22
+        pierce: true
+        pierceCap: 3
+        pierceBuilding: false
+        speed: 5
+        width: 1.5
+        height: 2.5
+        trailChance: 1
+        trailRotation: true
+        trailEffect: {
+          type: ParticleEffect
+          particles: 1
+          length: 0
+          lifetime: 10
+          sizeFrom: 3
+          colorFrom: 84f491FF
+          colorTo: 62ae7fAA
+        }
+        homingRange: 300
+        homingPower: 0.3
+      }
+    }
+    {
+      name: death-laser
+      shootSound: lasershoot
+      reload: 5
+      recoil: 1
+      mirror: true
+      alternate: true
+      x: 40
+      y: -6
+      rotate: true
+      bullet: {
+        type: BasicBulletType
+        sprite: infinitus-chrono-bullet
+        status: time-slow-t2
+        statusDuration: 150
+        lifetime: 60
+        backColor: 62ae7fFF
+        frontColor: 84f491FF
+        damage: 22
+        pierce: true
+        pierceCap: 3
+        pierceBuilding: false
+        speed: 5
+        width: 3
+        height: 5
+        trailChance: 1
+        trailRotation: true
+        trailEffect: {
+          type: ParticleEffect
+          particles: 1
+          length: 0
+          lifetime: 10
+          sizeFrom: 3
+          colorFrom: 84f491FF
+          colorTo: 62ae7fAA
+        }
+        homingRange: 300
+        homingPower: 0.3
+      }
+    }
+    {
+      name: death-cannon
+      shootSound: laser
+      reload: 37.5
+      recoil: 5
+      mirror: true
+      alternate: true
+      x: 20
+      y: -14
+      rotate: true
+      bullet: {
+        type: basicBulletType
+        sprite: infinitus-chrono-bullet
+        status: time-slow-t3
+        statusDuration: 150
+        lifetime: 60
+        backColor: 62ae7fFF
+        frontColor: 84f491FF
+        damage: 40
+        buildingDamageMultiplier: 0.5
+        splashDamage: 120
+        splashDamageRadius: 40
+        speed: 5
+        width: 3
+        height: 5
+        trailChance: 1
+        trailRotation: true
+        trailEffect: {
+          type: ParticleEffect
+          particles: 1
+          length: 0
+          lifetime: 10
+          sizeFrom: 6
+          colorFrom: 84f491FF
+          colorTo: 62ae7fAA
+        }
+      }
+    }
+    {
+      name: death-cannon
+      shootSound: laser
+      reload: 35
+      recoil: 5
+      mirror: true
+      alternate: true
+      x: 20
+      y: 0
+      rotate: true
+      bullet: {
+        type: basicBulletType
+        sprite: infinitus-chrono-bullet
+        status: time-slow-t3
+        statusDuration: 150
+        lifetime: 60
+        backColor: 62ae7fFF
+        frontColor: 84f491FF
+        damage: 35
+        splashDamage: 100
+        splashDamageRadius: 40
+        speed: 5
+        width: 3
+        buildingDamageMultiplier: 0.5
+        height: 5
+        trailChance: 1
+        trailRotation: true
+        trailEffect: {
+          type: ParticleEffect
+          particles: 1
+          length: 0
+          lifetime: 10
+          sizeFrom: 6
+          colorFrom: 84f491FF
+          colorTo: 62ae7fAA
+        }
+      }
+    }
+    {
+      name: death-death
+      shootSound: laserblast
+      reload: 200
+      x: 0
+      y: -8
+      mirror: false
+      continuous: true
+      alternate: false
+      shake: 4
+      recoil: 4
+      rotate: true
+      bullet: {
+        type: ContinuousLaserBulletType
+        shootEffect: hitMeltdown
+        damage: 100
+        status: time-stop
+        buildingDamageMultiplier: 0.25
+        statusDuration: 300
+        width: 15
+        lifetime: 100
+        colors: [
+          62ae7fAA
+          84f491FF
+          FFFFFF
+        ]
+        length: 400
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: StatusFieldAbility
+      duration: 60
+      reload: 60
+      range: 300
+      effect: infinitus-time-speed
+    }
+  ]
+  immunities: [
+    time-slow-t1
+    time-slow-t2
+    time-slow-t3
+    time-stop
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  name: Spatial Link
+  description: A block that acts as a forward base, teleporting all inputted items to the core.
+  health: 1200
+  size: 3
+  buildLimit: 1
+  solid: true
+  update: true
+  itemCapacity: 50
+  hasItems: true
+  requirements: [
+    time-crystal/300
+    titanium/1250
+    spatial-shard/200
+  ]
+  category: effect
+  research: 0c-0-01-tiny-core
+}

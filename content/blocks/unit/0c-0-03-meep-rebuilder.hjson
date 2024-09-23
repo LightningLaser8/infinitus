@@ -1,0 +1,32 @@
+{
+  name: "[lime]Temporal [green]Rebuilder"
+  type: Reconstructor
+  size: 5
+  research: 0c-0-02-meep-reconstructor
+  category: units
+  constructTime: 3600
+  consumes: {
+    power: 6
+    items: [
+      time-crystal/75
+      silicon/100
+      temporal-shard/50
+    ]
+  }
+  upgrades: [
+    [
+      0c-0-02-mip-t2
+      0c-0-03-mip-t3
+    ]
+    [
+      0c-5-02-charge
+      0c-5-03-shockwave
+    ]
+  ]
+  requirements: [
+    silicon/600
+    plastanium/200
+    titanium/350
+    infinitite/125
+  ]
+}

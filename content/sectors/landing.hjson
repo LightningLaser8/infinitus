@@ -1,0 +1,10 @@
+{
+  localizedName: Landing
+  captureWave: 35
+  difficulty: 3
+  sector: 0
+  planet: infernos
+  research: {
+    parent: infinite-start
+  }
+}

@@ -1,0 +1,105 @@
+{
+  type: flying
+  details:
+  '''
+  "Larger units. Guards, if you will.
+  These were a last resort.
+  Against anything that found us.
+  We thought we were safe with them around.
+  Everyone did.
+  They were always there, a comforting presence, and an 
+  inspiring flash of light in the darkness of the cavern.
+  Nothing could have prepared us for what came.
+  
+  We thought they were unstoppable.
+  We... We..."
+  '''
+  lowAltitude: true
+  speed: 4
+  itemCapacity: 10
+  faceTarget: true
+  accel: 0.5
+  flying: true
+  health: 150
+  research: {
+    parent: 0p-0-02-shadow-reconstructor
+    objectives: [
+      0p-4-01-mip-nanite
+    ]
+  }
+  hitSize: 8
+  outlines: false
+  range: 180
+  drawCell: false
+  maxRange: 180
+  engineOffset: 3.5
+  engineSize: 1.6
+  targetAir: true
+  parts: [
+    {
+      type: RegionPart
+      layer: 90.02
+      outline: false
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      blending: additive
+      layer: 91
+      color: fffa9f
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      layer: 140
+      color: fffa9f25
+      blending: additive
+    }
+  ]
+  weapons: [
+    {
+      name: nanite-mip-laser
+      shootSound: laser
+      reload: 120
+      x: 0
+      y: 0
+      rotate: false
+      mirror: false
+      alternate: false
+      continuous: true
+      bullet: {
+        type: LaserBulletType
+        lifetime: 20
+        colors: [
+          fffa9fAA
+          fff658FF
+          FFFFFF
+        ]
+        damage: 100
+        sideAngle: 30
+        sideWidth: 1
+        sideLength: 15
+        shootEffect: hitMeltdown
+        width: 20
+        length: 256
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: LiquidExplodeAbility
+      liquid: nanite
+      amount: 200
+    }
+    {
+      type: RegenAbility
+      amount: 2
+    }
+  ]
+  immunities: [
+    disassembly
+    disassemblyL2
+  ]
+}

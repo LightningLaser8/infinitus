@@ -1,0 +1,12 @@
+{
+    "name": "[#ffffff]Quartz",
+    "description": "",
+    "explosiveness": 0,
+    "research": "quartz-sand",
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0.1,
+    "cost": 1,
+    "color": "ffffff"
+    }
+    

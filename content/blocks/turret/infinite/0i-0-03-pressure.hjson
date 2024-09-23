@@ -1,0 +1,96 @@
+{
+  type: ItemTurret
+  size: 3
+  health: 1200
+  range: 160
+  reload: 80
+  recoil: 0.5
+  shoot: {
+    type: ShootSpread
+    shots: 40
+    spread: 0.5
+  }
+  inaccuracy: 25
+  shootSound: fire
+  ammoUseEffect: none
+  ammoTypes: {
+    raw-infinitite: {
+      type: BulletType
+      ammoMultiplier: 1
+      damage: 10
+      speed: 8
+      inaccuracy: 20
+      pierce: true
+      pierceBuilding: true
+      lifetime: 20
+      hittable: false
+      knockback: 12
+      collidesAir: true
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            length: 180
+            lifetime: 110
+            cone: 20
+            particles: 1
+            interp: pow2Out
+            sizeInterp: linear
+            region: particle
+            sizeFrom: 4
+            sizeTo: 0
+            colorFrom: 005555
+            colorTo: 005555
+          }
+          {
+            length: 180
+            lifetime: 110
+            cone: 20
+            particles: 2
+            interp: pow3Out
+            sizeInterp: linear
+            region: particle
+            sizeFrom: 16
+            sizeTo: 0
+            colorFrom: 005555
+            colorTo: 005555
+          }
+          {
+            length: 200
+            lifetime: 110
+            cone: 15
+            particles: 3
+            interp: pow3Out
+            sizeInterp: linear
+            region: particle
+            sizeFrom: 16
+            sizeTo: 0
+            colorFrom: 00ffff
+            colorTo: 00ffff
+          }
+        ]
+      }
+      smokeEffect: {
+        length: 160
+        lifetime: 110
+        layer: 55
+        cone: 25
+        particles: 1
+        interp: pow2Out
+        sizeInterp: linear
+        region: particle
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: 00a7a7
+        colorTo: 00a7a7
+      }
+    }
+  }
+  category: turret
+  research: 0i-0-01-beam
+  requirements: [
+    raw-infinitite/125
+  ]
+}

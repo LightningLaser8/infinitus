@@ -1,0 +1,21 @@
+{
+  type: LaunchPad
+  health: 740
+  name: "[cyan]I[][blue]T[][gold]I[] Point-to-Point Planetary Resource Distributor"
+  description: Uses advanced technology to launch items to different sectors.
+  launchTime: 300
+  lightColor: fdd37f
+  itemCapacity: 50
+  size: 2
+  consumes: {
+    power: 3
+  }
+  category: effect
+  research: infinite-start
+  requirements: [
+    titanium/400
+    raw-infinitite/200
+    silicon/300
+  ]
+  buildVisibility: campaignOnly
+}

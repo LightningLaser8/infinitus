@@ -1,0 +1,90 @@
+{
+  type: GenericCrafter
+  squareSprite: false
+  itemCapacity: 25
+  craftTime: 240
+  squareSprite: false
+  research: 0p-0-03-shade-infuser
+  drawer: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      color: ff0000
+      suffix: -glow
+    }
+    {
+      type: DrawFlame
+      flameRadius: 0
+      flameRadiusIn: 0
+      flameRadiusScl: 100
+      flameRadiusMag: 0
+      flameRadiusInMag: 0
+      color: 00000000
+    }
+  ]
+  size: 3
+  hasPower: true
+  hasItems: true
+  craftEffect: none
+  consumes: {
+    power: 1.25
+    items: {
+      items: [
+        shadow-steel/1
+        quartz/2
+      ]
+    }
+  }
+  outputItem: tinted-glass/2
+  ambientSound: hum
+  ambientSoundVolume: 0.7
+  category: crafting
+  research: 0p-0-03-shade-infuser
+  requirements: [
+    iron/50
+    shadow-steel/30
+    electronium/45
+    quartz/60
+  ]
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 12
+      sizeTo: 24
+      strokeFrom: 9
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+  ]
+}

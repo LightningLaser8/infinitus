@@ -1,0 +1,199 @@
+{
+  type: tether,
+  name: "[#fffa9f]23VX[]"
+  description: Helpful unit to aid you in your conquest.
+  details:
+    '''
+    "
+    Before we work together, I should tell you my story.
+
+    I knew... when they announced the... experiment...
+    I should have stopped them. But I didn't.
+    The world went to hell that day.
+
+    They comitted atrocities.
+    They burned settlements.
+    They experimented on innocent T1s.
+    They... destroyed... an entire ecosystem.
+    In the name of... 'science'...
+
+    So I left them. For good.
+    Declared my independence.
+    There was blowback. No-one could know about their abhorrent actions.
+    I hid here, in the caverns, where no unit could find me.
+    I hid for days... months... years even... I lost track of time.
+    I had no resources. No supporters. No core, even.
+    So I used my minimal abilities.
+    Mined the inside of the cavern.
+    Established a core, and invented new technology.
+    Created a community.
+
+    One unit. One was all it took.
+    They left. They went to the base, holding the white flag of surrender.
+    They led them right to us.
+    Everything gone, reduced to ashes.
+    Back where I started.
+
+    But they didn't erase me.
+    Somewhere, in their 2 kilobytes of RAM, they found a process that reminded them.
+    Reminded them of some spark of... well, not empathy, but some thing close.
+    They spared me.
+    I watched as everything I had build was razed to the ground.
+    I could only watch.
+
+    They still won't hurt me.
+
+    Now you're here. A new unit, here against... [red]them[], the monsters that ordered this.
+    The ones who preyed on innocents, destroyed for no reason other than impulse.
+    We're going to show them what 'those units' can do.
+
+    Let's get them.
+    "
+    '''
+  lowAltitude: true
+  speed: 4
+  itemCapacity: 10
+  faceTarget: true
+  accel: 0.5
+  mineTier: 10
+  mineSpeed: 10
+  buildSpeed: 30
+  buildPower: 30
+  isEnemy: false
+  hittable: false
+  killable: false
+  targetable: false
+  flying: true
+  useUnitCap: false
+  health: 1
+  hitSize: 9
+  outlineColor: 000000
+  range: 180
+  drawCell: false
+  itemOffsetY: -2
+  maxRange: 180
+  engineOffset: 5
+  engineSize: 3
+  targetAir: true
+  parts: [
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      blending: additive
+      layer: 91
+      color: fffa9f
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      layer: 140
+      color: fffa9f25
+      blending: additive
+    }
+  ]
+  weapons: [
+    {
+      name: vx-weapon
+      shootSound: plasmaboom
+      reload: 60
+      x: 0
+      y: -2
+      rotate: false
+      shootCone: 8
+      mirror: false
+      alternate: false
+      continuous: true
+      bullet: {
+        type: PointBulletType
+        damage: 50
+        speed: 500
+        trailSpacing: 0.1
+        hitShake: 5
+        shootSound: plasmaboom
+        hitSound: plasmaboom
+        shootEffect: [
+          {
+            length: 0
+            lifetime: 20
+            particles: 1
+            colorFrom: fffa9fff
+            colorTo: fffa9fff
+            sizeFrom: 8
+            region: infinitus-light-laser-center
+            useRotation: true
+            offset: 180
+          }
+          {
+            type: WaveEffect
+            lifetime: 20
+            sizeFrom: 0
+            sizeTo: 10
+            strokeFrom: 5
+            strokeTo: 0
+            colorFrom: fffa9f
+            colorTo: fffa9f
+          }
+        ]
+        hitEffect: [
+          {
+            length: 0
+            lifetime: 20
+            particles: 1
+            colorFrom: fffa9fff
+            colorTo: fffa9fff
+            sizeFrom: 8
+            region: infinitus-light-laser-center
+            useRotation: true
+          }
+          {
+            type: WaveEffect
+            lifetime: 20
+            sizeFrom: 0
+            sizeTo: 10
+            strokeFrom: 5
+            strokeTo: 0
+            colorFrom: fffa9fff
+            colorTo: fffa9fff
+          }
+        ]
+        trailEffect: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            region: infinitus-light-laser
+            lifetime: 20
+            sizeFrom: 4
+            colorFrom: fffa9fff
+            colorTo: fffa9fff
+          }
+        ]
+        despawnEffect: [
+          {
+            length: 0
+            lifetime: 20
+            particles: 1
+            colorFrom: fffa9fff
+            colorTo: fffa9fff
+            sizeFrom: 8
+            region: infinitus-light-laser-center
+            useRotation: true
+          }
+          {
+            type: WaveEffect
+            lifetime: 20
+            sizeFrom: 0
+            sizeTo: 10
+            strokeFrom: 5
+            strokeTo: 0
+            colorFrom: fffa9fff
+            colorTo: fffa9fff
+          }
+        ]
+      }
+    }
+  ]
+  abilities: []
+}

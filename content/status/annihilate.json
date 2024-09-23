@@ -1,0 +1,16 @@
+{
+    "name": "[#111111]Annihilating",
+    "description": "Antimatter is interesting, huh?",
+    "damage": 100
+    "color": "000000EE"
+    "effect": {
+ 	 "type": "ParticleEffect",
+ 	 "particles": 3,
+	 "length": 0,
+	 "lifetime": 30,
+	 "sizeFrom": 3,
+	 "sizeTo": 0,
+ 	 "colorFrom": "111111FF",
+	 "colorTo": "000000AA"
+	}
+}

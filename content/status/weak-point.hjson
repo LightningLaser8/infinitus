@@ -1,0 +1,14 @@
+reloadMultiplier: 0.5
+speedMultiplier: 0.75
+damageMultiplier: 0.6
+healthMultiplier: 0.2
+effect: {
+ type: WaveEffect
+ lifetime: 60
+ sizeFrom: 15
+ sizeTo: 20
+ strokeFrom: 0
+ strokeTo: 1
+ colorFrom: aeeaf5EE
+ colorTo: 3bbeffAA
+}

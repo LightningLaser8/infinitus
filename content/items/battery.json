@@ -1,0 +1,11 @@
+{
+    "name": "Battery",
+    "description": "Power as an item. Also the only 'normal' item here.",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 1,
+    "cost": 1,
+    "color": "914925"
+    }
+    

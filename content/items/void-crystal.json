@@ -1,0 +1,12 @@
+{
+    "name": "[#220022]Void Crystal",
+    "description": "Basic Void material, mildly radioactive.",
+    "explosiveness": 0,
+    "research": "void-start",
+    "flammability": 0,
+    "radioactivity": 0.2,
+    "charge": 0,
+    "cost": 1,
+    "color": "220022"
+    }
+    

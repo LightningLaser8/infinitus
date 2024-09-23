@@ -1,0 +1,102 @@
+{
+  type: Drill
+  size: 4
+  tier: 8
+  drillTime: 60
+  liquidBoostIntensity: 2.4
+  drawRim: true
+  heatColor: 8cdeff
+  requirements: [
+    electronium/50
+    shadow-steel/40
+    battery/10
+    rubber/30
+  ]
+  consumes: {
+    power: 4
+    liquid: {
+      liquid: infinitus-helium
+      amount: 0.3
+      booster: true
+      optional: true
+    }
+  }
+  category: production
+  ambientSound: build
+  ambientSoundVolume: 0.05
+  research: 0p-0-02-proto-beam-drill
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 16
+      sizeTo: 32
+      strokeFrom: 12
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}

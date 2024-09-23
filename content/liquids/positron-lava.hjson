@@ -1,0 +1,9 @@
+{
+  name: "[scarlet]Positrons"
+  description: Antimatter. The antiparticles of electrons.
+  temperature: 1
+  viscosity: 0.7
+  effect: annihilate
+  capPuddles: false
+  color: ff4141
+}

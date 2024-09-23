@@ -1,0 +1,30 @@
+{
+  name: "[#ff0000]Rail Bridge[]"
+  type: BufferedItemBridge
+  description: Instantly transports items in a straight line to another bridge. Consumes no power.
+  category: distribution
+  bufferCapacity: 8
+  itemCapacity: 24
+  speed: 40
+  health: 60
+  hasPower: false
+  range: 6
+  transportTime: 0.01
+  research: 0p-0-01-rail
+  requirements: [
+    shadow-steel/5
+    electronium/10
+  ]
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 4
+    sizeTo: 8
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

@@ -1,0 +1,86 @@
+{
+  type: GenericCrafter
+  squareSprite: false
+  itemCapacity: 25
+  craftTime: 240
+  invertFlip: true
+  regionRotated1: 0
+  liquidOutputDirections: [1, 3]
+  rotate: true
+  research: 0p-0-02-infinitite-kiln
+  liquidCapacity: 50
+  drawer: [
+    {
+      type: DrawRegion
+      suffix: -base
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padding: 2
+      alpha: 0.6
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ozone
+      padding: 2
+      alpha: 0.3
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: hydrogen
+      padding: 2
+      alpha: 0.3
+    }
+    {
+      type: DrawRegion
+      suffix: -edge
+    }
+    {
+      type: DrawRegion
+    }
+    {
+      type: DrawGlowRegion
+      color: 8cdeff
+      suffix: -glow
+    }
+    {
+      type: DrawLiquidOutputs
+    }
+  ]
+  size: 2
+  hasPower: true
+  hasItems: false
+  hasLiquids: true
+  craftEffect: none
+  consumes: {
+    power: 1.25
+    liquids: [
+      water/1
+    ]
+  }
+  outputLiquids: [
+    hydrogen/1
+    ozone/0.3
+  ]
+  ambientSound: hum
+  ambientSoundVolume: 0.2
+  category: crafting
+  research: 0p-0-02-infinitite-kiln
+  requirements: [
+    shadow-steel/15
+    electronium/60
+  ]
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

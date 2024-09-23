@@ -1,0 +1,41 @@
+type: mech
+speed: 0.6
+health: 1
+armor: 2147483648
+canBoost: true
+boostMultiplier: 1.8
+buildSpeed: 0.25
+lightRadius: 40
+lightColor: ffffff
+weapons: [
+  {
+    name: fire-hand-orange
+    top: false
+    x: 3.75
+    y: 0
+    rotate: false
+    reload: 6
+    recoil: 2
+    mirror: true
+    alternate: true
+    continuous: true
+    shootY: 5
+    shootSound: laser
+    shake: 0.8
+    bullet: {
+      type: fireBulletType
+      damage: 10
+      length: 30
+      shootEffect: hitMeltdown
+      recoil: 0
+      radius: 6
+    }
+  }
+]
+abilities: [
+]
+immunities:[
+burning
+melting
+]
+research: bone-core

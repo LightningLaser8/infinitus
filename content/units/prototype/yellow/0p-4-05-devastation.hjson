@@ -1,0 +1,168 @@
+{
+  type: flying
+	details:
+	'''
+	"...It shouldn't have come to this.
+
+	I never wanted this to happen.
+	I hope this isn't necessary."
+	'''
+  lowAltitude: true
+  speed: 1.2
+  itemCapacity: 500
+  faceTarget: true
+  accel: 0.5
+  flying: true
+  health: 8560
+  research: nano-reconstructor
+  hitSize: 64
+  outlineColor: 000000
+  range: 180
+  drawCell: false
+  maxRange: 180
+  engineOffset: 30
+  engineSize: 6
+  targetAir: true
+  parts: [
+    {
+      type: RegionPart
+      layer: 90.02
+      outline: false
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      blending: additive
+      layer: 91
+      color: fffa9f
+    }
+    {
+      type: RegionPart
+      suffix: -flare
+      outline: false
+      layer: 140
+      color: fffa9f25
+      blending: additive
+    }
+  ]
+  weapons: [
+    {
+      name: devastation-turret-launcher
+      layerOffset: 30
+      reload: 1200
+      x: 0
+      y: -6.5
+      recoil: 0
+      shootSound: bolt
+      top: false
+      bullet: {
+        sprite: infinitus-circle-trail
+        lifetime: 60
+        damage: 0
+        speed: 10
+        spin: 60
+        shrinkY: 0.5
+        shrinkX: 0.5
+        width: 37
+        height: 37
+        splashDamage: 100
+        parts: [
+          {
+            type: RegionPart
+            layer: 90.02
+            outline: false
+          }
+          {
+            type: RegionPart
+            suffix: -flare
+            outline: false
+            blending: additive
+            layer: 91
+            color: fffa9f
+          }
+          {
+            type: RegionPart
+            suffix: -flare
+            outline: false
+            layer: 140
+            color: fffa9f25
+            blending: additive
+          }
+        ]
+        frontColor: fffa9f
+        backColor: fffa9f
+        splashDamageRadius: 60
+        despawnUnit: infinitus-devastation-turret
+        despawnEffect: none
+      }
+    }
+    {
+      name: devastation-blade-launcher
+      layerOffset: -10
+      reload: 300
+      x: 0
+      y: -6.5
+      recoil: 0
+      shootSound: blade-yeet
+      shoot: {
+        type: ShootSpread
+        shots: 6
+        spread: 5
+      }
+      top: false
+      bullet: {
+        sprite: infinitus-circle-trail
+        lifetime: 60
+        layer: 80
+        speed: 10
+        hitSize: 20
+        spin: 90
+        shrinkY: 0.5
+        shrinkX: 0.5
+        width: 37
+        height: 37
+        pierce: true
+        pierceBuilding: false
+        damage: 100
+        parts: [
+          {
+            type: RegionPart
+            layer: 90.02
+            outline: false
+          }
+          {
+            type: RegionPart
+            suffix: -flare
+            outline: false
+            blending: additive
+            layer: 91
+            color: fffa9f
+          }
+          {
+            type: RegionPart
+            suffix: -flare
+            outline: false
+            layer: 140
+            color: fffa9f25
+            blending: additive
+          }
+        ]
+        frontColor: fffa9f
+        backColor: fffa9f
+        hitSound: sawblade-hit
+        despawnEffect: none
+      }
+    }
+  ]
+  abilities: [
+    {
+      type: RegenAbility
+      amount: 5
+    }
+  ]
+  immunities: [
+    disassembly
+    disassemblyL2
+  ]
+}

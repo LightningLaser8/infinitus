@@ -1,0 +1,61 @@
+type: mech
+speed: 0.6
+health: 1
+armor: 2147483648
+canBoost: true
+boostMultiplier: 1.8
+buildSpeed: 0.25
+lightRadius: 40
+lightColor: ffffff
+weapons: [
+  {
+    name: bone-weapon
+    top: false
+    x: 3.75
+    y: 0
+    reload: 15
+    recoil: 2
+    mirror: false
+    shootY: 4
+    shootSound: shoot
+    shake: 0.8
+    bullet: {
+      type: basicBulletType
+      lifetime: 240
+      damage: 10
+      recoil: 0.1
+      inaccuracy: 10
+      width: 10
+      buildingDamageMultiplier: 0.01
+      height: 30
+      backColor: ffffff
+      frontColor: ffffff
+      sprite: infinitus-spike-tall
+    },
+  }
+  {
+    name: bone-weapon
+    top: false
+    x: -3.75
+    y: 0
+    reload: 300
+    recoil: 2
+    mirror: false
+    shootY: 4
+    shootSound: laser
+    shake: 0.8
+    bullet: {
+      type: ArtilleryBulletType
+      lifetime: 240
+      despawnUnit: blaster
+      damage: 0
+      recoil: 0.1
+      backColor: 00ffff
+      frontColor: 00ffff
+      sprite: infinitus-spike-tall
+    }
+  }
+]
+abilities: [
+]
+research: bone-core

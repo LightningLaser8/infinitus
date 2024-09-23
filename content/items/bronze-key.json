@@ -1,0 +1,12 @@
+{
+    "name": "[#723e1d]Bronze Key",
+    "description": "A bronze key.",
+    "explosiveness": 0,
+    "research": "prototype-start",
+    "flammability": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "cost": 1,
+    "color": "723e1d"
+    }
+    

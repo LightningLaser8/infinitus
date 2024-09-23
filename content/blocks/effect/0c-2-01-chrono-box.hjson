@@ -1,0 +1,13 @@
+{
+  name: "[green]ChronoContainer[]"
+  type: StorageBlock
+  research: chrono-start
+  size: 1
+  researchCostMultiplier: 0.6
+  health: 225
+  itemCapacity: 200
+  category: effect
+  requirements: [
+    time-crystal/20
+  ]
+}

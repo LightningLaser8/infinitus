@@ -1,0 +1,16 @@
+{
+	"name": "[green]Core: Mini",
+	"type": "CoreBlock",
+	"research": "chrono-start",
+	"health": 2000,
+	"size": 2,
+	"itemCapacity": 2000,
+	"unitCapModifier": 5,
+        "unitType": "0c-1-01-meep",
+	"requirements": [
+		"silicon/1000",
+		"lead/2000",
+		"time-crystal/100"
+	],
+  	"category": "effect"
+}

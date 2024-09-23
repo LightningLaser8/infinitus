@@ -1,0 +1,58 @@
+{
+  type: GenericCrafter
+  size: 4
+  drawer: {
+    type: DrawMulti,
+    drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawLiquidRegion,
+        drawLiquid: infinitus-infinite-oil
+        suffix: -liquid,
+      }
+      {
+        type: DrawRegion,
+        suffix: -rotator,
+        rotateSpeed: -4
+        spinSprite: true
+      }
+    ]
+  }
+  craftTime: 90
+  hasLiquids: true
+  consumes: {
+    power: 1.5
+    liquid: {
+      liquid: infinite-oil
+      amount: 0.05
+    }
+  }
+  outputItem: infinitite/1
+  updateEffect: {
+    type: ParticleEffect
+    length: 6
+    particles: 5
+    lifetime: 35
+    colorFrom: 00ffffff
+    colorTo: 00ffff50
+    sizeFrom: 0.75
+  }
+  craftEffect: {
+    type: ParticleEffect
+    length: 12
+    lifetime: 45
+    particles: 12
+    colorFrom: 00ffffff
+    colorTo: 00ffff50
+    sizeFrom: 1.5
+    sizeTo: 0
+  }
+  category: crafting
+  research: 0i-0-01-infini-borer
+  requirements: [
+    iron/100
+    silicon/25
+  ]
+}

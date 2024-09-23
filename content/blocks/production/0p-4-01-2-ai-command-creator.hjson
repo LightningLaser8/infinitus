@@ -1,0 +1,48 @@
+{
+  type: GenericCrafter
+  drawer: {
+    type: DrawMulti
+    drawers: [
+      {
+        type: DrawRegion
+        suffix: -bottom
+      }
+      {
+        type: DrawArcSmelt
+        flameColor: ff5555
+        midColor: ff3333
+        particleLife: 35
+      }
+      {
+        type: DrawDefault
+      }
+    ]
+  }
+  size: 2
+  hasPower: true
+  hasItems: true
+  itemCapacity: 20
+  squareSprite: false
+  craftTime: 240
+  craftEffect: smeltsmoke
+  updateEffect: none
+  consumes: {
+    power: 3
+    items: {
+      items: [
+        rubber/1
+        silicon/3
+        battery/1
+      ]
+    }
+  }
+  requirements: [
+    shadow-steel/200
+    dark-plates/200
+    tinted-glass/100
+    rubber/75
+  ]
+  category: crafting
+  research: 0p-3-02-charger
+  outputItem: ai-command/1
+}

@@ -1,0 +1,22 @@
+{
+  type: MassDriver
+  rotateSpeed: 10
+  range: 180
+  minDistribute: 2
+  itemCapacity: 10
+  bulletSpeed: 6
+  bulletLifetime: 30
+  knockback: 1
+  reload: 60
+  shootEffect: shootSmall
+  smokeEffect: shootSmallSmoke
+  receiveEffect: pulverizeSmall
+  shootSound: pew
+  shake: 0
+  category: distribution
+  research: 0c-0-01-chrono-rail
+  requirements: [
+    time-crystal/25
+    spatial-shard/50
+  ]
+}

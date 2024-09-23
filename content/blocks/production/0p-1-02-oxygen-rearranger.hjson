@@ -1,0 +1,68 @@
+{
+  type: GenericCrafter
+  squareSprite: false
+  craftTime: 240
+  invertFlip: true
+  research: 0p-1-01-electrolysation-ring
+  liquidCapacity: 50
+  drawer: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ozone
+      padding: 2
+      alpha: 0.6
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: oxygen
+      padding: 2
+      alpha: 0.6
+    }
+    {
+      type: DrawBlurSpin
+      color: 8cdeff
+      suffix: -spinner
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+  size: 2
+  hasPower: true
+  hasItems: false
+  hasLiquids: true
+  craftEffect: none
+  consumes: {
+    power: 0.75
+    liquids: [
+      ozone/0.4
+    ]
+  }
+  outputLiquids: [
+    oxygen/0.6
+  ]
+  ambientSound: hum
+  ambientSoundVolume: 0.2
+  category: crafting
+  requirements: [
+    tinted-glass/15
+    shadow-steel/30
+    electronium/60
+  ]
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

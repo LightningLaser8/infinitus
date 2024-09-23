@@ -1,0 +1,75 @@
+{
+  type: UnitFactory
+  size: 2
+  consumes: {
+    power: 3
+  }
+  plans: [
+    {
+      unit: 0p-0-01-mip-proto
+      requirements: [
+        electronium/5
+        shadow-steel/10
+        ai-command/1
+      ]
+      time: 300
+    }
+    {
+      unit: 0p-4-01-mip-nanite
+      requirements: [
+        electronium/5
+        nanite-alloy/5
+        ai-vx/1
+      ]
+      time: 400
+    }
+    {
+      unit: 0p-5-01-entity-lightning-ball
+      requirements: [
+        electronium/15
+        ai-command/1
+      ]
+      time: 120
+    }
+    {
+      unit: 0p-6-01-impact
+      requirements: [
+        shadow-steel/12
+				positronium/2
+        ai-command/1
+        ai-combat/1
+      ]
+      time: 180
+    }
+  ]
+  requirements: [
+    iron/100
+    shadow-steel/50
+  ]
+  category: units
+  research: prototype-start
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+  breakEffect: {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff0000
+    colorTo: ff0000
+  }
+}

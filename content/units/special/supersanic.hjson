@@ -1,0 +1,101 @@
+type: flying 
+flying: true
+health: 1200
+shadowElevationScl: 3.7
+speed: 8
+accel: 0.03
+drag: 0.02
+engineSize: 3.5
+engineOffset: 5
+engineColor: fff100
+engineLayer: 115.01
+outlines: false 
+drawCell: false 
+buildSpeed: 2.25
+drawBuildBeam: false 
+engines: [
+  {
+    x: 5
+    y: -2
+    radius: 2
+    rotation: 315
+  }
+  {
+    x: -5
+    y: -2
+    radius: 2
+    rotation: 225
+  }
+]
+parts: [
+  {
+    type: RegionPart
+    outline: false
+    layer: 115.02
+  }
+  {
+    type: RegionPart
+    suffix: -flare
+    outline: false
+    blending: additive
+    layer: 115.03
+    color: fff100bb
+  }
+]
+weapons: [
+  {
+    type: BuildWeapon
+    x: 8
+    y: -1
+  }
+{
+  name: laser-eyes,
+  shootCone: 8,
+  shake: 10,
+  reload: 120,
+  shootSound: shockBlast,
+  x: 3,
+  y: 5,
+  mirror: true,
+  alternate: false
+  continuous: true
+  bullet: {
+    type: laserBulletType,
+    shootEffect: hitMeltdown,
+    damage: 1000,
+    sideAngle: 0,
+    sideWidth: 0,
+    sideLength: 0,
+    width: 10,
+    colors:[FF0000AA, FF0000FF, FFFFFF],
+    length: 300,
+    collidesAir: true
+  }
+}
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.1
+    y: -5
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 115
+      lifetime: 15
+      sizeFrom: 3.5
+      sizeTo: 0
+      colorFrom: ffff10
+      colorTo: cccc00
+    }
+  }
+  {
+    type: StatusFieldAbility
+    duration: 600
+    reload: 1800
+    range: 1
+    effect: infinitus-super-mode
+  }
+]

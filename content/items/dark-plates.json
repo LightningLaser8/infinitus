@@ -1,0 +1,12 @@
+{
+    "name": "[#ff0000]Dark Plates",
+    "description": "Shadow Steel plates, infused with Void Essence.\nVery hard, and less explosive.\nUsed in higher-tier [#ff0000]Prototype[] tech and as armor.",
+    "explosiveness": 0.5,
+    "flammability": 0,
+    "research": "shadow-steel",
+    "radioactivity": 0,
+    "charge": 0.2,
+    "cost": 15,
+    "color": "CC0000"
+    }
+    

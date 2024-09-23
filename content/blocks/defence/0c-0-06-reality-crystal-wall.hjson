@@ -1,0 +1,43 @@
+{
+  type: ShieldWall
+  health: 7000
+  shieldHealth: 3000
+  breakCooldown: 999999999999999
+  glowColor: ff55557f
+  regenSpeed: 0
+  size: 2
+  customShadow: true
+  category: defense
+  research: 0c-0-05-space-crystal-wall
+  requirements: [
+    reality-shard/24
+  ]
+  destroyBullet: {
+    type: BulletType
+    lifetime: 0
+    collides: false
+    hittable: false
+    absorbable: false
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+    fragBullets: 16
+    fragRandomSpread: 0
+    fragSpread: 22.5
+    fragBullet: {
+      type: LaserBulletType
+      length: 80
+      lifetime: 36
+      damage: 100
+      width: 8
+      colors: [
+        ffffff
+        ff5555
+        ff0000
+        ]
+      despawnEffect: none
+    }
+  }
+  group: walls
+}

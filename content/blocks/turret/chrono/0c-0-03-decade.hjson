@@ -1,0 +1,54 @@
+{
+  type: PowerTurret
+  size: 4
+  health: 2800
+  rotate: false
+  reload: 110
+  consumes: {
+    power: 20
+  }
+  rotateSpeed: 0
+  shootCone: 360
+  range: 180
+  shoot: {
+    shots: 100
+  }
+  velocityRnd: 0.5
+  targetHealing: true
+  shootSound: shootBig
+  shake: 10
+  shootY: 0
+  recoil: 0
+  shootType: {
+    type: ContinuousLaserBulletType
+    damage: 12.5
+    incendChance: 0
+    status: time-slow-t1
+    incendAmount: 0
+    pierceCap: 5
+    inaccuracy: 360
+    speed: 8
+    drag: 0.04
+    lifetime: 90
+    shootY: 0
+    length: 16
+    width: 8
+    absorbable: true
+    colors: [
+      83f79320
+      83f79360
+      83f793
+      ffffff
+    ]
+    hitEffect: hitMeltHeal
+  }
+  category: turret
+  research: 0c-0-02-year
+  requirements: [
+    copper/1500
+    silicon/800
+    titanium/500
+    plastanium/350
+    time-crystal/200
+  ]
+}

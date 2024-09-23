@@ -1,0 +1,53 @@
+{
+  type: mech
+  speed: 1.2
+  hitSize: 15
+  name: "[green]Charge[]"
+  health: 1000
+  armor: 50
+  rotateSpeed: 6
+  mechFrontSway: 1
+  weapons: [
+    {
+      name: 0c-5-03-shockwave-weapon
+      x: 8.75
+      y: 0
+      reload: 180
+      top: false
+      shootSound: shootAltBig
+      shake: 1
+      recoil: -5
+      range: 80
+      maxRange: 80
+      shoot: {
+        shots: 10
+        shotDelay: 5
+      }
+      bullet: {
+        type: BulletType
+        damage: 0
+        range: 80
+        maxRange: 80
+        splashDamage: 40
+        splashDamageRadius: 20
+        speed: 0
+        recoil: -5
+        lifetime: 1
+        pierce: true
+        knockback: 5
+        smokeEffect: none
+        shootEffect: none
+        despawnEffect: none
+        hitEffect: {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 20
+          colorFrom: 00ff00
+          colorTo: 00ff0000
+          strokeFrom: 5
+          strokeTo: 0
+        }
+      }
+    }
+  ]
+}

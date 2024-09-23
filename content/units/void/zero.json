@@ -1,0 +1,61 @@
+{
+  "name": "[#222222]Zero",
+  "description": "Basic Void unit. Can step over most terrain. Pauses enemies.",
+  "health": 700,
+  "flying": false,
+  "legCount": 4,
+  "legLength": 10,
+  "legForwardScl": 0.7,
+  "legMoveSpace": 1.2,
+  "hovering": true,
+  "allowLegStep": true,
+  "commandLimit": 4,
+  "speed": 1.5,
+  "outlineColor": "000000ff",
+  "rotateSpeed": 4,
+  "armor": 3,
+  "range": 80,
+  "mechSideSway": 0.25,
+  "type": "legs",
+  "hitSize": 10,
+  "research": {
+    "parent": "void-start",
+    "requirements": [
+      {
+        "item": "void-crystal",
+        "amount": 400
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "name": "nothing",
+      "x": 0,
+      "y": 0,
+      "reload": 60,
+      "shake": 2,
+      "rotateSpeed": 3,
+      "ejectEffect": "casing1",
+      "shootSound": "shoot",
+      "rotate": true,
+      "mirror": false,
+      "recoil": 1,
+      "bullet": {
+         "type": "LaserBulletType",
+          "damage": 30,
+        "width": 4,
+      "serrationLenScl": 2,
+      "serrationSpaceOffset": 70,
+      "serrationFadeOffset": 0,
+      "serrations": 8,
+        "length": 100,
+      "serrationWidth": 2,
+      "colors": ["420044","5e0061","9e00a4"]
+      "shootEffect": "sparkShoot",
+      "smokeEffect": "sparkShoot",
+    "status": "unmoving",
+    "statusDuration": 30
+      }
+    },
+  ]
+}

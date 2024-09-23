@@ -1,0 +1,85 @@
+{
+  type: legs
+  name: "[green]Mortem[]"
+  description: Small crawler unit spawned by Death Itself.
+  hitSize: 10
+  health: 1001
+  lockLegBase: true
+  legCount: 6
+  outlineColor: 000000
+  legLength: 20
+  maxStretch: 1.2
+  legExtension: -5
+  armor: 5
+  envDisabled: 0
+  treadPullOffset: 8
+  treadRects: [
+    {
+      x: 7
+      y: -26
+      width: 14
+      height: 51
+    }
+  ]
+  hovering: false
+  faceTarget: false
+  outlineColor: 000000
+  speed: 4.5
+  accel: 0.1
+  rotateSpeed: 2
+  omniMovement: false
+  baseRotateSpeed: 2
+  commandLimit: 888
+  itemCapacity: 0
+  flying: false
+  drownTimeMultiplier: 1
+  weapons: [
+    {
+      name: dspooder-blaster
+      reload: 105
+      x: 0
+      y: 0
+      shootY: 8
+      recoils: 9
+      recoilTime: 5
+      mirror: false
+      shoot: {
+        shots: 9
+        shotDelay: 0
+        spread: 3
+      }
+      rotate: true
+      bullet: {
+        type: BasicBulletType
+        hittable: false
+        inaccuracy: 60
+        sprite: infinitus-chrono-bullet
+        status: time-slow-t3
+        statusDuration: 300
+        lifetime: 40
+        backColor: 00CC00FF
+        frontColor: 55FF55FF
+        damage: 50
+        pierce: true
+        pierceCap: 3
+        pierceBuilding: false
+        speed: 5
+        width: 3
+        height: 6
+        trailWidth: 1
+        trailLength: 10
+        trailColor: 33ff33
+      }
+    }
+  ]
+  immunities: [
+    time-slow-t1
+    time-slow-t2
+    time-slow-t3
+    time-stop
+    time-speed
+    time-speed-t2
+    time-speed-t3
+    chrono-hyperspeed
+  ]
+}

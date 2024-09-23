@@ -1,0 +1,175 @@
+{
+  type: ItemTurret
+  size: 4
+  reload: 3600
+  recoil: 0
+  outlineColor: 000000
+  shake: 6
+  shootSound: wave
+  targetGround: true
+  targetAir: true
+  rotateSpeed: 0.5
+  range: 8192
+  health: 1300
+  cooldownTime: 360
+  coolantMultiplier: 0.3
+  maxAmmo: 1
+  ammoTypes: {
+    keycode: {
+      ammoMultiplier: 1
+      type: PointBulletType
+      //pierceArmor: true
+      trailEffect: none
+      hitEffect: none
+      speed: 800
+      damage: 0
+      despawnUnit: infinitus-orbital-strike
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sides: 0
+            lifetime: 30
+            sizeFrom: 0
+            sizeTo: 45
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: ff0000
+            colorTo: ff0000
+          }
+          {
+            type: WaveEffect
+            sides: 0
+            lifetime: 30
+            sizeFrom: 45
+            sizeTo: 0
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: ff0000
+            colorTo: ff0000
+          }
+          {
+            type: WaveEffect
+            sides: 0
+            lifetime: 30
+            sizeFrom: 23
+            sizeTo: 23
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: ff0000
+            colorTo: ff0000
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            spin: 1.4
+            lifetime: 120
+            sizeFrom: 50
+            colorFrom: ff0000
+            colorTo: ff0000
+            region: infinitus-singularity-ring-color
+          }
+        ]
+      }
+    }
+  }
+  consumes: {
+    power: 165
+  }
+  requirements: [
+    shadow-steel/1300
+    dark-plates/1000
+    rubber/750
+    electronium/5000
+  ]
+  category: turret
+  research: {
+    parent: 0p-0-08-ultimatum
+    objectives: [
+      {
+        type: OnSector
+        preset: island
+      }
+      {
+        type: SectorCaptured
+        preset: island
+      }
+    ]
+  }
+  breakEffect: [
+    {
+      type: WaveEffect
+      rotation: 41
+      lifetime: 20
+      sides: 4
+      sizeFrom: 16
+      sizeTo: 32
+      strokeFrom: 12
+      strokeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 11
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff000000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      startDelay: 10
+      useRotation: false
+      region: infinitus-prototype-icon
+      sizeFrom: 8
+      sizeTo: 8
+      colorFrom: ff0000
+      colorTo: ff000000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      cone: 0
+      baseRotation: 180
+      randLength: false
+      length: 0
+      baseLength: 12
+      lifetime: 35
+      useRotation: false
+      region: infinitus-energy-arrow
+      interp: pow3Out
+      sizeInterp: pow2In
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ff0000
+      colorTo: ff0000
+    }
+  ]
+}
