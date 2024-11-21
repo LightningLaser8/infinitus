@@ -1,0 +1,43 @@
+{
+  type: flying
+  lowAltitude: true
+  itemCapacity: 10
+  faceTarget: true
+  accel: 0.5
+  flying: true
+  health: 420
+  speed: 2
+  hitSize: 12
+  outlineColor: 000000
+  engineOffset: 4.75
+  engineSize: 4
+  hidden: true
+  weapons: [
+    {
+      name: divide-weapon
+      x: 5.75
+      y: 0.5
+      reload: 20
+      top: false
+      mirror: true
+      alternate: true
+      ejectEffect: casing1
+      shoot: {
+        type: ShootPattern
+        shots: 3
+        shotDelay: 3
+      }
+      bullet: {
+        type: BasicBulletType
+        speed: 4
+        damage: 10
+        width: 7
+        height: 9
+        lifetime: 70
+        pierce: 1
+        backColor: ff5555
+        frontColor: ffffff
+      }
+    }
+  ]
+}

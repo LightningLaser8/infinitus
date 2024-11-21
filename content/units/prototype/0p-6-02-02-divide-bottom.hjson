@@ -1,0 +1,77 @@
+{
+  type: legs
+  health: 420
+  speed: 0.8
+  hitSize: 12
+  legCount: 4
+  legLength: 12
+  legForwardScl: 0.4
+  legMoveSpace: 1
+  hovering: true
+  groundLayer: 72
+  outlineColor: 000000
+  shadowElevation: 0.1
+  hidden: true
+  weapons: [
+    {
+      name: divide-weapon-base
+      x: 5.75
+      y: 5.75
+      baseRotation: -45
+      shootCone: 360
+      reload: 30
+      top: false
+      mirror: true
+      alternate: false
+      ejectEffect: casing1
+      shoot: {
+        type: ShootPattern
+        shots: 2
+        shotDelay: 6
+      }
+      bullet: {
+        type: BasicBulletType
+        speed: 4
+        damage: 10
+        width: 7
+        height: 9
+        lifetime: 70
+        pierce: 1
+        homingRange: 200
+        homingPower: 0.1
+        backColor: ff5555
+        frontColor: ffffff
+      }
+    }
+    {
+      name: divide-weapon-base
+      x: 5.75
+      y: -5.75
+      baseRotation: -135
+      shootCone: 360
+      reload: 30
+      top: false
+      mirror: true
+      alternate: false
+      ejectEffect: casing1
+      shoot: {
+        type: ShootPattern
+        shots: 2
+        shotDelay: 6
+      }
+      bullet: {
+        type: BasicBulletType
+        speed: 4
+        damage: 10
+        width: 7
+        height: 9
+        lifetime: 70
+        pierce: 1
+        homingRange: 200
+        homingPower: 0.1
+        backColor: ff5555
+        frontColor: ffffff
+      }
+    }
+  ]
+}

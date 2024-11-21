@@ -1,7 +1,7 @@
 {
   type: ShieldWall
   health: 7000
-  shieldHealth: 3000
+  shieldHealth: 5000
   breakCooldown: 999999999999999
   glowColor: ff55557f
   regenSpeed: 0

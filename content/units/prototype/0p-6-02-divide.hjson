@@ -1,8 +1,7 @@
 {
   type: legs
-  health: 420
+  health: 840
   speed: 0.8
-  armor: 1
   hitSize: 12
   legCount: 4
   legLength: 12
@@ -10,20 +9,54 @@
   legMoveSpace: 1
   hovering: true
   groundLayer: 72
+  outlineColor: 000000
   shadowElevation: 0.1
   weapons: [
+    {
+      name: divide-split
+      x: 0
+      y: 0
+      shootY: 0
+      reload: 1
+      controllable: false
+      aiControllable: true
+      useAttackRange: false
+      autoTarget: true
+      bullet: {
+        range: 50
+        type: BasicBulletType
+        speed: 20
+        collides: false
+        hittable: false
+        absorbable: false
+        reflectable: false
+        width: 70
+        height: 60
+        lifetime: 6
+        backColor: 00000000
+        frontColor: 00000000
+        sprite: 0p-6-02-divide
+        despawnUnit: 0p-6-02-01-divide-top
+        despawnUnitRadius: 0
+        killShooter: true
+        trail: true
+        trailWidth: 7.5
+        trailLength: 200
+        trailColor: ff0000
+      }
+    }
     {
       name: divide-weapon
       x: 5.75
       y: 0.5
-      reload: 10
+      reload: 20
       top: false
       mirror: true
       alternate: true
       ejectEffect: casing1
       shoot: {
         type: ShootPattern
-        shots: 2
+        shots: 3
         shotDelay: 3
       }
       bullet: {
@@ -33,9 +66,18 @@
         width: 7
         height: 9
         lifetime: 70
+        pierce: 1
         backColor: ff5555
         frontColor: ffffff
       }
+    }
+  ]
+  abilities: [
+    {
+      type: SpawnDeathAbility
+      unit: 0p-6-02-02-divide-bottom
+      amount: 1
+      spread: 0
     }
   ]
   research: {
