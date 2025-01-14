@@ -1,9 +1,9 @@
 {
     "displayName": "[][#00ffff[]]Infinitus", 
     "name": "infinitus",
-    "author": "infinity",
+    "author": "[#00ffff]LightningLaser8[]",
     "subtitle": "One element, infinite potential",
-    "description": "Adds a lot of random stuff\n\n< Version 0.8.0 >\n\"This isn't favouritism!\"\nContent:\n - New Prototype units: Divide\n - In-depth lore for Prototype\n - A lot of code optimisation.",
+    "description": "My attempt at an immersive content mod.\nMostly fairly unbalanced, expect damage/pierce values to get reduced in the future.\n\n< Version 0.8.0 >\n\"This isn't favouritism!\"\nContent:\n - New Prototype ground units\nWorld:\n - More in-depth lore for Prototype\nPerformance:\n - A lot of code optimisation/formatting.",
     "version": "0.8.0",
     "minGameVersion": "140.4"
 }
