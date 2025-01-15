@@ -4,12 +4,6 @@
   alwaysUnlocked: false
   research: {
     parent: prototype-start
-    objectives: [
-      {
-        type: SectorComplete
-        preset: island
-      }
-    ]
   }
   mesh: {
     type: NoiseMesh
@@ -51,7 +45,7 @@
   hasAtmosphere: true
   allowWaveSimulation: true
   allowLaunchToNumbered: false
-  clearSectorOnLose: false
+  clearSectorOnLose: true
   allowWaves: true
   defaultCore: 0p-0-01-proton-core
   solarSystem: sun

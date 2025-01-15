@@ -491,12 +491,6 @@
   category: turret
   research: {
     parent: 0p-0-02-attraction
-    objectives: [
-      {
-        type: OnSector
-        preset: island
-      }
-    ]
   }
   breakEffect: [
     {

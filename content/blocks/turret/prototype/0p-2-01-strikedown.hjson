@@ -87,16 +87,6 @@
   category: turret
   research: {
     parent: 0p-0-08-ultimatum
-    objectives: [
-      {
-        type: OnSector
-        preset: island
-      }
-      {
-        type: SectorCaptured
-        preset: island
-      }
-    ]
   }
   breakEffect: [
     {
