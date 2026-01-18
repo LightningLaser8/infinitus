@@ -74,7 +74,7 @@
   }
   shootType: {
     type: PointLaserBulletType
-    color: FFFF40
+    color: 40FFFF
     status: electrified
     sprite: infinitus-color-laser
     damage: 300
@@ -121,7 +121,6 @@
         suffix: -edge1
         heatProgress: warmup
         heatColor: FFFFFFFF
-        cooldownTime: 180
         moveX: 1
         moveY: 5
         moveRot: -20
@@ -139,7 +138,6 @@
         suffix: -edge2
         heatProgress: warmup
         heatColor: FFFFFFFF
-        cooldownTime: 180
         moveX: 5
         moveY: 5.5
         moveRot: -30
@@ -157,7 +155,6 @@
         suffix: -edge3
         heatProgress: warmup
         heatColor: FFFFFFFF
-        cooldownTime: 180
         moveRot: -35
         moveX: 10
         moveY: 6
