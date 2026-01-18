@@ -1,4 +1,5 @@
 {
+  type: mech
   speed: 0.6
   hitSize: 8
   health: 120

@@ -8,7 +8,7 @@
   minWarmup: 0.9999
   research: infinite-start
   squareSprite: false
-  "haloProgress ": warmup
+  haloProgress: warmup
   outlineColor: 0F0F0F
   cooldownTime: 180
   hasPower: true
